@@ -1,0 +1,25 @@
+{
+  "name": "하루 영어 첫걸음 — 알파벳부터 12주",
+  "short_name": "영어 첫걸음",
+  "description": "알파벳부터 파닉스, 단어, 문장, 퀴즈까지 하루 30분",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f8fb",
+  "theme_color": "#152234",
+  "lang": "ko",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

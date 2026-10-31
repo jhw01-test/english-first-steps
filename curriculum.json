@@ -1,0 +1,2794 @@
+{
+  "lessons": [
+    {
+      "id": 0,
+      "week": 1,
+      "day": 1,
+      "weekTitle": "알파벳 A~L",
+      "weekSummary": "알파벳의 모양과 이름을 익히고 대표 소리를 듣습니다.",
+      "title": "A·B",
+      "focus": "알파벳 A(에이), B(비)의 모양·이름과 예시 단어를 익혀요. 글자의 이름과 단어에서 내는 소리는 다를 수 있어요.",
+      "words": [
+        {
+          "word": "apple",
+          "meaning": "사과"
+        },
+        {
+          "word": "ant",
+          "meaning": "개미"
+        },
+        {
+          "word": "ball",
+          "meaning": "공"
+        },
+        {
+          "word": "bag",
+          "meaning": "가방"
+        },
+        {
+          "word": "book",
+          "meaning": "책"
+        }
+      ],
+      "sentence": "A big apple.",
+      "translation": "큰 사과 하나.",
+      "letters": [
+        {
+          "upper": "A",
+          "lower": "a",
+          "name": "에이",
+          "sound": "/æ/",
+          "example": "apple",
+          "meaning": "사과"
+        },
+        {
+          "upper": "B",
+          "lower": "b",
+          "name": "비",
+          "sound": "/b/",
+          "example": "ball",
+          "meaning": "공"
+        }
+      ],
+      "phase": "alphabet"
+    },
+    {
+      "id": 1,
+      "week": 1,
+      "day": 2,
+      "weekTitle": "알파벳 A~L",
+      "weekSummary": "알파벳의 모양과 이름을 익히고 대표 소리를 듣습니다.",
+      "title": "C·D",
+      "focus": "C(씨)는 cat에서 /k/ 소리, D(디)는 dog에서 /d/ 소리로 시작해요. C는 다른 소리로 읽힐 때도 있어요.",
+      "words": [
+        {
+          "word": "cat",
+          "meaning": "고양이"
+        },
+        {
+          "word": "cup",
+          "meaning": "컵"
+        },
+        {
+          "word": "car",
+          "meaning": "자동차"
+        },
+        {
+          "word": "dog",
+          "meaning": "개"
+        },
+        {
+          "word": "desk",
+          "meaning": "책상"
+        }
+      ],
+      "sentence": "A cat and a dog.",
+      "translation": "고양이와 개.",
+      "letters": [
+        {
+          "upper": "C",
+          "lower": "c",
+          "name": "씨",
+          "sound": "/k/",
+          "example": "cat",
+          "meaning": "고양이"
+        },
+        {
+          "upper": "D",
+          "lower": "d",
+          "name": "디",
+          "sound": "/d/",
+          "example": "dog",
+          "meaning": "개"
+        }
+      ],
+      "phase": "alphabet"
+    },
+    {
+      "id": 2,
+      "week": 1,
+      "day": 3,
+      "weekTitle": "알파벳 A~L",
+      "weekSummary": "알파벳의 모양과 이름을 익히고 대표 소리를 듣습니다.",
+      "title": "E·F",
+      "focus": "E(이)는 egg에서 짧은 /ɛ/ 소리, F(에프)는 fish에서 /f/ 소리를 낼 수 있어요.",
+      "words": [
+        {
+          "word": "egg",
+          "meaning": "달걀"
+        },
+        {
+          "word": "end",
+          "meaning": "끝"
+        },
+        {
+          "word": "fish",
+          "meaning": "물고기"
+        },
+        {
+          "word": "fan",
+          "meaning": "선풍기"
+        },
+        {
+          "word": "fun",
+          "meaning": "재미"
+        }
+      ],
+      "sentence": "A fish in a box.",
+      "translation": "상자 안에 있는 물고기 한 마리.",
+      "letters": [
+        {
+          "upper": "E",
+          "lower": "e",
+          "name": "이",
+          "sound": "/ɛ/",
+          "example": "egg",
+          "meaning": "달걀"
+        },
+        {
+          "upper": "F",
+          "lower": "f",
+          "name": "에프",
+          "sound": "/f/",
+          "example": "fish",
+          "meaning": "물고기"
+        }
+      ],
+      "phase": "alphabet"
+    },
+    {
+      "id": 3,
+      "week": 1,
+      "day": 4,
+      "weekTitle": "알파벳 A~L",
+      "weekSummary": "알파벳의 모양과 이름을 익히고 대표 소리를 듣습니다.",
+      "title": "G·H",
+      "focus": "G(지)는 go에서 /g/, H(에이치)는 hat에서 /h/ 소리를 내요. G도 단어에 따라 소리가 바뀌어요.",
+      "words": [
+        {
+          "word": "go",
+          "meaning": "가다"
+        },
+        {
+          "word": "gum",
+          "meaning": "껌"
+        },
+        {
+          "word": "gap",
+          "meaning": "틈"
+        },
+        {
+          "word": "hat",
+          "meaning": "모자"
+        },
+        {
+          "word": "hand",
+          "meaning": "손"
+        }
+      ],
+      "sentence": "I have a hat.",
+      "translation": "나는 모자가 있어요.",
+      "letters": [
+        {
+          "upper": "G",
+          "lower": "g",
+          "name": "지",
+          "sound": "/ɡ/",
+          "example": "go",
+          "meaning": "가다"
+        },
+        {
+          "upper": "H",
+          "lower": "h",
+          "name": "에이치",
+          "sound": "/h/",
+          "example": "hat",
+          "meaning": "모자"
+        }
+      ],
+      "phase": "alphabet"
+    },
+    {
+      "id": 4,
+      "week": 1,
+      "day": 5,
+      "weekTitle": "알파벳 A~L",
+      "weekSummary": "알파벳의 모양과 이름을 익히고 대표 소리를 듣습니다.",
+      "title": "I·J",
+      "focus": "I(아이)는 ink에서 짧은 /ɪ/, J(제이)는 jam에서 /dʒ/ 소리가 나요.",
+      "words": [
+        {
+          "word": "ink",
+          "meaning": "잉크"
+        },
+        {
+          "word": "igloo",
+          "meaning": "이글루"
+        },
+        {
+          "word": "in",
+          "meaning": "안에"
+        },
+        {
+          "word": "jam",
+          "meaning": "잼"
+        },
+        {
+          "word": "jet",
+          "meaning": "제트기"
+        }
+      ],
+      "sentence": "I am in.",
+      "translation": "나는 안에 있어요.",
+      "letters": [
+        {
+          "upper": "I",
+          "lower": "i",
+          "name": "아이",
+          "sound": "/ɪ/",
+          "example": "ink",
+          "meaning": "잉크"
+        },
+        {
+          "upper": "J",
+          "lower": "j",
+          "name": "제이",
+          "sound": "/dʒ/",
+          "example": "jam",
+          "meaning": "잼"
+        }
+      ],
+      "phase": "alphabet"
+    },
+    {
+      "id": 5,
+      "week": 1,
+      "day": 6,
+      "weekTitle": "알파벳 A~L",
+      "weekSummary": "알파벳의 모양과 이름을 익히고 대표 소리를 듣습니다.",
+      "title": "K·L 복습",
+      "focus": "K(케이)는 /k/, L(엘)은 /l/ 소리를 냅니다. A~L 대문자와 소문자를 섞어 읽어보세요.",
+      "words": [
+        {
+          "word": "kite",
+          "meaning": "연"
+        },
+        {
+          "word": "key",
+          "meaning": "열쇠"
+        },
+        {
+          "word": "king",
+          "meaning": "왕"
+        },
+        {
+          "word": "lion",
+          "meaning": "사자"
+        },
+        {
+          "word": "leg",
+          "meaning": "다리"
+        }
+      ],
+      "sentence": "A lion has legs.",
+      "translation": "사자는 다리가 있어요.",
+      "letters": [
+        {
+          "upper": "K",
+          "lower": "k",
+          "name": "케이",
+          "sound": "/k/",
+          "example": "kite",
+          "meaning": "연"
+        },
+        {
+          "upper": "L",
+          "lower": "l",
+          "name": "엘",
+          "sound": "/l/",
+          "example": "lion",
+          "meaning": "사자"
+        }
+      ],
+      "phase": "alphabet"
+    },
+    {
+      "id": 6,
+      "week": 2,
+      "day": 1,
+      "weekTitle": "알파벳 M~Z",
+      "weekSummary": "26개 대문자·소문자를 구분하고 예시 단어를 듣습니다.",
+      "title": "M·N",
+      "focus": "M(엠)은 /m/, N(엔)은 /n/ 소리를 내요. 소리를 낼 때 입술과 혀의 움직임도 느껴보세요.",
+      "words": [
+        {
+          "word": "moon",
+          "meaning": "달"
+        },
+        {
+          "word": "map",
+          "meaning": "지도"
+        },
+        {
+          "word": "mom",
+          "meaning": "엄마"
+        },
+        {
+          "word": "nose",
+          "meaning": "코"
+        },
+        {
+          "word": "net",
+          "meaning": "그물"
+        }
+      ],
+      "sentence": "My mom has a map.",
+      "translation": "우리 엄마는 지도가 있어요.",
+      "letters": [
+        {
+          "upper": "M",
+          "lower": "m",
+          "name": "엠",
+          "sound": "/m/",
+          "example": "moon",
+          "meaning": "달"
+        },
+        {
+          "upper": "N",
+          "lower": "n",
+          "name": "엔",
+          "sound": "/n/",
+          "example": "nose",
+          "meaning": "코"
+        }
+      ],
+      "phase": "alphabet"
+    },
+    {
+      "id": 7,
+      "week": 2,
+      "day": 2,
+      "weekTitle": "알파벳 M~Z",
+      "weekSummary": "26개 대문자·소문자를 구분하고 예시 단어를 듣습니다.",
+      "title": "O·P",
+      "focus": "O(오우)는 단어에 따라 여러 소리가 나요. P(피)는 /p/ 소리입니다. 오늘은 octopus와 pig로 익혀요.",
+      "words": [
+        {
+          "word": "octopus",
+          "meaning": "문어"
+        },
+        {
+          "word": "on",
+          "meaning": "위에"
+        },
+        {
+          "word": "off",
+          "meaning": "꺼진"
+        },
+        {
+          "word": "pig",
+          "meaning": "돼지"
+        },
+        {
+          "word": "pen",
+          "meaning": "펜"
+        }
+      ],
+      "sentence": "A pen is on the desk.",
+      "translation": "펜이 책상 위에 있어요.",
+      "letters": [
+        {
+          "upper": "O",
+          "lower": "o",
+          "name": "오우",
+          "sound": "/ɑ/",
+          "example": "octopus",
+          "meaning": "문어"
+        },
+        {
+          "upper": "P",
+          "lower": "p",
+          "name": "피",
+          "sound": "/p/",
+          "example": "pig",
+          "meaning": "돼지"
+        }
+      ],
+      "phase": "alphabet"
+    },
+    {
+      "id": 8,
+      "week": 2,
+      "day": 3,
+      "weekTitle": "알파벳 M~Z",
+      "weekSummary": "26개 대문자·소문자를 구분하고 예시 단어를 듣습니다.",
+      "title": "Q·R",
+      "focus": "Q(큐)는 보통 u와 함께 /kw/처럼, R(아르)은 /r/처럼 발음해요. 한국어 ㄹ과 영어 /r/은 같지 않아요.",
+      "words": [
+        {
+          "word": "queen",
+          "meaning": "여왕"
+        },
+        {
+          "word": "quick",
+          "meaning": "빠른"
+        },
+        {
+          "word": "quiz",
+          "meaning": "퀴즈"
+        },
+        {
+          "word": "red",
+          "meaning": "빨간"
+        },
+        {
+          "word": "run",
+          "meaning": "달리다"
+        }
+      ],
+      "sentence": "Run, run, run!",
+      "translation": "달려, 달려, 달려!",
+      "letters": [
+        {
+          "upper": "Q",
+          "lower": "q",
+          "name": "큐",
+          "sound": "/kw/",
+          "example": "queen",
+          "meaning": "여왕"
+        },
+        {
+          "upper": "R",
+          "lower": "r",
+          "name": "아르",
+          "sound": "/r/",
+          "example": "red",
+          "meaning": "빨간"
+        }
+      ],
+      "phase": "alphabet"
+    },
+    {
+      "id": 9,
+      "week": 2,
+      "day": 4,
+      "weekTitle": "알파벳 M~Z",
+      "weekSummary": "26개 대문자·소문자를 구분하고 예시 단어를 듣습니다.",
+      "title": "S·T",
+      "focus": "S(에스)는 /s/, T(티)는 /t/ 소리를 낼 수 있어요. 끝소리까지 놓치지 않고 들어보세요.",
+      "words": [
+        {
+          "word": "sun",
+          "meaning": "태양"
+        },
+        {
+          "word": "sit",
+          "meaning": "앉다"
+        },
+        {
+          "word": "sad",
+          "meaning": "슬픈"
+        },
+        {
+          "word": "ten",
+          "meaning": "열"
+        },
+        {
+          "word": "top",
+          "meaning": "꼭대기"
+        }
+      ],
+      "sentence": "Sit on the mat.",
+      "translation": "매트 위에 앉으세요.",
+      "letters": [
+        {
+          "upper": "S",
+          "lower": "s",
+          "name": "에스",
+          "sound": "/s/",
+          "example": "sun",
+          "meaning": "태양"
+        },
+        {
+          "upper": "T",
+          "lower": "t",
+          "name": "티",
+          "sound": "/t/",
+          "example": "ten",
+          "meaning": "열"
+        }
+      ],
+      "phase": "alphabet"
+    },
+    {
+      "id": 10,
+      "week": 2,
+      "day": 5,
+      "weekTitle": "알파벳 M~Z",
+      "weekSummary": "26개 대문자·소문자를 구분하고 예시 단어를 듣습니다.",
+      "title": "U·V",
+      "focus": "U(유)는 up에서 /ʌ/, V(브이)는 /v/ 소리가 나요. V는 윗니와 아랫입술이 가볍게 닿아요.",
+      "words": [
+        {
+          "word": "up",
+          "meaning": "위로"
+        },
+        {
+          "word": "under",
+          "meaning": "아래에"
+        },
+        {
+          "word": "us",
+          "meaning": "우리"
+        },
+        {
+          "word": "van",
+          "meaning": "승합차"
+        },
+        {
+          "word": "vest",
+          "meaning": "조끼"
+        }
+      ],
+      "sentence": "The van is red.",
+      "translation": "그 승합차는 빨간색이에요.",
+      "letters": [
+        {
+          "upper": "U",
+          "lower": "u",
+          "name": "유",
+          "sound": "/ʌ/",
+          "example": "up",
+          "meaning": "위로"
+        },
+        {
+          "upper": "V",
+          "lower": "v",
+          "name": "브이",
+          "sound": "/v/",
+          "example": "van",
+          "meaning": "승합차"
+        }
+      ],
+      "phase": "alphabet"
+    },
+    {
+      "id": 11,
+      "week": 2,
+      "day": 6,
+      "weekTitle": "알파벳 M~Z",
+      "weekSummary": "26개 대문자·소문자를 구분하고 예시 단어를 듣습니다.",
+      "title": "W·X·Y·Z 복습",
+      "focus": "W(더블유), X(엑스), Y(와이), Z(지/제드)를 익히고 A~Z 전체를 확인해요.",
+      "words": [
+        {
+          "word": "water",
+          "meaning": "물"
+        },
+        {
+          "word": "box",
+          "meaning": "상자"
+        },
+        {
+          "word": "yes",
+          "meaning": "네"
+        },
+        {
+          "word": "yellow",
+          "meaning": "노란"
+        },
+        {
+          "word": "zoo",
+          "meaning": "동물원"
+        }
+      ],
+      "sentence": "Yes, I see a box.",
+      "translation": "네, 상자가 보여요.",
+      "letters": [
+        {
+          "upper": "W",
+          "lower": "w",
+          "name": "더블유",
+          "sound": "/w/",
+          "example": "water",
+          "meaning": "물"
+        },
+        {
+          "upper": "X",
+          "lower": "x",
+          "name": "엑스",
+          "sound": "/ks/",
+          "example": "box",
+          "meaning": "상자"
+        },
+        {
+          "upper": "Y",
+          "lower": "y",
+          "name": "와이",
+          "sound": "/j/",
+          "example": "yes",
+          "meaning": "네"
+        },
+        {
+          "upper": "Z",
+          "lower": "z",
+          "name": "지/제드",
+          "sound": "/z/",
+          "example": "zoo",
+          "meaning": "동물원"
+        }
+      ],
+      "phase": "alphabet"
+    },
+    {
+      "id": 12,
+      "week": 3,
+      "day": 1,
+      "weekTitle": "짧은 모음 a·e",
+      "weekSummary": "세 글자 단어를 소리로 연결해 읽기 시작합니다.",
+      "title": "짧은 a: -at",
+      "focus": "cat, hat 같은 단어에서 a는 /æ/에 가까운 소리예요. 알파벳 이름 에이가 아니라 소리로 연결해 읽어요.",
+      "words": [
+        {
+          "word": "cat",
+          "meaning": "고양이"
+        },
+        {
+          "word": "hat",
+          "meaning": "모자"
+        },
+        {
+          "word": "mat",
+          "meaning": "매트"
+        },
+        {
+          "word": "bat",
+          "meaning": "박쥐"
+        },
+        {
+          "word": "rat",
+          "meaning": "쥐"
+        }
+      ],
+      "sentence": "The cat sat on a mat.",
+      "translation": "고양이가 매트에 앉았어요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 13,
+      "week": 3,
+      "day": 2,
+      "weekTitle": "짧은 모음 a·e",
+      "weekSummary": "세 글자 단어를 소리로 연결해 읽기 시작합니다.",
+      "title": "짧은 a: -an",
+      "focus": "끝부분 -an이 반복되면 앞 자음만 바꾸어 읽어보세요.",
+      "words": [
+        {
+          "word": "man",
+          "meaning": "남자"
+        },
+        {
+          "word": "can",
+          "meaning": "할 수 있다"
+        },
+        {
+          "word": "fan",
+          "meaning": "선풍기"
+        },
+        {
+          "word": "pan",
+          "meaning": "프라이팬"
+        },
+        {
+          "word": "ran",
+          "meaning": "달렸다"
+        }
+      ],
+      "sentence": "A man can run.",
+      "translation": "남자는 달릴 수 있어요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 14,
+      "week": 3,
+      "day": 3,
+      "weekTitle": "짧은 모음 a·e",
+      "weekSummary": "세 글자 단어를 소리로 연결해 읽기 시작합니다.",
+      "title": "짧은 a: -ap",
+      "focus": "끝부분 -ap을 묶어 듣고, 시작 자음과 합쳐 읽어보세요.",
+      "words": [
+        {
+          "word": "map",
+          "meaning": "지도"
+        },
+        {
+          "word": "cap",
+          "meaning": "모자"
+        },
+        {
+          "word": "tap",
+          "meaning": "톡 치다"
+        },
+        {
+          "word": "nap",
+          "meaning": "낮잠"
+        },
+        {
+          "word": "lap",
+          "meaning": "무릎"
+        }
+      ],
+      "sentence": "I have a map.",
+      "translation": "나는 지도가 있어요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 15,
+      "week": 3,
+      "day": 4,
+      "weekTitle": "짧은 모음 a·e",
+      "weekSummary": "세 글자 단어를 소리로 연결해 읽기 시작합니다.",
+      "title": "짧은 e: -en",
+      "focus": "pen, ten처럼 e가 /ɛ/에 가까운 소리를 내는 단어를 연습해요.",
+      "words": [
+        {
+          "word": "pen",
+          "meaning": "펜"
+        },
+        {
+          "word": "ten",
+          "meaning": "열"
+        },
+        {
+          "word": "hen",
+          "meaning": "암탉"
+        },
+        {
+          "word": "men",
+          "meaning": "남자들"
+        },
+        {
+          "word": "den",
+          "meaning": "굴"
+        }
+      ],
+      "sentence": "I have a pen.",
+      "translation": "나는 펜이 있어요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 16,
+      "week": 3,
+      "day": 5,
+      "weekTitle": "짧은 모음 a·e",
+      "weekSummary": "세 글자 단어를 소리로 연결해 읽기 시작합니다.",
+      "title": "짧은 e: -ed",
+      "focus": "bed, red에서 e의 짧은 소리를 연습하고 끝 자음을 분명히 들어보세요.",
+      "words": [
+        {
+          "word": "bed",
+          "meaning": "침대"
+        },
+        {
+          "word": "red",
+          "meaning": "빨간"
+        },
+        {
+          "word": "fed",
+          "meaning": "먹이를 주었다"
+        },
+        {
+          "word": "led",
+          "meaning": "이끌었다"
+        },
+        {
+          "word": "wed",
+          "meaning": "결혼하다"
+        }
+      ],
+      "sentence": "The bed is red.",
+      "translation": "침대는 빨간색이에요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 17,
+      "week": 3,
+      "day": 6,
+      "weekTitle": "짧은 모음 a·e",
+      "weekSummary": "세 글자 단어를 소리로 연결해 읽기 시작합니다.",
+      "title": "a/e 총복습",
+      "focus": "이번 주에는 짧은 a와 짧은 e 소리를 비교했어요. 비슷한 단어를 섞어 읽어보세요.",
+      "words": [
+        {
+          "word": "cat",
+          "meaning": "고양이"
+        },
+        {
+          "word": "pen",
+          "meaning": "펜"
+        },
+        {
+          "word": "mat",
+          "meaning": "매트"
+        },
+        {
+          "word": "bed",
+          "meaning": "침대"
+        },
+        {
+          "word": "cap",
+          "meaning": "모자"
+        }
+      ],
+      "sentence": "A cat is on the bed.",
+      "translation": "고양이가 침대 위에 있어요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 18,
+      "week": 4,
+      "day": 1,
+      "weekTitle": "짧은 모음 i·o·u",
+      "weekSummary": "기초 단모음 5개를 비교하며 읽습니다.",
+      "title": "짧은 i: -in",
+      "focus": "pin의 i는 짧은 /ɪ/ 소리예요. 길게 아이라고 읽지 않아요.",
+      "words": [
+        {
+          "word": "pin",
+          "meaning": "핀"
+        },
+        {
+          "word": "fin",
+          "meaning": "지느러미"
+        },
+        {
+          "word": "win",
+          "meaning": "이기다"
+        },
+        {
+          "word": "bin",
+          "meaning": "통"
+        },
+        {
+          "word": "tin",
+          "meaning": "양철"
+        }
+      ],
+      "sentence": "I see a pin.",
+      "translation": "핀이 보여요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 19,
+      "week": 4,
+      "day": 2,
+      "weekTitle": "짧은 모음 i·o·u",
+      "weekSummary": "기초 단모음 5개를 비교하며 읽습니다.",
+      "title": "짧은 i: -it",
+      "focus": "sit, hit처럼 앞 자음을 바꾸며 소리를 연결해요.",
+      "words": [
+        {
+          "word": "sit",
+          "meaning": "앉다"
+        },
+        {
+          "word": "hit",
+          "meaning": "치다"
+        },
+        {
+          "word": "fit",
+          "meaning": "맞다"
+        },
+        {
+          "word": "bit",
+          "meaning": "조금"
+        },
+        {
+          "word": "kit",
+          "meaning": "도구 세트"
+        }
+      ],
+      "sentence": "Sit with me.",
+      "translation": "나와 함께 앉으세요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 20,
+      "week": 4,
+      "day": 3,
+      "weekTitle": "짧은 모음 i·o·u",
+      "weekSummary": "기초 단모음 5개를 비교하며 읽습니다.",
+      "title": "짧은 o: -ot",
+      "focus": "미국식 발음을 기준으로 hot의 o는 /ɑ/에 가까워요. 단어 전체 음원을 확인해요.",
+      "words": [
+        {
+          "word": "hot",
+          "meaning": "뜨거운"
+        },
+        {
+          "word": "pot",
+          "meaning": "냄비"
+        },
+        {
+          "word": "dot",
+          "meaning": "점"
+        },
+        {
+          "word": "lot",
+          "meaning": "많은 양"
+        },
+        {
+          "word": "not",
+          "meaning": "아닌"
+        }
+      ],
+      "sentence": "The pot is hot.",
+      "translation": "냄비가 뜨거워요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 21,
+      "week": 4,
+      "day": 4,
+      "weekTitle": "짧은 모음 i·o·u",
+      "weekSummary": "기초 단모음 5개를 비교하며 읽습니다.",
+      "title": "짧은 o: -og",
+      "focus": "dog와 log의 끝부분 -og 소리를 비교해보세요.",
+      "words": [
+        {
+          "word": "dog",
+          "meaning": "개"
+        },
+        {
+          "word": "log",
+          "meaning": "통나무"
+        },
+        {
+          "word": "fog",
+          "meaning": "안개"
+        },
+        {
+          "word": "jog",
+          "meaning": "조깅하다"
+        },
+        {
+          "word": "hog",
+          "meaning": "돼지"
+        }
+      ],
+      "sentence": "A dog can jog.",
+      "translation": "개가 가볍게 달릴 수 있어요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 22,
+      "week": 4,
+      "day": 5,
+      "weekTitle": "짧은 모음 i·o·u",
+      "weekSummary": "기초 단모음 5개를 비교하며 읽습니다.",
+      "title": "짧은 u: -un",
+      "focus": "sun에서 u는 /ʌ/에 가까운 소리예요. 한국어 어와 완전히 같지는 않아요.",
+      "words": [
+        {
+          "word": "sun",
+          "meaning": "태양"
+        },
+        {
+          "word": "run",
+          "meaning": "달리다"
+        },
+        {
+          "word": "fun",
+          "meaning": "재미"
+        },
+        {
+          "word": "bun",
+          "meaning": "둥근 빵"
+        },
+        {
+          "word": "gun",
+          "meaning": "총"
+        }
+      ],
+      "sentence": "Run in the sun.",
+      "translation": "햇볕 아래에서 달리세요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 23,
+      "week": 4,
+      "day": 6,
+      "weekTitle": "짧은 모음 i·o·u",
+      "weekSummary": "기초 단모음 5개를 비교하며 읽습니다.",
+      "title": "짧은 u: -ut",
+      "focus": "cut, nut의 짧은 u를 연습한 뒤 a/e/i/o/u를 섞어서 읽어보세요.",
+      "words": [
+        {
+          "word": "cut",
+          "meaning": "자르다"
+        },
+        {
+          "word": "nut",
+          "meaning": "견과류"
+        },
+        {
+          "word": "but",
+          "meaning": "하지만"
+        },
+        {
+          "word": "hut",
+          "meaning": "오두막"
+        },
+        {
+          "word": "gut",
+          "meaning": "장"
+        }
+      ],
+      "sentence": "Cut a nut.",
+      "translation": "견과류를 자르세요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 24,
+      "week": 5,
+      "day": 1,
+      "weekTitle": "자음 두 글자의 소리",
+      "weekSummary": "sh, ch, th 등 두 글자가 만드는 소리를 익힙니다.",
+      "title": "sh는 한 소리",
+      "focus": "s와 h가 붙으면 ship처럼 /ʃ/ 소리가 나요. /s/와 /h/를 따로 읽지 않아요.",
+      "words": [
+        {
+          "word": "ship",
+          "meaning": "배"
+        },
+        {
+          "word": "shop",
+          "meaning": "가게"
+        },
+        {
+          "word": "fish",
+          "meaning": "물고기"
+        },
+        {
+          "word": "dish",
+          "meaning": "접시"
+        },
+        {
+          "word": "wish",
+          "meaning": "소망"
+        }
+      ],
+      "sentence": "I see a ship.",
+      "translation": "배가 보여요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 25,
+      "week": 5,
+      "day": 2,
+      "weekTitle": "자음 두 글자의 소리",
+      "weekSummary": "sh, ch, th 등 두 글자가 만드는 소리를 익힙니다.",
+      "title": "ch는 한 소리",
+      "focus": "c와 h가 붙어 chip처럼 /tʃ/ 소리가 날 수 있어요.",
+      "words": [
+        {
+          "word": "chip",
+          "meaning": "칩"
+        },
+        {
+          "word": "chin",
+          "meaning": "턱"
+        },
+        {
+          "word": "chat",
+          "meaning": "수다를 떨다"
+        },
+        {
+          "word": "much",
+          "meaning": "많이"
+        },
+        {
+          "word": "lunch",
+          "meaning": "점심"
+        }
+      ],
+      "sentence": "We chat at lunch.",
+      "translation": "우리는 점심때 이야기를 나눠요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 26,
+      "week": 5,
+      "day": 3,
+      "weekTitle": "자음 두 글자의 소리",
+      "weekSummary": "sh, ch, th 등 두 글자가 만드는 소리를 익힙니다.",
+      "title": "th: /θ/",
+      "focus": "thin의 th는 혀끝을 앞니 사이에 가볍게 두고 공기를 내보내는 /θ/ 소리예요.",
+      "words": [
+        {
+          "word": "thin",
+          "meaning": "얇은"
+        },
+        {
+          "word": "thick",
+          "meaning": "두꺼운"
+        },
+        {
+          "word": "bath",
+          "meaning": "목욕"
+        },
+        {
+          "word": "moth",
+          "meaning": "나방"
+        },
+        {
+          "word": "three",
+          "meaning": "셋"
+        }
+      ],
+      "sentence": "I have three pens.",
+      "translation": "나는 펜이 세 개 있어요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 27,
+      "week": 5,
+      "day": 4,
+      "weekTitle": "자음 두 글자의 소리",
+      "weekSummary": "sh, ch, th 등 두 글자가 만드는 소리를 익힙니다.",
+      "title": "th: /ð/",
+      "focus": "this의 th는 성대가 울리는 /ð/ 소리예요. 앞에서 배운 /θ/와 비교해요.",
+      "words": [
+        {
+          "word": "this",
+          "meaning": "이것"
+        },
+        {
+          "word": "that",
+          "meaning": "저것"
+        },
+        {
+          "word": "them",
+          "meaning": "그들을"
+        },
+        {
+          "word": "then",
+          "meaning": "그때"
+        },
+        {
+          "word": "with",
+          "meaning": "~와 함께"
+        }
+      ],
+      "sentence": "This is my bag.",
+      "translation": "이것은 내 가방이에요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 28,
+      "week": 5,
+      "day": 5,
+      "weekTitle": "자음 두 글자의 소리",
+      "weekSummary": "sh, ch, th 등 두 글자가 만드는 소리를 익힙니다.",
+      "title": "ck: /k/",
+      "focus": "ck는 back에서 /k/ 한 소리를 내요. 두 글자를 따로 길게 발음하지 않아요.",
+      "words": [
+        {
+          "word": "back",
+          "meaning": "뒤"
+        },
+        {
+          "word": "duck",
+          "meaning": "오리"
+        },
+        {
+          "word": "sock",
+          "meaning": "양말"
+        },
+        {
+          "word": "neck",
+          "meaning": "목"
+        },
+        {
+          "word": "rock",
+          "meaning": "바위"
+        }
+      ],
+      "sentence": "A duck is on a rock.",
+      "translation": "오리가 바위 위에 있어요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 29,
+      "week": 5,
+      "day": 6,
+      "weekTitle": "자음 두 글자의 소리",
+      "weekSummary": "sh, ch, th 등 두 글자가 만드는 소리를 익힙니다.",
+      "title": "ng: /ŋ/",
+      "focus": "sing의 ng는 코로 울리는 /ŋ/ 소리예요. 영어 단어 끝소리를 잘 들어보세요.",
+      "words": [
+        {
+          "word": "ring",
+          "meaning": "반지"
+        },
+        {
+          "word": "sing",
+          "meaning": "노래하다"
+        },
+        {
+          "word": "king",
+          "meaning": "왕"
+        },
+        {
+          "word": "long",
+          "meaning": "긴"
+        },
+        {
+          "word": "song",
+          "meaning": "노래"
+        }
+      ],
+      "sentence": "Sing a song.",
+      "translation": "노래를 부르세요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 30,
+      "week": 6,
+      "day": 1,
+      "weekTitle": "연속 자음 읽기",
+      "weekSummary": "st, sp, bl 등 소리를 끊지 않고 연결합니다.",
+      "title": "st: 두 자음 이어 읽기",
+      "focus": "stop은 s와 t 소리가 연이어 나요. sh처럼 한 소리가 되는 경우와 구분해요.",
+      "words": [
+        {
+          "word": "stop",
+          "meaning": "멈추다"
+        },
+        {
+          "word": "step",
+          "meaning": "걸음"
+        },
+        {
+          "word": "star",
+          "meaning": "별"
+        },
+        {
+          "word": "stand",
+          "meaning": "서다"
+        },
+        {
+          "word": "best",
+          "meaning": "가장 좋은"
+        }
+      ],
+      "sentence": "Stop and stand.",
+      "translation": "멈추고 서세요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 31,
+      "week": 6,
+      "day": 2,
+      "weekTitle": "연속 자음 읽기",
+      "weekSummary": "st, sp, bl 등 소리를 끊지 않고 연결합니다.",
+      "title": "sp: 두 자음 이어 읽기",
+      "focus": "spin의 sp는 /s/ 다음 /p/가 이어져요. 앞에 불필요한 모음을 넣지 않아요.",
+      "words": [
+        {
+          "word": "spin",
+          "meaning": "돌다"
+        },
+        {
+          "word": "spot",
+          "meaning": "점"
+        },
+        {
+          "word": "spell",
+          "meaning": "철자를 쓰다"
+        },
+        {
+          "word": "spill",
+          "meaning": "쏟다"
+        },
+        {
+          "word": "fast",
+          "meaning": "빠른"
+        }
+      ],
+      "sentence": "I see a spot.",
+      "translation": "점이 보여요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 32,
+      "week": 6,
+      "day": 3,
+      "weekTitle": "연속 자음 읽기",
+      "weekSummary": "st, sp, bl 등 소리를 끊지 않고 연결합니다.",
+      "title": "bl: 두 자음 이어 읽기",
+      "focus": "black의 bl은 /b/와 /l/이 연달아 나는 소리예요.",
+      "words": [
+        {
+          "word": "black",
+          "meaning": "검은"
+        },
+        {
+          "word": "blue",
+          "meaning": "파란"
+        },
+        {
+          "word": "block",
+          "meaning": "블록"
+        },
+        {
+          "word": "blink",
+          "meaning": "눈을 깜박이다"
+        },
+        {
+          "word": "blend",
+          "meaning": "섞다"
+        }
+      ],
+      "sentence": "The block is black.",
+      "translation": "그 블록은 검은색이에요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 33,
+      "week": 6,
+      "day": 4,
+      "weekTitle": "연속 자음 읽기",
+      "weekSummary": "st, sp, bl 등 소리를 끊지 않고 연결합니다.",
+      "title": "cl: 두 자음 이어 읽기",
+      "focus": "clap의 cl을 분리해 느리게 발음한 다음 빠르게 연결해보세요.",
+      "words": [
+        {
+          "word": "clap",
+          "meaning": "박수치다"
+        },
+        {
+          "word": "clip",
+          "meaning": "클립"
+        },
+        {
+          "word": "clock",
+          "meaning": "시계"
+        },
+        {
+          "word": "club",
+          "meaning": "동아리"
+        },
+        {
+          "word": "class",
+          "meaning": "수업"
+        }
+      ],
+      "sentence": "Clap for the class.",
+      "translation": "반 친구들에게 박수를 쳐 주세요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 34,
+      "week": 6,
+      "day": 5,
+      "weekTitle": "연속 자음 읽기",
+      "weekSummary": "st, sp, bl 등 소리를 끊지 않고 연결합니다.",
+      "title": "fr: 두 자음 이어 읽기",
+      "focus": "frog에서 /f/와 /r/이 이어집니다. 영어 r 소리는 한국어 ㄹ과 달라요.",
+      "words": [
+        {
+          "word": "frog",
+          "meaning": "개구리"
+        },
+        {
+          "word": "from",
+          "meaning": "~에서"
+        },
+        {
+          "word": "fresh",
+          "meaning": "신선한"
+        },
+        {
+          "word": "frame",
+          "meaning": "틀"
+        },
+        {
+          "word": "free",
+          "meaning": "자유로운"
+        }
+      ],
+      "sentence": "A frog is green.",
+      "translation": "개구리는 초록색이에요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 35,
+      "week": 6,
+      "day": 6,
+      "weekTitle": "연속 자음 읽기",
+      "weekSummary": "st, sp, bl 등 소리를 끊지 않고 연결합니다.",
+      "title": "tr: 두 자음 이어 읽기",
+      "focus": "tree에서 tr 소리가 연결되는 것을 들어보세요. 천천히 말하다가 속도를 높이세요.",
+      "words": [
+        {
+          "word": "train",
+          "meaning": "기차"
+        },
+        {
+          "word": "tree",
+          "meaning": "나무"
+        },
+        {
+          "word": "trap",
+          "meaning": "덫"
+        },
+        {
+          "word": "trip",
+          "meaning": "여행"
+        },
+        {
+          "word": "truck",
+          "meaning": "트럭"
+        }
+      ],
+      "sentence": "I see a tree.",
+      "translation": "나무가 보여요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 36,
+      "week": 7,
+      "day": 1,
+      "weekTitle": "긴 모음과 끝 e",
+      "weekSummary": "cake, kite 등 긴 모음 패턴을 배웁니다.",
+      "title": "a_e: 긴 a",
+      "focus": "cake처럼 끝의 e가 앞 모음 a의 발음에 영향을 주는 경우가 있어요. a는 /eɪ/로 읽혀요.",
+      "words": [
+        {
+          "word": "cake",
+          "meaning": "케이크"
+        },
+        {
+          "word": "make",
+          "meaning": "만들다"
+        },
+        {
+          "word": "name",
+          "meaning": "이름"
+        },
+        {
+          "word": "lake",
+          "meaning": "호수"
+        },
+        {
+          "word": "game",
+          "meaning": "게임"
+        }
+      ],
+      "sentence": "My name is Sam.",
+      "translation": "내 이름은 샘이에요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 37,
+      "week": 7,
+      "day": 2,
+      "weekTitle": "긴 모음과 끝 e",
+      "weekSummary": "cake, kite 등 긴 모음 패턴을 배웁니다.",
+      "title": "i_e: 긴 i",
+      "focus": "bike의 i는 /aɪ/처럼 길게 읽고 끝 e는 보통 별도로 발음하지 않아요.",
+      "words": [
+        {
+          "word": "bike",
+          "meaning": "자전거"
+        },
+        {
+          "word": "kite",
+          "meaning": "연"
+        },
+        {
+          "word": "time",
+          "meaning": "시간"
+        },
+        {
+          "word": "line",
+          "meaning": "선"
+        },
+        {
+          "word": "fine",
+          "meaning": "괜찮은"
+        }
+      ],
+      "sentence": "I like my bike.",
+      "translation": "나는 내 자전거가 좋아요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 38,
+      "week": 7,
+      "day": 3,
+      "weekTitle": "긴 모음과 끝 e",
+      "weekSummary": "cake, kite 등 긴 모음 패턴을 배웁니다.",
+      "title": "o_e: 긴 o",
+      "focus": "home, note에서 o는 /oʊ/ 소리예요. 단어 전체를 듣고 따라해요.",
+      "words": [
+        {
+          "word": "home",
+          "meaning": "집"
+        },
+        {
+          "word": "hope",
+          "meaning": "희망하다"
+        },
+        {
+          "word": "nose",
+          "meaning": "코"
+        },
+        {
+          "word": "rope",
+          "meaning": "밧줄"
+        },
+        {
+          "word": "note",
+          "meaning": "메모"
+        }
+      ],
+      "sentence": "I go home.",
+      "translation": "나는 집에 가요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 39,
+      "week": 7,
+      "day": 4,
+      "weekTitle": "긴 모음과 끝 e",
+      "weekSummary": "cake, kite 등 긴 모음 패턴을 배웁니다.",
+      "title": "u_e: 긴 u",
+      "focus": "cube는 /kjuːb/, tune은 /tuːn/ 등으로 소리 나요. u_e가 항상 같은 소리는 아니에요.",
+      "words": [
+        {
+          "word": "cube",
+          "meaning": "정육면체"
+        },
+        {
+          "word": "cute",
+          "meaning": "귀여운"
+        },
+        {
+          "word": "tube",
+          "meaning": "관"
+        },
+        {
+          "word": "mule",
+          "meaning": "노새"
+        },
+        {
+          "word": "tune",
+          "meaning": "곡조"
+        }
+      ],
+      "sentence": "That is a cute mule.",
+      "translation": "저것은 귀여운 노새예요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 40,
+      "week": 7,
+      "day": 5,
+      "weekTitle": "긴 모음과 끝 e",
+      "weekSummary": "cake, kite 등 긴 모음 패턴을 배웁니다.",
+      "title": "짧은 모음과 긴 모음",
+      "focus": "cap/cape, kit/kite처럼 끝 e 유무에 따른 소리 차이를 비교해요.",
+      "words": [
+        {
+          "word": "cap",
+          "meaning": "모자"
+        },
+        {
+          "word": "cape",
+          "meaning": "망토"
+        },
+        {
+          "word": "kit",
+          "meaning": "도구 세트"
+        },
+        {
+          "word": "kite",
+          "meaning": "연"
+        },
+        {
+          "word": "hope",
+          "meaning": "희망하다"
+        }
+      ],
+      "sentence": "I have a cap and a cape.",
+      "translation": "나는 모자와 망토가 있어요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 41,
+      "week": 7,
+      "day": 6,
+      "weekTitle": "긴 모음과 끝 e",
+      "weekSummary": "cake, kite 등 긴 모음 패턴을 배웁니다.",
+      "title": "ar: /ɑr/",
+      "focus": "car, park에서는 ar가 함께 /ɑr/처럼 들립니다. 미국식 영어 발음을 기준으로 들어보세요.",
+      "words": [
+        {
+          "word": "car",
+          "meaning": "자동차"
+        },
+        {
+          "word": "star",
+          "meaning": "별"
+        },
+        {
+          "word": "farm",
+          "meaning": "농장"
+        },
+        {
+          "word": "hard",
+          "meaning": "어려운"
+        },
+        {
+          "word": "park",
+          "meaning": "공원"
+        }
+      ],
+      "sentence": "The car is in the park.",
+      "translation": "자동차가 공원 안에 있어요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 42,
+      "week": 8,
+      "day": 1,
+      "weekTitle": "모음 글자 조합",
+      "weekSummary": "ee, ea, ai, ay, oa, ow 패턴을 읽습니다.",
+      "title": "ee: /iː/",
+      "focus": "see에서 두 e가 함께 긴 /iː/ 소리를 내요.",
+      "words": [
+        {
+          "word": "see",
+          "meaning": "보다"
+        },
+        {
+          "word": "tree",
+          "meaning": "나무"
+        },
+        {
+          "word": "green",
+          "meaning": "초록색"
+        },
+        {
+          "word": "feet",
+          "meaning": "발들"
+        },
+        {
+          "word": "sleep",
+          "meaning": "잠자다"
+        }
+      ],
+      "sentence": "I see a green tree.",
+      "translation": "초록색 나무가 보여요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 43,
+      "week": 8,
+      "day": 2,
+      "weekTitle": "모음 글자 조합",
+      "weekSummary": "ee, ea, ai, ay, oa, ow 패턴을 읽습니다.",
+      "title": "ea: /iː/",
+      "focus": "eat와 sea에서는 ea가 /iː/로 소리 나요. 다만 bread처럼 예외도 있어요.",
+      "words": [
+        {
+          "word": "eat",
+          "meaning": "먹다"
+        },
+        {
+          "word": "sea",
+          "meaning": "바다"
+        },
+        {
+          "word": "read",
+          "meaning": "읽다"
+        },
+        {
+          "word": "team",
+          "meaning": "팀"
+        },
+        {
+          "word": "clean",
+          "meaning": "깨끗한"
+        }
+      ],
+      "sentence": "I read by the sea.",
+      "translation": "나는 바닷가에서 책을 읽어요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 44,
+      "week": 8,
+      "day": 3,
+      "weekTitle": "모음 글자 조합",
+      "weekSummary": "ee, ea, ai, ay, oa, ow 패턴을 읽습니다.",
+      "title": "ai: /eɪ/",
+      "focus": "rain, mail에서 ai가 /eɪ/ 소리를 내요.",
+      "words": [
+        {
+          "word": "rain",
+          "meaning": "비"
+        },
+        {
+          "word": "mail",
+          "meaning": "우편"
+        },
+        {
+          "word": "train",
+          "meaning": "기차"
+        },
+        {
+          "word": "wait",
+          "meaning": "기다리다"
+        },
+        {
+          "word": "paint",
+          "meaning": "칠하다"
+        }
+      ],
+      "sentence": "Wait for the train.",
+      "translation": "기차를 기다리세요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 45,
+      "week": 8,
+      "day": 4,
+      "weekTitle": "모음 글자 조합",
+      "weekSummary": "ee, ea, ai, ay, oa, ow 패턴을 읽습니다.",
+      "title": "ay: /eɪ/",
+      "focus": "day, play에서는 ay가 /eɪ/ 소리로 들려요. ai와 위치를 비교해보세요.",
+      "words": [
+        {
+          "word": "day",
+          "meaning": "하루"
+        },
+        {
+          "word": "play",
+          "meaning": "놀다"
+        },
+        {
+          "word": "say",
+          "meaning": "말하다"
+        },
+        {
+          "word": "stay",
+          "meaning": "머무르다"
+        },
+        {
+          "word": "gray",
+          "meaning": "회색"
+        }
+      ],
+      "sentence": "We play all day.",
+      "translation": "우리는 하루 종일 놀아요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 46,
+      "week": 8,
+      "day": 5,
+      "weekTitle": "모음 글자 조합",
+      "weekSummary": "ee, ea, ai, ay, oa, ow 패턴을 읽습니다.",
+      "title": "oa: /oʊ/",
+      "focus": "boat, road에서 oa는 /oʊ/ 소리가 나요.",
+      "words": [
+        {
+          "word": "boat",
+          "meaning": "배"
+        },
+        {
+          "word": "coat",
+          "meaning": "외투"
+        },
+        {
+          "word": "road",
+          "meaning": "도로"
+        },
+        {
+          "word": "soap",
+          "meaning": "비누"
+        },
+        {
+          "word": "goat",
+          "meaning": "염소"
+        }
+      ],
+      "sentence": "The goat is on the road.",
+      "translation": "염소가 도로 위에 있어요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 47,
+      "week": 8,
+      "day": 6,
+      "weekTitle": "모음 글자 조합",
+      "weekSummary": "ee, ea, ai, ay, oa, ow 패턴을 읽습니다.",
+      "title": "ow: /oʊ/",
+      "focus": "snow, show에서 ow는 /oʊ/로 들리지만 cow에서는 다른 소리가 나요.",
+      "words": [
+        {
+          "word": "snow",
+          "meaning": "눈"
+        },
+        {
+          "word": "show",
+          "meaning": "보여주다"
+        },
+        {
+          "word": "slow",
+          "meaning": "느린"
+        },
+        {
+          "word": "grow",
+          "meaning": "자라다"
+        },
+        {
+          "word": "blow",
+          "meaning": "불다"
+        }
+      ],
+      "sentence": "The snow falls slowly.",
+      "translation": "눈이 천천히 내려요.",
+      "letters": [],
+      "phase": "phonics"
+    },
+    {
+      "id": 48,
+      "week": 9,
+      "day": 1,
+      "weekTitle": "가장 쉬운 문장",
+      "weekSummary": "대명사, be동사, 명사를 익힙니다.",
+      "title": "I·you·we·they",
+      "focus": "I는 나, you는 너/여러분, we는 우리, they는 그들이에요. 누가 행동하는지 알려주는 말입니다.",
+      "words": [
+        {
+          "word": "I",
+          "meaning": "나"
+        },
+        {
+          "word": "you",
+          "meaning": "너·당신"
+        },
+        {
+          "word": "we",
+          "meaning": "우리"
+        },
+        {
+          "word": "they",
+          "meaning": "그들"
+        },
+        {
+          "word": "my",
+          "meaning": "나의"
+        }
+      ],
+      "sentence": "We are happy.",
+      "translation": "우리는 행복해요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 49,
+      "week": 9,
+      "day": 2,
+      "weekTitle": "가장 쉬운 문장",
+      "weekSummary": "대명사, be동사, 명사를 익힙니다.",
+      "title": "am·is·are",
+      "focus": "I am, he is, we are처럼 주어에 따라 be동사가 달라져요.",
+      "words": [
+        {
+          "word": "am",
+          "meaning": "이다·있다"
+        },
+        {
+          "word": "is",
+          "meaning": "이다·있다"
+        },
+        {
+          "word": "are",
+          "meaning": "이다·있다"
+        },
+        {
+          "word": "he",
+          "meaning": "그"
+        },
+        {
+          "word": "ready",
+          "meaning": "준비된"
+        }
+      ],
+      "sentence": "I am ready.",
+      "translation": "나는 준비됐어요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 50,
+      "week": 9,
+      "day": 3,
+      "weekTitle": "가장 쉬운 문장",
+      "weekSummary": "대명사, be동사, 명사를 익힙니다.",
+      "title": "가족과 사람",
+      "focus": "사람을 가리키는 쉬운 단어와 he/she를 함께 배워요.",
+      "words": [
+        {
+          "word": "mom",
+          "meaning": "엄마"
+        },
+        {
+          "word": "dad",
+          "meaning": "아빠"
+        },
+        {
+          "word": "sister",
+          "meaning": "여자 형제"
+        },
+        {
+          "word": "brother",
+          "meaning": "남자 형제"
+        },
+        {
+          "word": "family",
+          "meaning": "가족"
+        }
+      ],
+      "sentence": "She is my sister.",
+      "translation": "그녀는 내 여자 형제예요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 51,
+      "week": 9,
+      "day": 4,
+      "weekTitle": "가장 쉬운 문장",
+      "weekSummary": "대명사, be동사, 명사를 익힙니다.",
+      "title": "a·an·this·that",
+      "focus": "a/an은 단수의 셀 수 있는 명사 앞에 쓰이고, this/that은 가까운 것과 먼 것을 가리킬 수 있어요.",
+      "words": [
+        {
+          "word": "a",
+          "meaning": "하나의"
+        },
+        {
+          "word": "an",
+          "meaning": "하나의"
+        },
+        {
+          "word": "this",
+          "meaning": "이것"
+        },
+        {
+          "word": "that",
+          "meaning": "저것"
+        },
+        {
+          "word": "apple",
+          "meaning": "사과"
+        }
+      ],
+      "sentence": "This is an apple.",
+      "translation": "이것은 사과예요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 52,
+      "week": 9,
+      "day": 5,
+      "weekTitle": "가장 쉬운 문장",
+      "weekSummary": "대명사, be동사, 명사를 익힙니다.",
+      "title": "색깔 표현",
+      "focus": "색깔을 말할 때는 The bag is black.처럼 문장으로 연결해봐요.",
+      "words": [
+        {
+          "word": "red",
+          "meaning": "빨간"
+        },
+        {
+          "word": "blue",
+          "meaning": "파란"
+        },
+        {
+          "word": "green",
+          "meaning": "초록색"
+        },
+        {
+          "word": "black",
+          "meaning": "검은"
+        },
+        {
+          "word": "white",
+          "meaning": "흰"
+        }
+      ],
+      "sentence": "My bag is black.",
+      "translation": "내 가방은 검은색이에요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 53,
+      "week": 9,
+      "day": 6,
+      "weekTitle": "가장 쉬운 문장",
+      "weekSummary": "대명사, be동사, 명사를 익힙니다.",
+      "title": "기본 동작",
+      "focus": "go, come, sit, stand, read를 동작과 함께 소리 내어 말해보세요.",
+      "words": [
+        {
+          "word": "go",
+          "meaning": "가다"
+        },
+        {
+          "word": "come",
+          "meaning": "오다"
+        },
+        {
+          "word": "sit",
+          "meaning": "앉다"
+        },
+        {
+          "word": "stand",
+          "meaning": "서다"
+        },
+        {
+          "word": "read",
+          "meaning": "읽다"
+        }
+      ],
+      "sentence": "I read a book.",
+      "translation": "나는 책을 읽어요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 54,
+      "week": 10,
+      "day": 1,
+      "weekTitle": "쉬운 문장 만들기",
+      "weekSummary": "like, can, 질문, 부정을 사용합니다.",
+      "title": "좋아해요: I like",
+      "focus": "I like ~는 내가 ~를 좋아한다는 뜻이에요. 내 취향을 문장으로 표현해봐요.",
+      "words": [
+        {
+          "word": "like",
+          "meaning": "좋아하다"
+        },
+        {
+          "word": "love",
+          "meaning": "사랑하다"
+        },
+        {
+          "word": "want",
+          "meaning": "원하다"
+        },
+        {
+          "word": "need",
+          "meaning": "필요하다"
+        },
+        {
+          "word": "have",
+          "meaning": "가지다"
+        }
+      ],
+      "sentence": "I like coffee.",
+      "translation": "나는 커피를 좋아해요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 55,
+      "week": 10,
+      "day": 2,
+      "weekTitle": "쉬운 문장 만들기",
+      "weekSummary": "like, can, 질문, 부정을 사용합니다.",
+      "title": "일상 동작",
+      "focus": "I eat, I drink처럼 주어와 동사를 연결하여 문장을 만듭니다.",
+      "words": [
+        {
+          "word": "eat",
+          "meaning": "먹다"
+        },
+        {
+          "word": "drink",
+          "meaning": "마시다"
+        },
+        {
+          "word": "cook",
+          "meaning": "요리하다"
+        },
+        {
+          "word": "make",
+          "meaning": "만들다"
+        },
+        {
+          "word": "wash",
+          "meaning": "씻다"
+        }
+      ],
+      "sentence": "I drink water.",
+      "translation": "나는 물을 마셔요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 56,
+      "week": 10,
+      "day": 3,
+      "weekTitle": "쉬운 문장 만들기",
+      "weekSummary": "like, can, 질문, 부정을 사용합니다.",
+      "title": "할 수 있어요: can",
+      "focus": "can 다음에는 동사의 기본형이 옵니다. I can swim.처럼 말해봐요.",
+      "words": [
+        {
+          "word": "can",
+          "meaning": "할 수 있다"
+        },
+        {
+          "word": "run",
+          "meaning": "달리다"
+        },
+        {
+          "word": "jump",
+          "meaning": "뛰다"
+        },
+        {
+          "word": "swim",
+          "meaning": "수영하다"
+        },
+        {
+          "word": "sing",
+          "meaning": "노래하다"
+        }
+      ],
+      "sentence": "I can swim.",
+      "translation": "나는 수영할 수 있어요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 57,
+      "week": 10,
+      "day": 4,
+      "weekTitle": "쉬운 문장 만들기",
+      "weekSummary": "like, can, 질문, 부정을 사용합니다.",
+      "title": "쉬운 질문: Do you",
+      "focus": "Do you like ~?는 상대방의 취향을 묻는 기본 질문입니다.",
+      "words": [
+        {
+          "word": "do",
+          "meaning": "하다"
+        },
+        {
+          "word": "does",
+          "meaning": "하다"
+        },
+        {
+          "word": "what",
+          "meaning": "무엇"
+        },
+        {
+          "word": "yes",
+          "meaning": "네"
+        },
+        {
+          "word": "no",
+          "meaning": "아니요"
+        }
+      ],
+      "sentence": "Do you like tea?",
+      "translation": "차를 좋아하세요?",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 58,
+      "week": 10,
+      "day": 5,
+      "weekTitle": "쉬운 문장 만들기",
+      "weekSummary": "like, can, 질문, 부정을 사용합니다.",
+      "title": "부정문: not",
+      "focus": "I am not, I do not, I cannot처럼 하지 않거나 아닌 상태를 말해요.",
+      "words": [
+        {
+          "word": "not",
+          "meaning": "~아닌"
+        },
+        {
+          "word": "don’t",
+          "meaning": "~하지 않는다"
+        },
+        {
+          "word": "can’t",
+          "meaning": "할 수 없다"
+        },
+        {
+          "word": "no",
+          "meaning": "아니요"
+        },
+        {
+          "word": "never",
+          "meaning": "결코 ~않는"
+        }
+      ],
+      "sentence": "I am not tired.",
+      "translation": "나는 피곤하지 않아요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 59,
+      "week": 10,
+      "day": 6,
+      "weekTitle": "쉬운 문장 만들기",
+      "weekSummary": "like, can, 질문, 부정을 사용합니다.",
+      "title": "매일 하는 일",
+      "focus": "매일 반복하는 행동을 현재형으로 말해봐요. 아직 정확한 문법보다 표현 익히기를 우선합니다.",
+      "words": [
+        {
+          "word": "wake",
+          "meaning": "깨다"
+        },
+        {
+          "word": "sleep",
+          "meaning": "잠자다"
+        },
+        {
+          "word": "work",
+          "meaning": "일하다"
+        },
+        {
+          "word": "study",
+          "meaning": "공부하다"
+        },
+        {
+          "word": "walk",
+          "meaning": "걷다"
+        }
+      ],
+      "sentence": "I study every day.",
+      "translation": "나는 매일 공부해요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 60,
+      "week": 11,
+      "day": 1,
+      "weekTitle": "생활 영어 시작",
+      "weekSummary": "인사, 소개, 숫자, 장소, 음식 표현을 배웁니다.",
+      "title": "인사하기",
+      "focus": "Hello와 Hi는 인사말입니다. 상대방에게 기분을 물을 때 How are you?를 써요.",
+      "words": [
+        {
+          "word": "hello",
+          "meaning": "안녕하세요"
+        },
+        {
+          "word": "hi",
+          "meaning": "안녕"
+        },
+        {
+          "word": "good",
+          "meaning": "좋은"
+        },
+        {
+          "word": "morning",
+          "meaning": "아침"
+        },
+        {
+          "word": "bye",
+          "meaning": "안녕히 가세요"
+        }
+      ],
+      "sentence": "Hello! How are you?",
+      "translation": "안녕하세요! 어떻게 지내세요?",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 61,
+      "week": 11,
+      "day": 2,
+      "weekTitle": "생활 영어 시작",
+      "weekSummary": "인사, 소개, 숫자, 장소, 음식 표현을 배웁니다.",
+      "title": "자기소개",
+      "focus": "My name is ~, I am ~처럼 이름과 자신을 간단히 소개해봐요.",
+      "words": [
+        {
+          "word": "name",
+          "meaning": "이름"
+        },
+        {
+          "word": "my",
+          "meaning": "나의"
+        },
+        {
+          "word": "student",
+          "meaning": "학생"
+        },
+        {
+          "word": "teacher",
+          "meaning": "선생님"
+        },
+        {
+          "word": "nice",
+          "meaning": "좋은"
+        }
+      ],
+      "sentence": "My name is Mina.",
+      "translation": "제 이름은 미나예요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 62,
+      "week": 11,
+      "day": 3,
+      "weekTitle": "생활 영어 시작",
+      "weekSummary": "인사, 소개, 숫자, 장소, 음식 표현을 배웁니다.",
+      "title": "숫자와 나이",
+      "focus": "one부터 five까지 소리 내어 읽고 몇 개 있는지 세어보세요.",
+      "words": [
+        {
+          "word": "one",
+          "meaning": "하나"
+        },
+        {
+          "word": "two",
+          "meaning": "둘"
+        },
+        {
+          "word": "three",
+          "meaning": "셋"
+        },
+        {
+          "word": "four",
+          "meaning": "넷"
+        },
+        {
+          "word": "five",
+          "meaning": "다섯"
+        }
+      ],
+      "sentence": "I have two books.",
+      "translation": "나는 책이 두 권 있어요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 63,
+      "week": 11,
+      "day": 4,
+      "weekTitle": "생활 영어 시작",
+      "weekSummary": "인사, 소개, 숫자, 장소, 음식 표현을 배웁니다.",
+      "title": "날짜와 시간",
+      "focus": "today, tomorrow, yesterday는 시간의 기준을 잡아 주는 기본 단어예요.",
+      "words": [
+        {
+          "word": "today",
+          "meaning": "오늘"
+        },
+        {
+          "word": "tomorrow",
+          "meaning": "내일"
+        },
+        {
+          "word": "yesterday",
+          "meaning": "어제"
+        },
+        {
+          "word": "Monday",
+          "meaning": "월요일"
+        },
+        {
+          "word": "Friday",
+          "meaning": "금요일"
+        }
+      ],
+      "sentence": "Today is Monday.",
+      "translation": "오늘은 월요일이에요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 64,
+      "week": 11,
+      "day": 5,
+      "weekTitle": "생활 영어 시작",
+      "weekSummary": "인사, 소개, 숫자, 장소, 음식 표현을 배웁니다.",
+      "title": "장소 말하기",
+      "focus": "here는 여기, there는 저기예요. Where are you?와 연결해봐요.",
+      "words": [
+        {
+          "word": "here",
+          "meaning": "여기"
+        },
+        {
+          "word": "there",
+          "meaning": "저기"
+        },
+        {
+          "word": "home",
+          "meaning": "집"
+        },
+        {
+          "word": "school",
+          "meaning": "학교"
+        },
+        {
+          "word": "office",
+          "meaning": "사무실"
+        }
+      ],
+      "sentence": "I am at home.",
+      "translation": "나는 집에 있어요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 65,
+      "week": 11,
+      "day": 6,
+      "weekTitle": "생활 영어 시작",
+      "weekSummary": "인사, 소개, 숫자, 장소, 음식 표현을 배웁니다.",
+      "title": "음식과 음료",
+      "focus": "음식을 가리키는 명사를 이용해 I like~, I want~를 연습해요.",
+      "words": [
+        {
+          "word": "water",
+          "meaning": "물"
+        },
+        {
+          "word": "rice",
+          "meaning": "밥·쌀"
+        },
+        {
+          "word": "bread",
+          "meaning": "빵"
+        },
+        {
+          "word": "coffee",
+          "meaning": "커피"
+        },
+        {
+          "word": "tea",
+          "meaning": "차"
+        }
+      ],
+      "sentence": "I want some water.",
+      "translation": "나는 물을 좀 원해요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 66,
+      "week": 12,
+      "day": 1,
+      "weekTitle": "읽기·말하기 종합",
+      "weekSummary": "짧은 글과 대화로 지금까지 배운 내용을 정리합니다.",
+      "title": "자기소개 대화",
+      "focus": "Hello → My name is ~ → Nice to meet you. 순서로 짧게 말해보세요.",
+      "words": [
+        {
+          "word": "hello",
+          "meaning": "안녕하세요"
+        },
+        {
+          "word": "name",
+          "meaning": "이름"
+        },
+        {
+          "word": "meet",
+          "meaning": "만나다"
+        },
+        {
+          "word": "nice",
+          "meaning": "반가운"
+        },
+        {
+          "word": "thanks",
+          "meaning": "고마워요"
+        }
+      ],
+      "sentence": "Hello. My name is Min.",
+      "translation": "안녕하세요. 제 이름은 민이에요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 67,
+      "week": 12,
+      "day": 2,
+      "weekTitle": "읽기·말하기 종합",
+      "weekSummary": "짧은 글과 대화로 지금까지 배운 내용을 정리합니다.",
+      "title": "좋아하는 것 말하기",
+      "focus": "I like ~와 What do you like?를 이어 간단한 대화를 만들어봐요.",
+      "words": [
+        {
+          "word": "like",
+          "meaning": "좋아하다"
+        },
+        {
+          "word": "enjoy",
+          "meaning": "즐기다"
+        },
+        {
+          "word": "music",
+          "meaning": "음악"
+        },
+        {
+          "word": "book",
+          "meaning": "책"
+        },
+        {
+          "word": "coffee",
+          "meaning": "커피"
+        }
+      ],
+      "sentence": "I like books and music.",
+      "translation": "나는 책과 음악을 좋아해요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 68,
+      "week": 12,
+      "day": 3,
+      "weekTitle": "읽기·말하기 종합",
+      "weekSummary": "짧은 글과 대화로 지금까지 배운 내용을 정리합니다.",
+      "title": "하루 일과 말하기",
+      "focus": "I study in the morning.과 같이 하루 일과를 짧게 설명해봐요.",
+      "words": [
+        {
+          "word": "today",
+          "meaning": "오늘"
+        },
+        {
+          "word": "morning",
+          "meaning": "아침"
+        },
+        {
+          "word": "study",
+          "meaning": "공부하다"
+        },
+        {
+          "word": "work",
+          "meaning": "일하다"
+        },
+        {
+          "word": "home",
+          "meaning": "집"
+        }
+      ],
+      "sentence": "I study at home.",
+      "translation": "나는 집에서 공부해요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 69,
+      "week": 12,
+      "day": 4,
+      "weekTitle": "읽기·말하기 종합",
+      "weekSummary": "짧은 글과 대화로 지금까지 배운 내용을 정리합니다.",
+      "title": "다섯 가지 질문",
+      "focus": "what, where, who, when, how의 기본적인 질문 역할을 익혀요.",
+      "words": [
+        {
+          "word": "what",
+          "meaning": "무엇"
+        },
+        {
+          "word": "where",
+          "meaning": "어디"
+        },
+        {
+          "word": "who",
+          "meaning": "누구"
+        },
+        {
+          "word": "when",
+          "meaning": "언제"
+        },
+        {
+          "word": "how",
+          "meaning": "어떻게"
+        }
+      ],
+      "sentence": "Where are you?",
+      "translation": "당신은 어디에 있나요?",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 70,
+      "week": 12,
+      "day": 5,
+      "weekTitle": "읽기·말하기 종합",
+      "weekSummary": "짧은 글과 대화로 지금까지 배운 내용을 정리합니다.",
+      "title": "짧은 글 읽기",
+      "focus": "쉬운 4문장으로 이루어진 글을 읽으며 주어와 동사를 찾아보세요.",
+      "words": [
+        {
+          "word": "student",
+          "meaning": "학생"
+        },
+        {
+          "word": "study",
+          "meaning": "공부하다"
+        },
+        {
+          "word": "book",
+          "meaning": "책"
+        },
+        {
+          "word": "every",
+          "meaning": "매"
+        },
+        {
+          "word": "day",
+          "meaning": "날"
+        }
+      ],
+      "sentence": "My name is Min. I am a student. I like books. I study every day.",
+      "translation": "내 이름은 민이에요. 나는 학생이에요. 책을 좋아해요. 매일 공부해요.",
+      "letters": [],
+      "phase": "sentences"
+    },
+    {
+      "id": 71,
+      "week": 12,
+      "day": 6,
+      "weekTitle": "읽기·말하기 종합",
+      "weekSummary": "짧은 글과 대화로 지금까지 배운 내용을 정리합니다.",
+      "title": "12주 총정리",
+      "focus": "알파벳·파닉스·쉬운 문장을 다시 확인해요. 모르는 단어는 복습 목록에서 반복해보세요.",
+      "words": [
+        {
+          "word": "hello",
+          "meaning": "안녕하세요"
+        },
+        {
+          "word": "read",
+          "meaning": "읽다"
+        },
+        {
+          "word": "like",
+          "meaning": "좋아하다"
+        },
+        {
+          "word": "study",
+          "meaning": "공부하다"
+        },
+        {
+          "word": "book",
+          "meaning": "책"
+        }
+      ],
+      "sentence": "Hello! I am Min. I like English. I read and study every day.",
+      "translation": "안녕하세요! 나는 민이에요. 영어를 좋아해요. 나는 매일 읽고 공부해요.",
+      "letters": [],
+      "phase": "sentences"
+    }
+  ],
+  "weeks": [
+    [
+      "알파벳 A~L",
+      "알파벳의 모양과 이름을 익히고 대표 소리를 듣습니다."
+    ],
+    [
+      "알파벳 M~Z",
+      "26개 대문자·소문자를 구분하고 예시 단어를 듣습니다."
+    ],
+    [
+      "짧은 모음 a·e",
+      "세 글자 단어를 소리로 연결해 읽기 시작합니다."
+    ],
+    [
+      "짧은 모음 i·o·u",
+      "기초 단모음 5개를 비교하며 읽습니다."
+    ],
+    [
+      "자음 두 글자의 소리",
+      "sh, ch, th 등 두 글자가 만드는 소리를 익힙니다."
+    ],
+    [
+      "연속 자음 읽기",
+      "st, sp, bl 등 소리를 끊지 않고 연결합니다."
+    ],
+    [
+      "긴 모음과 끝 e",
+      "cake, kite 등 긴 모음 패턴을 배웁니다."
+    ],
+    [
+      "모음 글자 조합",
+      "ee, ea, ai, ay, oa, ow 패턴을 읽습니다."
+    ],
+    [
+      "가장 쉬운 문장",
+      "대명사, be동사, 명사를 익힙니다."
+    ],
+    [
+      "쉬운 문장 만들기",
+      "like, can, 질문, 부정을 사용합니다."
+    ],
+    [
+      "생활 영어 시작",
+      "인사, 소개, 숫자, 장소, 음식 표현을 배웁니다."
+    ],
+    [
+      "읽기·말하기 종합",
+      "짧은 글과 대화로 지금까지 배운 내용을 정리합니다."
+    ]
+  ]
+}
