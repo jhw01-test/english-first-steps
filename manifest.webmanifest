@@ -1,7 +1,7 @@
 {
-  "name": "하루 영어 첫걸음 — 알파벳부터 12주",
+  "name": "영어 첫걸음 — 나의 영어 학습 플래너",
   "short_name": "영어 첫걸음",
-  "description": "알파벳부터 파닉스, 단어, 문장, 퀴즈까지 하루 30분",
+  "description": "날짜별 일정, 단어장 퀴즈, 기초 72회, 토익·토스·오픽 챕터 학습",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
