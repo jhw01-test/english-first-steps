@@ -2997,7 +2997,8 @@ function cachedCloudSession(){
 }
 function cloudMeta(){try{return JSON.parse(localStorage.getItem(activeStorageKey+'-sync')||'null')||{revision:0,dirty:false}}catch{return {revision:0,dirty:false}}}
 function storeCloudMeta(m){localStorage.setItem(activeStorageKey+'-sync',JSON.stringify(m))}
-function rememberSession(s){if(!s||typeof s.access_token!=='string'||!s.access_token||typeof s.refresh_token!=='string'||!s.refresh_token||!/^[0-9a-f-]{36}$/i.test(s.user?.id))throw Error('로그인 정보를 확인하지 못했어요. 다시 로그인해 주세요.');s.expires_at=Date.now()/1000+(s.expires_in||3600);cloudSession=s;localStorage.setItem('english-cloud-session',JSON.stringify(s))}
+function rememberSession(s){if(!s||typeof s.access_token!=='string'||!s.access_token||typeof s.refresh_token!=='string'||!s.refresh_token||!/^[0-9a-f-]{36}$/i.test(s.user?.id))throw Error('로그인 정보를 확인하지 못했어요. 다시 로그인해 주세요.');const next={access_token:s.access_token,refresh_token:s.refresh_token,expires_at:Date.now()/1000+(s.expires_in||3600),user:{id:s.user.id,email:typeof s.user.email==='string'?s.user.email:''}};try{localStorage.setItem('english-cloud-session',JSON.stringify(next))}catch{throw Error('로그인을 저장할 수 없어요. Safari에서 브라우저 저장 공간을 확인해 주세요.')}cloudSession=next}
+
 async function safeCloudFetch(url,options){try{return await fetch(url,options)}catch{throw Error('네트워크에 연결하지 못했어요. 기록은 이 기기에 보관되며 다시 연결해 동기화할 수 있어요.')}}
 async function cloudFetch(path,options={},authenticated=true){
  const requestEpoch=authEpoch;
@@ -3011,7 +3012,7 @@ async function cloudFetch(path,options={},authenticated=true){
  const body=await response.json().catch(()=>null);
  if(authenticated&&requestEpoch!==authEpoch)throw Error('계정이 변경되어 요청을 중단했어요.');
  if(!response.ok){if(body?.code==='40001'){cloudConflict=true;throw Error('다른 기기의 기록이 바뀌었어요. 사용할 기록을 선택해 주세요.')}
- throw Error(authenticated?'연결하지 못했어요. 네트워크와 로그인 상태를 확인해 주세요.':'Google 로그인을 완료하지 못했어요. 로그인 버튼으로 다시 시도해 주세요.');}
+ if(!authenticated)throw loginProblem(body?.code||body?.error_code||body?.error||'',body?.error_description||body?.msg||body?.message||'');throw Error('연결하지 못했어요. 네트워크와 로그인 상태를 확인해 주세요.');}
  return body;
 }
 function queueCloudSave(){if(!cloudSession)return;try{const m=cloudMeta();m.dirty=true;storeCloudMeta(m)}catch{return}clearTimeout(cloudTimer);if(!cloudConflict)cloudTimer=setTimeout(()=>syncCloud().catch(()=>{}),1200)}
@@ -3034,6 +3035,19 @@ async function syncCloud(){
 }
 let googleProviderReady=null,googleProviderChecking=false,googleRedirecting=false;
 const GOOGLE_PKCE_KEY='english-google-pkce';
+const GOOGLE_PENDING_KEY='english-google-pending-v2';
+function loginProblem(code,description=''){
+ const message=String(description).toLowerCase();let tag='LOGIN_CALLBACK_FAILED',text='Google 로그인 응답을 처리하지 못했어요. Safari에서 새로 로그인을 시작해 주세요.';
+ if(code==='access_denied'){tag='LOGIN_CANCELLED';text='로그인이 취소됐어요. 다시 시도할 수 있습니다.'}
+ if(/invalid.?client|client.?secret|unauthorized_client/.test(message+' '+code)){tag='GOOGLE_CLIENT_SETTINGS';text='Google 로그인 연결 설정을 확인해야 합니다. 관리자에게 아래 확인 코드를 알려주세요.'}
+ else if(['flow_state_expired','flow_state_not_found','otp_expired'].includes(code)){tag='LOGIN_EXPIRED';text='로그인 연결이 만료됐어요. Google 로그인 버튼으로 다시 시작해 주세요.'}
+ else if(['bad_code_verifier','pkce_verification_failed','browser_changed'].includes(code)){tag='LOGIN_BROWSER_CHANGED';text='로그인을 시작한 브라우저에서 다시 시도해 주세요. 앱 안에서 열었다면 Safari로 열어 로그인해 주세요.'}
+ else if(['bad_oauth_callback','bad_oauth_state'].includes(code)){tag='LOGIN_RETURN_INVALID';text='Google에서 돌아오는 로그인 연결이 유효하지 않아요. Safari에서 새로 로그인해 주세요.'}
+ else if(['provider_disabled','oauth_provider_not_supported','signup_disabled'].includes(code)){tag='LOGIN_PROVIDER_SETTINGS';text='로그인 제공자 설정을 확인해야 합니다. 관리자에게 아래 확인 코드를 알려주세요.'}
+ else if(code==='unexpected_callback'){tag='LOGIN_RESPONSE_CHANGED';text='이전 방식의 로그인 응답이 도착했어요. Safari에서 앱을 새로고침하고 새로 로그인해 주세요.'}
+ else if(code==='unexpected_failure'||/exchange.*external.*code/.test(message)){tag='GOOGLE_CALLBACK_FAILED';text='Google 인증을 마무리하지 못했어요. 다시 시도해도 같으면 로그인 연결 설정을 확인해야 합니다.'}
+ const error=new Error(text+' (확인 코드: '+tag+')');error.code=tag;return error;
+}
 async function checkGoogleProvider(){
  if(googleProviderChecking)return;googleProviderChecking=true;
  try{const settings=await cloudFetch('/auth/v1/settings',{},false);googleProviderReady=settings?.external?.google===true;if(!googleProviderReady&&!cloudSession)cloudStatus='Google 로그인 연결을 준비하고 있어요. 지금은 기기에 학습 기록이 저장됩니다.'}
@@ -3041,7 +3055,21 @@ async function checkGoogleProvider(){
  finally{googleProviderChecking=false;refreshCloudUI()}
 }
 function base64url(bytes){return btoa(String.fromCharCode(...bytes)).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'')}
-function appRedirectURL(){const url=new URL(location.href);url.search='';url.hash='';return url.href}
+function normalizedAuthURL(value){const url=new URL(value);url.search='';url.hash='';if(url.pathname.endsWith('/index.html'))url.pathname=url.pathname.slice(0,-10);return url.href}
+function appRedirectURL(){return normalizedAuthURL(location.href)}
+function validPendingLogin(p){return p&&typeof p.verifier==='string'&&/^[A-Za-z0-9_-]{43}$/.test(p.verifier)&&Number.isFinite(p.createdAt)&&p.createdAt<=Date.now()+60000&&Date.now()-p.createdAt<10*60*1000&&typeof p.redirectTo==='string'&&normalizedAuthURL(p.redirectTo)===appRedirectURL()}
+function readPendingLogins(){try{const rows=JSON.parse(localStorage.getItem(GOOGLE_PENDING_KEY)||'[]');return Array.isArray(rows)?rows.filter(p=>{try{return validPendingLogin(p)}catch{return false}}).slice(-5):[]}catch{return []}}
+function pendingLogin(){let tab;try{tab=JSON.parse(sessionStorage.getItem(GOOGLE_PKCE_KEY)||'null')}catch{}try{if(validPendingLogin(tab))return tab}catch{}const shared=readPendingLogins();return shared.length===1?shared[0]:null}
+function forgetPendingLogin(p){
+ try{const tab=JSON.parse(sessionStorage.getItem(GOOGLE_PKCE_KEY)||'null');if(!p||tab?.verifier===p.verifier)sessionStorage.removeItem(GOOGLE_PKCE_KEY)}catch{}
+ try{const rows=readPendingLogins().filter(row=>p&&row.verifier!==p.verifier);if(rows.length)localStorage.setItem(GOOGLE_PENDING_KEY,JSON.stringify(rows));else localStorage.removeItem(GOOGLE_PENDING_KEY)}catch{}
+}
+function storePendingLogin(p){
+ let tabSaved=false,sharedSaved=false;let previous;try{previous=JSON.parse(sessionStorage.getItem(GOOGLE_PKCE_KEY)||'null')}catch{}
+ try{sessionStorage.setItem(GOOGLE_PKCE_KEY,JSON.stringify(p));tabSaved=true}catch{}
+ try{const rows=readPendingLogins().filter(row=>row.verifier!==previous?.verifier);rows.push(p);localStorage.setItem(GOOGLE_PENDING_KEY,JSON.stringify(rows.slice(-5)));sharedSaved=true}catch{}
+ if(!tabSaved&&!sharedSaved)throw Error('로그인 정보를 보관할 수 없어요. 일반 Safari에서 앱을 열고 다시 시도해 주세요.');
+}
 async function startGoogleLogin(){
  if(googleRedirecting)return;
  if(googleProviderReady!==true){await checkGoogleProvider();if(googleProviderReady!==true)return}
@@ -3050,28 +3078,21 @@ async function startGoogleLogin(){
  try{
   const verifier=base64url(crypto.getRandomValues(new Uint8Array(32)));
   const challenge=base64url(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(verifier))));
-  const redirectTo=appRedirectURL();
-  sessionStorage.setItem(GOOGLE_PKCE_KEY,JSON.stringify({verifier,createdAt:Date.now(),redirectTo}));
-  const url=new URL(CLOUD_CONFIG.url+'/auth/v1/authorize');
-  url.searchParams.set('provider','google');url.searchParams.set('redirect_to',redirectTo);url.searchParams.set('code_challenge',challenge);url.searchParams.set('code_challenge_method','s256');url.searchParams.set('prompt','select_account');
-  location.assign(url.href);
+  const redirectTo=appRedirectURL();storePendingLogin({verifier,createdAt:Date.now(),redirectTo});
+  const url=new URL(CLOUD_CONFIG.url+'/auth/v1/authorize');url.searchParams.set('provider','google');url.searchParams.set('redirect_to',redirectTo);url.searchParams.set('code_challenge',challenge);url.searchParams.set('code_challenge_method','s256');url.searchParams.set('prompt','select_account');location.assign(url.href);
  }catch(e){googleRedirecting=false;throw e}
 }
 function clearAuthURL(){const url=new URL(location.href);for(const key of ['code','error','error_code','error_description'])url.searchParams.delete(key);url.hash='';history.replaceState(null,'',url.pathname+url.search)}
 async function initializeGoogleAuth(){
- const url=new URL(location.href),hash=new URLSearchParams(url.hash.slice(1)),code=url.searchParams.get('code'),error=url.searchParams.get('error')||hash.get('error');
+ const url=new URL(location.href),hash=new URLSearchParams(url.hash.slice(1)),code=url.searchParams.get('code'),error=url.searchParams.get('error')||hash.get('error'),errorCode=url.searchParams.get('error_code')||hash.get('error_code')||error,errorDescription=url.searchParams.get('error_description')||hash.get('error_description')||'';
  if(!code&&!error&&!hash.has('access_token')){if(cloudSession)await syncCloud().catch(()=>{});await checkGoogleProvider();return}
- clearAuthURL();screen='account';stopActivities();
- if(error||hash.has('access_token')){sessionStorage.removeItem(GOOGLE_PKCE_KEY);cloudStatus=error==='access_denied'?'로그인이 취소됐어요. 다시 시도할 수 있습니다.':'로그인을 완료하지 못했어요. Google 로그인 버튼으로 다시 시작해 주세요.';render();await checkGoogleProvider();return}
- let saved;try{saved=JSON.parse(sessionStorage.getItem(GOOGLE_PKCE_KEY)||'null')}catch{}
- sessionStorage.removeItem(GOOGLE_PKCE_KEY);
- if(!saved||typeof saved.verifier!=='string'||!/^[A-Za-z0-9_-]{43}$/.test(saved.verifier)||!Number.isFinite(saved.createdAt)||Date.now()-saved.createdAt>10*60*1000||saved.createdAt>Date.now()+60000||saved.redirectTo!==appRedirectURL()){
-  cloudStatus='로그인을 시작한 브라우저에서 다시 시도해 주세요. 로그인 연결이 만료됐을 수도 있어요.';render();await checkGoogleProvider();return
- }
+ clearAuthURL();screen='account';stopActivities();const saved=pendingLogin();
+ if(error||hash.has('access_token')){if(saved)forgetPendingLogin(saved);cloudStatus=loginProblem(error?errorCode:'unexpected_callback',errorDescription).message;render();await checkGoogleProvider();return}
+ if(!saved){cloudStatus=loginProblem('browser_changed').message;render();await checkGoogleProvider();return}
  cloudStatus='Google 로그인을 확인하고 있어요…';render();
  try{
   const session=await cloudFetch('/auth/v1/token?grant_type=pkce',{method:'POST',body:JSON.stringify({auth_code:code,code_verifier:saved.verifier})},false);
-  authEpoch++;rememberSession(session);activeStorageKey=KEY+'-user-'+session.user.id;state=loadState();cloudConflict=false;quiz=null;cloudStatus='로그인했어요. 개인 기록을 확인합니다.';await syncCloud();
+  rememberSession(session);forgetPendingLogin(saved);authEpoch++;activeStorageKey=KEY+'-user-'+session.user.id;state=loadState();cloudConflict=false;quiz=null;cloudStatus='로그인했어요. 개인 기록을 확인합니다.';await syncCloud();
  }catch(e){cloudStatus=e.message}
  render();await checkGoogleProvider();
 }
@@ -3087,7 +3108,7 @@ async function resolveCloudConflict(useLocal){
 function accountHTML(){
  const enabled=!!(CLOUD_CONFIG.enabled&&CLOUD_CONFIG.url&&CLOUD_CONFIG.publishableKey);
  if(!enabled)return `<div class="panel pad"><span class="eyebrow">MY ACCOUNT</span><h1 class="h1">나의 학습 계정</h1><p class="lead">기기 간에 기록을 이어 쓸 수 있도록 계정 연결을 준비하고 있어요. 현재는 이 브라우저에 기록됩니다.</p><button class="btn primary gap-top" data-act="goto" data-to="settings">학습 기록 백업하기</button></div>`;
- return `<div class="panel pad"><span class="eyebrow">MY ACCOUNT</span><h1 class="h1">${cloudSession?'나의 학습 계정':'Google 계정으로 시작하기'}</h1>${cloudSession?`<p class="lead">${esc(cloudSession.user.email||'로그인한 사용자')}</p><p>학습 일정·단어장·퀴즈·기초·시험 챕터 기록을 계정에 저장합니다.</p><div class="button-row"><button class="btn primary" data-act="cloud-sync" ${cloudBusy?'disabled':''}>지금 동기화</button><button class="btn" data-act="cloud-import">로그인 전 기기 기록 가져오기</button><button class="btn" data-act="cloud-logout" ${cloudBusy?'disabled':''}>로그아웃</button></div>${cloudConflict?`<div class="alert gap-top"><p>여러 기기의 기록이 달라요. 덮어쓰기 전에 설정에서 기록을 백업할 수 있습니다.</p><div class="button-row"><button class="btn" data-act="cloud-use-remote">온라인 기록 사용</button><button class="btn" data-act="cloud-use-local">이 기기 기록으로 온라인 저장</button></div></div>`:''}`:`<p class="lead">Google 계정으로 로그인하고, 다른 기기에서도 학습을 이어가세요.</p><div class="button-row gap-top"><button class="btn primary" data-act="cloud-google" ${googleProviderReady===true&&!googleRedirecting?'':'disabled'}>${googleRedirecting?'Google로 이동 중…':'Google로 로그인'}</button>${googleProviderReady!==true?`<button class="btn" data-act="cloud-provider-check" ${googleProviderChecking?'disabled':''}>연결 상태 다시 확인</button>`:''}</div>`}<p id="cloud-status" class="tip gap-top" role="status">${esc(cloudStatus||(cloudSession?'연결 상태를 확인해 주세요.':'로그인 전 기록은 이 브라우저에 보관됩니다.'))}</p></div>`;
+ return `<div class="panel pad"><span class="eyebrow">MY ACCOUNT</span><h1 class="h1">${cloudSession?'나의 학습 계정':'Google 계정으로 시작하기'}</h1>${cloudSession?`<p class="lead">${esc(cloudSession.user.email||'로그인한 사용자')}</p><p>학습 일정·단어장·퀴즈·기초·시험 챕터 기록을 계정에 저장합니다.</p><div class="button-row"><button class="btn primary" data-act="cloud-sync" ${cloudBusy?'disabled':''}>지금 동기화</button><button class="btn" data-act="cloud-import">로그인 전 기기 기록 가져오기</button><button class="btn" data-act="cloud-logout" ${cloudBusy?'disabled':''}>로그아웃</button></div>${cloudConflict?`<div class="alert gap-top"><p>여러 기기의 기록이 달라요. 덮어쓰기 전에 설정에서 기록을 백업할 수 있습니다.</p><div class="button-row"><button class="btn" data-act="cloud-use-remote">온라인 기록 사용</button><button class="btn" data-act="cloud-use-local">이 기기 기록으로 온라인 저장</button></div></div>`:''}`:`<p class="lead">Google 계정으로 로그인하고, 다른 기기에서도 학습을 이어가세요.</p>${/iPhone|iPad|iPod/i.test(navigator.userAgent)?'<p class="tip gap-top">앱 안의 브라우저에서 로그인이 안 되면 Safari에서 열어 다시 시도해 주세요. 아이폰의 공유 메뉴나 나침반 버튼으로 Safari를 열 수 있어요.</p>':''}<div class="button-row gap-top"><button class="btn primary" data-act="cloud-google" ${googleProviderReady===true&&!googleRedirecting?'':'disabled'}>${googleRedirecting?'Google로 이동 중…':'Google로 로그인'}</button>${googleProviderReady!==true?`<button class="btn" data-act="cloud-provider-check" ${googleProviderChecking?'disabled':''}>연결 상태 다시 확인</button>`:''}</div>`}<p id="cloud-status" class="tip gap-top" role="status">${esc(cloudStatus||(cloudSession?'연결 상태를 확인해 주세요.':'로그인 전 기록은 이 브라우저에 보관됩니다.'))}</p></div>`;
 }
 async function handleCloudAction(a){
  try{
@@ -3099,7 +3120,7 @@ async function handleCloudAction(a){
   if(a==='cloud-import'&&confirm('로그인 전 이 브라우저의 기록으로 현재 계정 기록을 바꿀까요? 계정의 기존 기록은 설정에서 먼저 백업하세요.')){const raw=localStorage.getItem(KEY);if(!raw)throw Error('가져올 기기 기록이 없어요.');state=normalizeState(JSON.parse(raw));save();await syncCloud()}
   if(a==='cloud-logout'){
    if(cloudMeta().dirty&&!confirm('아직 온라인에 저장되지 않은 기록이 있어요. 설정에서 먼저 백업할 수 있습니다. 이 기기의 계정 기록을 지우고 로그아웃할까요?'))return;
-   clearTimeout(cloudTimer);stopActivities();const oldKey=activeStorageKey;authEpoch++;cloudSession=null;cloudConflict=false;localStorage.removeItem('english-cloud-session');sessionStorage.removeItem(GOOGLE_PKCE_KEY);localStorage.removeItem(oldKey);localStorage.removeItem(oldKey+'-sync');activeStorageKey=KEY;state=loadState();quiz=null;cloudStatus='로그아웃했어요. 로그인 전 기기 기록으로 돌아왔어요.';
+   clearTimeout(cloudTimer);stopActivities();const oldKey=activeStorageKey;authEpoch++;cloudSession=null;cloudConflict=false;localStorage.removeItem('english-cloud-session');forgetPendingLogin();localStorage.removeItem(oldKey);localStorage.removeItem(oldKey+'-sync');activeStorageKey=KEY;state=loadState();quiz=null;cloudStatus='로그아웃했어요. 로그인 전 기기 기록으로 돌아왔어요.';
   }
  }catch(e){cloudStatus=e.message}refreshCloudUI();
 }
