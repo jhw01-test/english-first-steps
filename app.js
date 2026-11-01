@@ -2080,7 +2080,7 @@ function handleExtraAction(a,b){
 let plannerDate=dateStr(),plannerMonth=dateStr().slice(0,7),chapterTrack='toeic',chapterId='t1';
 function validDay(value){if(typeof value!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(value))return false;const d=new Date(value+'T12:00:00');return !Number.isNaN(+d)&&dateStr(d)===value}
 function dateAdd(value,days){const d=new Date(value+'T12:00:00');d.setDate(d.getDate()+days);return dateStr(d)}
-function defaultPlan(){return {start:dateStr(),minutes:30,days:[1,2,3,4,5],focus:'balanced',targets:{toeic:'',tos:'',opic:''}}}
+function defaultPlan(){return {start:dateStr(),minutes:30,days:[1,2,3,4,5],focus:'speaking',targets:{toeic:'',tos:'',opic:''}}}
 function normalizeUpgrade(x,safe){
  const p=x.plan;if(p&&typeof p==='object'){
   if(validDay(p.start))safe.plan.start=p.start;
