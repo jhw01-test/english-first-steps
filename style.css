@@ -18,3 +18,15 @@ main.shell{padding-top:31px;padding-bottom:70px;min-height:calc(100vh - 160px)}.
 /* iPhone safe area */
 .shell{padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
 .footer{padding-bottom:max(34px,env(safe-area-inset-bottom))}
+
+/* More ways to learn */
+.nav{flex-wrap:wrap}.nav button{min-height:44px}
+.exam-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.exam-card{display:flex;flex-direction:column;align-items:flex-start}.exam-card .lead{flex:1}
+.self-check{border:1px solid var(--line);border-radius:13px;padding:16px}.self-check label{display:flex;gap:10px;align-items:flex-start;margin:12px 0;font-size:14px}.self-check input{width:20px;height:20px;flex:none;accent-color:var(--accent)}
+.sentence-slots{display:flex;flex-wrap:wrap;gap:8px;min-height:76px;border:2px dashed #cbd7ed;border-radius:14px;padding:14px;color:var(--muted)}
+textarea.search{resize:vertical;font-size:16px;line-height:1.65}.quiz-question,.english-sentence,.quiz-option{overflow-wrap:anywhere}.chip{max-width:100%;white-space:normal}
+@media(max-width:820px){.exam-grid{grid-template-columns:1fr}.nav{width:100%}.nav button{flex:1 0 28%;padding:10px 5px}.page-head{flex-wrap:wrap}}
+
+@media(max-width:820px){.nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}.nav button{font-size:11px}}
+.exam-card .progress-track{width:100%}
