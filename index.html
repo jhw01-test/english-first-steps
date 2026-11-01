@@ -60,6 +60,11 @@ textarea.search{resize:vertical;font-size:16px;line-height:1.65}.quiz-question,.
 @media(max-width:560px){.dashboard-hero{padding:22px;gap:20px}.dashboard-hero .h1{font-size:28px}.learn-grid{grid-template-columns:1fr}.task-row{padding:14px;gap:10px}.task-status{width:25px;height:25px}.task-copy strong{font-size:14px}.calendar-grid{gap:3px}.calendar-day{min-height:56px}.calendar-day small{font-size:9px}.word-controls,#custom-word-form{grid-template-columns:1fr}.word-controls>label{min-width:0}.date-mini{font-size:16px;width:152px}.daily-ring{padding:20px}.daily-ring strong{font-size:36px}.stat-grid .stat{padding:15px 10px}.stat-grid small{font-size:12px}.flashcard{padding:22px}.nav button{padding:9px 2px}.planner-layout>.panel{padding:18px}}
 
 @media(max-width:560px){.study-report .stat-grid{grid-template-columns:1fr;gap:20px}.study-report .stat-grid>div+div{border-top:1px solid var(--line);padding-top:16px}}
+
+.carry-label{color:#94651c;font-weight:700}.planner-layout .task-copy .tiny{overflow-wrap:anywhere}
+
+.word-books{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.word-book{text-align:left;padding:18px;display:flex;flex-direction:column;gap:9px;color:var(--ink)}.word-book.active{border-color:#7f9ce1;background:#edf2ff}.lesson-photo{margin:20px 0}.lesson-photo img{display:block;width:100%;height:auto;max-height:520px;object-fit:contain;background:#edf0f6;border-radius:14px}.lesson-photo figcaption{font-size:11px;color:var(--muted);margin-top:8px}.lesson-photo a{color:inherit}.mock-selected{background:#edf2ff;border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}#mock-notes{font-size:16px}.word-book .tiny{line-height:1.5}#custom-word-form{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:560px){.word-books{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.word-book{padding:15px;font-size:13px}.word-book .tiny{font-size:11px}#custom-word-form{grid-template-columns:1fr}.lesson-photo{margin:16px 0}}
 </style>
 </head>
 <body>
@@ -3228,6 +3233,623 @@ const EXTRA={
     }
   ]
 };
+const LIBRARY={
+  "words": {
+    "toeic": [
+      {
+        "word": "application",
+        "meaning": "지원서"
+      },
+      {
+        "word": "applicant",
+        "meaning": "지원자"
+      },
+      {
+        "word": "recruitment",
+        "meaning": "채용"
+      },
+      {
+        "word": "qualification",
+        "meaning": "자격"
+      },
+      {
+        "word": "resume",
+        "meaning": "이력서"
+      },
+      {
+        "word": "interview",
+        "meaning": "면접"
+      },
+      {
+        "word": "department",
+        "meaning": "부서"
+      },
+      {
+        "word": "supervisor",
+        "meaning": "상사"
+      },
+      {
+        "word": "colleague",
+        "meaning": "동료"
+      },
+      {
+        "word": "promotion",
+        "meaning": "승진"
+      },
+      {
+        "word": "salary",
+        "meaning": "급여"
+      },
+      {
+        "word": "benefit",
+        "meaning": "복리후생"
+      },
+      {
+        "word": "contract",
+        "meaning": "계약"
+      },
+      {
+        "word": "agreement",
+        "meaning": "합의"
+      },
+      {
+        "word": "signature",
+        "meaning": "서명"
+      },
+      {
+        "word": "approval",
+        "meaning": "승인"
+      },
+      {
+        "word": "purchase",
+        "meaning": "구매"
+      },
+      {
+        "word": "purchase order",
+        "meaning": "발주서"
+      },
+      {
+        "word": "inventory",
+        "meaning": "재고"
+      },
+      {
+        "word": "warehouse",
+        "meaning": "창고"
+      },
+      {
+        "word": "supplier",
+        "meaning": "공급업체"
+      },
+      {
+        "word": "manufacturer",
+        "meaning": "제조업체"
+      },
+      {
+        "word": "receipt",
+        "meaning": "영수증"
+      },
+      {
+        "word": "invoice",
+        "meaning": "청구서"
+      },
+      {
+        "word": "payment",
+        "meaning": "지불"
+      },
+      {
+        "word": "deposit",
+        "meaning": "보증금"
+      },
+      {
+        "word": "balance",
+        "meaning": "잔액"
+      },
+      {
+        "word": "budget",
+        "meaning": "예산"
+      },
+      {
+        "word": "expense",
+        "meaning": "비용"
+      },
+      {
+        "word": "reimbursement",
+        "meaning": "비용 환급"
+      },
+      {
+        "word": "conference",
+        "meaning": "회의"
+      },
+      {
+        "word": "agenda",
+        "meaning": "안건"
+      },
+      {
+        "word": "presentation",
+        "meaning": "발표"
+      },
+      {
+        "word": "venue",
+        "meaning": "행사 장소"
+      },
+      {
+        "word": "participant",
+        "meaning": "참가자"
+      },
+      {
+        "word": "registration",
+        "meaning": "등록"
+      },
+      {
+        "word": "cancellation",
+        "meaning": "취소"
+      },
+      {
+        "word": "accommodation",
+        "meaning": "숙소"
+      },
+      {
+        "word": "itinerary",
+        "meaning": "여행 일정"
+      },
+      {
+        "word": "boarding pass",
+        "meaning": "탑승권"
+      },
+      {
+        "word": "departure gate",
+        "meaning": "출발 탑승구"
+      },
+      {
+        "word": "luggage",
+        "meaning": "수하물"
+      },
+      {
+        "word": "commute",
+        "meaning": "통근하다"
+      },
+      {
+        "word": "renovation",
+        "meaning": "보수 공사"
+      },
+      {
+        "word": "facility",
+        "meaning": "시설"
+      },
+      {
+        "word": "equipment",
+        "meaning": "장비"
+      },
+      {
+        "word": "inspection",
+        "meaning": "점검"
+      },
+      {
+        "word": "warranty",
+        "meaning": "보증"
+      },
+      {
+        "word": "replacement",
+        "meaning": "교체품"
+      },
+      {
+        "word": "complimentary",
+        "meaning": "무료로 제공되는"
+      }
+    ],
+    "tos": [
+      {
+        "word": "in my opinion",
+        "meaning": "내 의견으로는"
+      },
+      {
+        "word": "i would prefer",
+        "meaning": "나는 더 선호한다"
+      },
+      {
+        "word": "there are several reasons",
+        "meaning": "이유는 몇 가지가 있다"
+      },
+      {
+        "word": "first of all",
+        "meaning": "우선"
+      },
+      {
+        "word": "for instance",
+        "meaning": "예를 들면"
+      },
+      {
+        "word": "as a result",
+        "meaning": "그 결과"
+      },
+      {
+        "word": "on the other hand",
+        "meaning": "반면에"
+      },
+      {
+        "word": "in addition",
+        "meaning": "게다가"
+      },
+      {
+        "word": "that is why",
+        "meaning": "그래서"
+      },
+      {
+        "word": "from my experience",
+        "meaning": "내 경험상"
+      },
+      {
+        "word": "in the foreground",
+        "meaning": "사진 앞쪽에"
+      },
+      {
+        "word": "in the background",
+        "meaning": "사진 배경에"
+      },
+      {
+        "word": "on the left",
+        "meaning": "왼쪽에"
+      },
+      {
+        "word": "on the right",
+        "meaning": "오른쪽에"
+      },
+      {
+        "word": "in the middle",
+        "meaning": "가운데에"
+      },
+      {
+        "word": "be wearing",
+        "meaning": "옷을 입고 있다"
+      },
+      {
+        "word": "be holding",
+        "meaning": "손에 들고 있다"
+      },
+      {
+        "word": "be looking at",
+        "meaning": "바라보고 있다"
+      },
+      {
+        "word": "be talking to",
+        "meaning": "이야기하고 있다"
+      },
+      {
+        "word": "be working on",
+        "meaning": "작업하고 있다"
+      },
+      {
+        "word": "according to the schedule",
+        "meaning": "일정표에 따르면"
+      },
+      {
+        "word": "it is scheduled for",
+        "meaning": "일정이 잡혀 있다"
+      },
+      {
+        "word": "it will take place",
+        "meaning": "행사가 열릴 예정이다"
+      },
+      {
+        "word": "the admission fee",
+        "meaning": "입장료"
+      },
+      {
+        "word": "you need to register",
+        "meaning": "등록해야 한다"
+      },
+      {
+        "word": "please note that",
+        "meaning": "알아 두세요"
+      },
+      {
+        "word": "i am afraid",
+        "meaning": "유감스럽지만"
+      },
+      {
+        "word": "it depends on",
+        "meaning": "상황에 따라 다르다"
+      },
+      {
+        "word": "save time",
+        "meaning": "시간을 절약하다"
+      },
+      {
+        "word": "save money",
+        "meaning": "돈을 절약하다"
+      },
+      {
+        "word": "reduce stress",
+        "meaning": "스트레스를 줄이다"
+      },
+      {
+        "word": "stay focused",
+        "meaning": "집중력을 유지하다"
+      },
+      {
+        "word": "work efficiently",
+        "meaning": "효율적으로 일하다"
+      },
+      {
+        "word": "improve communication",
+        "meaning": "소통을 향상하다"
+      },
+      {
+        "word": "learn from others",
+        "meaning": "다른 사람에게 배우다"
+      },
+      {
+        "word": "have more opportunities",
+        "meaning": "더 많은 기회를 갖다"
+      },
+      {
+        "word": "be convenient for",
+        "meaning": "누군가에게 편리하다"
+      },
+      {
+        "word": "i strongly believe",
+        "meaning": "나는 확신한다"
+      },
+      {
+        "word": "the main reason is",
+        "meaning": "주된 이유는"
+      },
+      {
+        "word": "to sum up",
+        "meaning": "정리하자면"
+      }
+    ],
+    "opic": [
+      {
+        "word": "let me think",
+        "meaning": "잠깐 생각해 볼게요"
+      },
+      {
+        "word": "to be honest",
+        "meaning": "솔직히 말하면"
+      },
+      {
+        "word": "as far as i remember",
+        "meaning": "내 기억으로는"
+      },
+      {
+        "word": "what i mean is",
+        "meaning": "내 말은"
+      },
+      {
+        "word": "you know what",
+        "meaning": "있잖아요"
+      },
+      {
+        "word": "actually",
+        "meaning": "사실은"
+      },
+      {
+        "word": "especially",
+        "meaning": "특히"
+      },
+      {
+        "word": "recently",
+        "meaning": "최근에"
+      },
+      {
+        "word": "these days",
+        "meaning": "요즘"
+      },
+      {
+        "word": "when i was younger",
+        "meaning": "내가 더 어렸을 때"
+      },
+      {
+        "word": "back then",
+        "meaning": "그 당시에는"
+      },
+      {
+        "word": "compared to the past",
+        "meaning": "과거와 비교하면"
+      },
+      {
+        "word": "i used to",
+        "meaning": "예전에 하곤 했다"
+      },
+      {
+        "word": "not anymore",
+        "meaning": "더 이상은 아니다"
+      },
+      {
+        "word": "the biggest difference",
+        "meaning": "가장 큰 차이"
+      },
+      {
+        "word": "once in a while",
+        "meaning": "가끔"
+      },
+      {
+        "word": "most of the time",
+        "meaning": "대부분의 시간에"
+      },
+      {
+        "word": "almost every day",
+        "meaning": "거의 매일"
+      },
+      {
+        "word": "right after work",
+        "meaning": "퇴근 직후"
+      },
+      {
+        "word": "on my way home",
+        "meaning": "집에 가는 길에"
+      },
+      {
+        "word": "i still remember",
+        "meaning": "아직도 기억한다"
+      },
+      {
+        "word": "i was surprised",
+        "meaning": "놀랐다"
+      },
+      {
+        "word": "i felt relieved",
+        "meaning": "안도했다"
+      },
+      {
+        "word": "it turned out that",
+        "meaning": "알고 보니"
+      },
+      {
+        "word": "eventually",
+        "meaning": "결국"
+      },
+      {
+        "word": "fortunately",
+        "meaning": "다행히"
+      },
+      {
+        "word": "unfortunately",
+        "meaning": "안타깝게도"
+      },
+      {
+        "word": "all of a sudden",
+        "meaning": "갑자기"
+      },
+      {
+        "word": "at that moment",
+        "meaning": "그 순간에"
+      },
+      {
+        "word": "i had no idea",
+        "meaning": "전혀 몰랐다"
+      },
+      {
+        "word": "i would like to ask",
+        "meaning": "여쭤보고 싶다"
+      },
+      {
+        "word": "would it be possible",
+        "meaning": "가능할까요"
+      },
+      {
+        "word": "could you tell me",
+        "meaning": "알려 주실 수 있나요"
+      },
+      {
+        "word": "is there any way",
+        "meaning": "방법이 있나요"
+      },
+      {
+        "word": "what about",
+        "meaning": "어떤가요"
+      },
+      {
+        "word": "instead of",
+        "meaning": "대신에"
+      },
+      {
+        "word": "i ended up",
+        "meaning": "결국 하게 됐다"
+      },
+      {
+        "word": "it was worth it",
+        "meaning": "그럴 만한 가치가 있었다"
+      },
+      {
+        "word": "i had a great time",
+        "meaning": "즐거운 시간을 보냈다"
+      },
+      {
+        "word": "i cannot wait to",
+        "meaning": "빨리 하고 싶다"
+      }
+    ]
+  },
+  "photos": [
+    {
+      "id": "photo-document",
+      "src": "assets/cafe-meeting.jpg",
+      "alt": "카페 테이블에서 펼친 문서를 손에 들고 있는 장면",
+      "credit": "rawpixel.com · CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Meeting_at_the_Cafe_(Unsplash).jpg",
+      "prompt": "Which statement best describes the picture?",
+      "options": [
+        "A person is holding an open document.",
+        "A person is driving a bus.",
+        "A person is painting a wall.",
+        "A person is climbing a ladder."
+      ],
+      "answer": 0,
+      "why": "펼쳐진 문서를 손에 들고 있는 모습이 보입니다. hold는 손에 들다, document는 문서라는 뜻이에요.",
+      "model": "A person is holding an open document at a table. A cup is on the table. The person appears to be reading."
+    },
+    {
+      "id": "photo-cafe",
+      "src": "assets/cafe-interior.jpg",
+      "alt": "테이블과 의자, 큰 창문과 조명이 있는 카페 내부",
+      "credit": "O.Mustafin · CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:W00158.jpg",
+      "prompt": "Which statement is supported by the picture?",
+      "options": [
+        "People are swimming in a pool.",
+        "Tables and chairs are arranged inside a café.",
+        "A train is arriving at a platform.",
+        "Workers are repairing a bridge."
+      ],
+      "answer": 1,
+      "why": "카페 안에 테이블과 의자들이 배치되어 있습니다. arrange는 배치하다, indoors는 실내라는 뜻이에요.",
+      "model": "This picture shows the inside of a café. There are many tables and chairs. Large windows and lights can be seen. Some people are sitting at the tables."
+    }
+  ],
+  "resources": [
+    {
+      "track": "toeic",
+      "title": "ETS 토익 LC·RC 공식 샘플 PDF",
+      "kind": "공식 PDF",
+      "url": "https://www.ets.org/content/dam/ets-org/pdfs/toeic/toeic-listening-reading-sample-test.pdf",
+      "desc": "공식 문제의 사진·지문·선택지 구성을 확인해요."
+    },
+    {
+      "track": "toeic",
+      "title": "한국TOEIC위원회 실제 기출 공개 영상",
+      "kind": "공식 기출 영상",
+      "url": "https://exam.toeic.co.kr/content/common/realQuestion.php?examCate=TOE",
+      "desc": "파트별 실제 기출과 해설을 공식 사이트에서 학습해요."
+    },
+    {
+      "track": "tos",
+      "title": "ETS 토스·라이팅 공식 샘플 PDF",
+      "kind": "공식 PDF",
+      "url": "https://www.ets.org/content/dam/ets-org/pdfs/toeic/toeic-speaking-writing-sample-tests.pdf",
+      "desc": "사진 묘사·질문 응답·의견 말하기의 문제 형식을 살펴봐요."
+    },
+    {
+      "track": "tos",
+      "title": "한국TOEIC위원회 토스 실제 기출 영상",
+      "kind": "공식 기출 영상",
+      "url": "https://www.toeicswt.co.kr/content/common/realQuestion.php?examCate=TOS",
+      "desc": "토스 유형별 기출 공개 영상을 공식 사이트에서 확인해요."
+    },
+    {
+      "track": "opic",
+      "title": "ACTFL OPIc 공식 안내 PDF",
+      "kind": "공식 안내",
+      "url": "https://www.actfl.org/uploads/files/general/OPIc_Familiarization_Guide.pdf",
+      "desc": "진행 방식과 답변 기능, 평가가 이루어지는 과정을 이해해요."
+    },
+    {
+      "track": "opic",
+      "title": "국내 OPIc 공식 안내",
+      "kind": "공식 사이트",
+      "url": "https://www.opic.or.kr/",
+      "desc": "국내 시험 안내와 공식 학습자 메뉴를 확인해요."
+    },
+    {
+      "track": "opic",
+      "title": "ACTFL OPIc 공식 자료 안내",
+      "kind": "공식 자료",
+      "url": "https://www.actfl.org/assessments/postsecondary-assessments/oral-proficiency-interview-computer-opic",
+      "desc": "최신 공식 안내와 데모 연결을 확인해요."
+    }
+  ]
+};
 const ADVANCED={
   "chapters": {
     "toeic": [
@@ -4681,7 +5303,7 @@ const KEY='everyday-english-foundation-state-v1';
 const CLOUD_CONFIG={url:'https://aicaaawuortmdqslkgbp.supabase.co',publishableKey:'sb_publishable_YddlPyyXDLlE9qq2gdqw8Q_IHxFSMzb',enabled:true};
 let cloudSession=cachedCloudSession();
 let activeStorageKey=cloudSession?KEY+'-user-'+cloudSession.user.id:KEY;
-const defaultState=()=>({completed:{},quizRecords:{},starred:[],srs:{},rate:.86,studyMinutes:30,errors:{},examRecords:{},schemaVersion:2,plan:defaultPlan(),customTasks:[],taskMoves:{},wordTaskDone:{},customWords:[],wordStats:{},wordHistory:[],wordPrefs:{source:"daily",mode:"mixed",size:10}});
+const defaultState=()=>({completed:{},quizRecords:{},starred:[],srs:{},rate:.86,studyMinutes:30,errors:{},examRecords:{},schemaVersion:2,plan:defaultPlan(),customTasks:[],taskMoves:{},wordTaskDone:{},customWords:[],cardSessions:{},mockHistory:[],wordStats:{},wordHistory:[],wordPrefs:{source:"daily",mode:"mixed",size:10}});
 let storageAvailable=true;
 function loadState(){try{const raw=localStorage.getItem(activeStorageKey);return raw?normalizeState(JSON.parse(raw)):defaultState()}catch{storageAvailable=false;return defaultState()}}
 function normalizeState(x){
@@ -4744,12 +5366,13 @@ function calculateStreak(){
 }
 function pct(n,d){return Math.round((n/d)*100)}
 function render(){
+ updatePlannerDate();
  app.innerHTML=`<header class="site-header"><div class="shell header-inner">
   <button class="brand" data-act="goto" data-to="home" aria-label="첫 화면으로 이동"><span class="brand-mark">Aa<\/span><span><span class="brand-name">하루 영어 첫걸음<\/span><span class="brand-sub">알파벳부터, 나만의 속도로<\/span><\/span><\/button>
   <nav class="nav" aria-label="주요 메뉴">
-   ${[['home','오늘 학습'],['planner','학습 일정'],['vocab','단어 학습'],['exams','시험 과정'],['progress','기초 과정'],['mistakes','오답 복습'],['account','내 계정'],['settings','설정']].map(([s,t])=>`<button class="${screen===s||(s==='home'&&screen==='day')||(s==='exams'&&['exam','chapters','chapter'].includes(screen))||(s==='vocab'&&screen==='wordquiz')?'active':''}" data-act="goto" data-to="${s}" ${screen===s?'aria-current="page"':''}>${t}<\/button>`).join('')}
+   ${[['home','오늘 학습'],['planner','학습 일정'],['vocab','단어 학습'],['exams','시험 과정'],['progress','기초 과정'],['mistakes','오답 복습'],['account','내 계정'],['settings','설정']].map(([s,t])=>`<button class="${screen===s||(s==='home'&&screen==='day')||(s==='exams'&&['exam','chapters','chapter','resources','minitest'].includes(screen))||(s==='vocab'&&screen==='wordquiz')?'active':''}" data-act="goto" data-to="${s}" ${screen===s?'aria-current="page"':''}>${t}<\/button>`).join('')}
   <\/nav><\/div><\/header>
-  <main class="shell" id="main-content">${!storageAvailable?'<div class="alert">이 환경에서는 자동 저장이 제한될 수 있습니다. 일반 웹브라우저에서 열거나 백업 기능을 사용해 주세요.<\/div>':''}${screen==='home'?homeHTML():screen==='planner'?plannerHTML():screen==='wordquiz'?wordQuizHTML():screen==='chapters'?chaptersHTML():screen==='chapter'?chapterHTML():screen==='day'?dayHTML():screen==='progress'?progressHTML():screen==='vocab'?vocabHTML():screen==='exams'?examOverviewHTML():screen==='exam'?examHTML():screen==='mistakes'?mistakesHTML():screen==='account'?accountHTML():settingsHTML()}<\/main>
+  <main class="shell" id="main-content">${!storageAvailable?'<div class="alert">이 환경에서는 자동 저장이 제한될 수 있습니다. 일반 웹브라우저에서 열거나 백업 기능을 사용해 주세요.<\/div>':''}${screen==='home'?homeHTML():screen==='planner'?plannerHTML():screen==='wordquiz'?wordQuizHTML():screen==='resources'?resourcesHTML():screen==='minitest'?miniTestHTML():screen==='chapters'?chaptersHTML():screen==='chapter'?chapterHTML():screen==='day'?dayHTML():screen==='progress'?progressHTML():screen==='vocab'?vocabHTML():screen==='exams'?examOverviewHTML():screen==='exam'?examHTML():screen==='mistakes'?mistakesHTML():screen==='account'?accountHTML():settingsHTML()}<\/main>
   <footer class="footer shell">영어 첫걸음 · 기초 72회 · 단어 학습 · 시험별 챕터 과정 · 로그인하면 개인 기록을 동기화합니다.<\/footer>`;
 }
 function legacyHomeHTML(){
@@ -4772,7 +5395,7 @@ function reviewHTML(due=dueWords()){
  const v=due[0];
  return `<div class="panel pad review-grid"><div class="review-front"><span class="soft-label">복습 1 / ${due.length}<\/span><span class="review-word">${esc(v.word)}<\/span><button data-act="speak" data-text="${attr(v.word)}" class="btn small">🔊 발음 듣기<\/button><\/div><div style="display:flex;flex-direction:column;justify-content:center;gap:12px"><span class="soft-label">이 단어를 기억하나요?<\/span>${reviewReveal?`<div style="font-size:20px;font-weight:850">${esc(v.meaning)}<\/div><div class="button-row"><button data-act="review-answer" data-word="${attr(v.word)}" data-known="1" class="btn green">기억나요<\/button><button data-act="review-answer" data-word="${attr(v.word)}" data-known="0" class="btn">한 번 더<\/button><\/div>`:`<button data-act="reveal-review" class="btn primary">뜻 확인하기<\/button><p class="tiny muted" style="margin:0">뜻을 생각한 뒤 확인하면 더 잘 기억할 수 있어요.<\/p>`}<\/div><\/div>`;
 }
-function goToScreen(to){stopActivities();mistakeChoice=null;mistakeIndex=0;screen=to;wordSearch='';render();window.scrollTo({top:0,behavior:'instant'})}
+function goToScreen(to){if(screen==='minitest'&&miniTest&&!miniTest.finished){if(!confirm('진행 중인 모의연습을 나갈까요? 답변은 제출 후 저장됩니다.'))return;miniTest=null;clearInterval(miniTicker)}stopActivities();mistakeChoice=null;mistakeIndex=0;screen=to;wordSearch='';render();window.scrollTo({top:0,behavior:'instant'})}
 function openDay(i){stopActivities();practiceTokens=[];practiceChecked=false;dialogueChoice=null;lessonIndex=Number(i);if(!Number.isInteger(lessonIndex)||lessonIndex<0||lessonIndex>71)lessonIndex=nextIndex();lessonTab='sound';quiz=null;quizHint=false;screen='day';render();window.scrollTo({top:0,behavior:'instant'})}
 function dayHTML(){const l=LESSONS[lessonIndex];const done=!!state.completed[l.id];const tabs=[['sound','1 · 소리'],['words','2 · 단어'],['reading','3 · 문장'],['quiz','4 · 퀴즈'],['practice','5 · 활용']];
  return `<div class="back-row"><button class="btn small" data-act="goto" data-to="home">← 오늘 학습<\/button><span class="pill">${l.week}단계 · ${l.day}/6일<\/span>${done?'<span class="round-tag" style="color:var(--success);background:var(--success-weak)">학습 완료 ✓<\/span>':''}<\/div>
@@ -4850,7 +5473,7 @@ app.addEventListener('click',event=>{
  const b=event.target.closest('[data-act]');if(!b||b.disabled)return;
  const a=b.dataset.act;
  if(a.startsWith('cloud-')){handleCloudAction(a);return}
- if(handlePlannerAction(a,b)||handleWordAction(a,b))return;
+ if(handlePlannerAction(a,b)||handleWordAction(a,b)||handleResourceAction(a,b))return;
  if(handleExtraAction(a,b))return;
  if(a==='goto'){goToScreen(b.dataset.to);return}
  if(a==='open-day'){openDay(b.dataset.i);return}
@@ -4858,7 +5481,7 @@ app.addEventListener('click',event=>{
  if(a==='speak'||a==='speak-slow'||a==='speak-letter'){speak(b.dataset.text,a==='speak-slow',a==='speak-letter');return}
  if(a==='toggle-word-meanings'){wordMeaningsVisible=!wordMeaningsVisible;render();return}
  if(a==='toggle-sentence'){sentenceMeaningVisible=!sentenceMeaningVisible;render();return}
- if(a==='star'){const w=b.dataset.word.toLowerCase();if(!vocabBank().some(item=>item.word===w))return;state.starred=state.starred.includes(w)?state.starred.filter(x=>x!==w):[...state.starred,w];save();render();return}
+ if(a==='star'){const w=b.dataset.word.toLowerCase();if(!vocabBank().some(item=>item.word===w))return;state.starred=state.starred.includes(w)?state.starred.filter(x=>x!==w):[...state.starred,w];save();delete state.cardSessions.starred;render();return}
  if(a==='reveal-review'){reviewReveal=true;render();return}
  if(a==='review-answer'){answerReview(b.dataset.word,b.dataset.known==='1');return}
  if(a==='quiz-hint'){quizHint=true;render();return}
@@ -4942,11 +5565,13 @@ function handleExtraAction(a,b){
 let plannerDate=dateStr(),plannerMonth=dateStr().slice(0,7),chapterTrack='toeic',chapterId='t1';
 function validDay(value){if(typeof value!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(value))return false;const d=new Date(value+'T12:00:00');return !Number.isNaN(+d)&&dateStr(d)===value}
 function dateAdd(value,days){const d=new Date(value+'T12:00:00');d.setDate(d.getDate()+days);return dateStr(d)}
-function defaultPlan(){return {start:dateStr(),minutes:30,days:[1,2,3,4,5],focus:'speaking',targets:{toeic:'',tos:'',opic:''}}}
+function defaultPlan(){return {start:dateStr(),minutes:30,weekendMinutes:60,autoCarry:true,days:[0,1,2,3,4,5,6],focus:'speaking',targets:{toeic:'',tos:'',opic:''}}}
 function normalizeUpgrade(x,safe){
  const p=x.plan;if(p&&typeof p==='object'){
   if(validDay(p.start))safe.plan.start=p.start;
   if([30,60,90].includes(p.minutes))safe.plan.minutes=p.minutes;
+  if([30,60,90].includes(p.weekendMinutes))safe.plan.weekendMinutes=p.weekendMinutes;
+  if(typeof p.autoCarry==='boolean')safe.plan.autoCarry=p.autoCarry;
   const days=Array.isArray(p.days)?[...new Set(p.days.filter(n=>Number.isInteger(n)&&n>=0&&n<=6))]:[];if(days.length)safe.plan.days=days;
   if(['balanced','toeic','speaking'].includes(p.focus))safe.plan.focus=p.focus;
   for(const t of ['toeic','tos','opic'])if(typeof p.targets?.[t]==='string')safe.plan.targets[t]=p.targets[t].slice(0,40);
@@ -4954,7 +5579,7 @@ function normalizeUpgrade(x,safe){
  if(Array.isArray(x.customTasks))safe.customTasks=x.customTasks.filter(t=>t&&/^custom-[a-z0-9-]{1,60}$/.test(t.id)&&validDay(t.date)&&typeof t.title==='string').slice(0,500).map(t=>({id:t.id,date:t.date,title:t.title.slice(0,100),minutes:Number.isInteger(t.minutes)&&t.minutes>=5&&t.minutes<=180?t.minutes:15,done:t.done===true,doneAt:validDay(t.doneAt)?t.doneAt:''}));
  if(x.taskMoves&&typeof x.taskMoves==='object')for(const [id,day] of Object.entries(x.taskMoves).slice(0,1500))if(validDay(day)&&validTaskId(id))safe.taskMoves[id]=day;
  if(x.wordTaskDone&&typeof x.wordTaskDone==='object')for(const [id,day] of Object.entries(x.wordTaskDone).slice(0,800))if(/^vocab:\d{4}-\d{2}-\d{2}$/.test(id)&&validDay(day))safe.wordTaskDone[id]=day;
- if(Array.isArray(x.customWords))safe.customWords=x.customWords.filter(w=>w&&validWord(w.word)&&typeof w.meaning==='string').slice(0,200).map(w=>({word:w.word.trim().toLowerCase(),meaning:w.meaning.slice(0,100)}));
+ if(Array.isArray(x.customWords))safe.customWords=x.customWords.filter(w=>w&&validWord(w.word)&&typeof w.meaning==='string').slice(0,1000).map(w=>({word:w.word.trim().toLowerCase(),meaning:w.meaning.slice(0,100),category:['basic','toeic','tos','opic'].includes(w.category)?w.category:'custom'}));
  if(x.wordStats&&typeof x.wordStats==='object')for(const [w,r] of Object.entries(x.wordStats).slice(0,1500))if(validWord(w)&&r&&typeof r==='object')safe.wordStats[w]={attempts:boundedCount(r.attempts),correct:Math.min(boundedCount(r.correct),boundedCount(r.attempts)),level:Number.isInteger(r.level)&&r.level>=0&&r.level<=5?r.level:0,due:validDay(r.due)?r.due:dateStr(),missed:r.missed===true};
  if(Array.isArray(x.wordHistory))safe.wordHistory=x.wordHistory.filter(r=>r&&validDay(r.date)&&Number.isInteger(r.total)&&r.total>0&&r.total<=20&&Number.isInteger(r.correct)&&r.correct>=0&&r.correct<=r.total).slice(-100).map(r=>({date:r.date,total:r.total,correct:r.correct,mode:typeof r.mode==='string'?r.mode.slice(0,20):'mixed'}));
  if(x.wordPrefs&&typeof x.wordPrefs==='object'){
@@ -4962,6 +5587,8 @@ function normalizeUpgrade(x,safe){
   if(WORD_MODES.some(([k])=>k===x.wordPrefs.mode))safe.wordPrefs.mode=x.wordPrefs.mode;
   if([5,10,20].includes(x.wordPrefs.size))safe.wordPrefs.size=x.wordPrefs.size;
  }
+ for(const [source] of WORD_SOURCES){const d=x.cardSessions?.[source];if(d&&typeof d==='object'&&validDay(d.day))safe.cardSessions[source]={day:d.day,cursor:boundedCount(d.cursor),queue:Array.isArray(d.queue)?d.queue.filter(validWord).slice(0,8):[],retry:Array.isArray(d.retry)?d.retry.filter(validWord).slice(0,3000):[],draws:boundedCount(d.draws),known:boundedCount(d.known)};}
+ safe.mockHistory=normalizeMockHistory(x.mockHistory);
  return safe;
 }
 function boundedCount(n){return Number.isInteger(n)&&n>0?Math.min(n,100000):0}
@@ -4972,7 +5599,7 @@ function buildStudyPlan(){
  const rotation=p.focus==='toeic'?['toeic','toeic','tos','toeic','opic']:p.focus==='speaking'?['tos','opic','toeic','tos','opic']:['toeic','tos','opic'];let base=0,turn=0,day=p.start;
  for(let n=0;n<730&&(base<72||Object.keys(queues).some(t=>positions[t]<queues[t].length));n++,day=dateAdd(day,1)){
   if(!p.days.includes(new Date(day+'T12:00:00').getDay()))continue;
-  const baseSlots=p.minutes===90?2:1,examSlots=p.minutes===90?2:1,baseBudget=p.minutes===30?10:p.minutes===60?25:30,examBudget=p.minutes===30?10:p.minutes===60?20:40,wordBudget=p.minutes===30?10:p.minutes===60?15:20;
+  const budget=dayBudget(day,p),baseSlots=budget===90?3:budget===60?2:1,examSlots=budget===90?4:budget===60?2:1,baseBudget=baseSlots*10,examBudget=examSlots*10,wordBudget=budget===30?10:20;
   result.push({id:'vocab:'+day,date:day,type:'vocab',title:'오늘의 단어 학습·퀴즈',minutes:wordBudget});
   for(let s=0;s<baseSlots&&base<72;s++,base++)result.push({id:'foundation:'+base,date:day,type:'foundation',ref:base,title:'기초 '+(base+1)+' · '+LESSONS[base].title,minutes:Math.floor(baseBudget/baseSlots)});
   for(let s=0;s<examSlots;s++){
@@ -4980,33 +5607,68 @@ function buildStudyPlan(){
    if(!track)break;const u=queues[track][positions[track]++];result.push({id:'exam:'+u.id,date:day,type:'exam',track,ref:EXTRA.tracks[track].units.indexOf(u),title:EXTRA.tracks[track].title+' · '+u.title,minutes:Math.floor(examBudget/examSlots)});
   }
  }
- return result.map(t=>({...t,date:state.taskMoves[t.id]||t.date})).concat(state.customTasks.map(t=>({...t,type:'custom'}))).sort((a,b)=>a.date.localeCompare(b.date)||({vocab:0,foundation:1,exam:2,custom:3}[a.type]-{vocab:0,foundation:1,exam:2,custom:3}[b.type]));
+ return carryStudyTasks(result.map(t=>({...t,date:state.taskMoves[t.id]||t.date})).concat(state.customTasks.map(t=>({...t,type:'custom'}))));
 }
+function dayBudget(day,plan=state.plan){const n=new Date(day+'T12:00:00').getDay();return n===0||n===6?plan.weekendMinutes:plan.minutes}
+function dailyWordGoal(day){return dayBudget(day)>=60?20:10}
+function taskCompletionDay(t){if(t.type==='foundation')return state.completed[t.ref];if(t.type==='exam')return state.examRecords[EXTRA.tracks[t.track].units[t.ref].id]?.doneAt;return t.type==='vocab'?state.wordTaskDone[t.id]:t.doneAt}
+function taskOrder(a,b){return a.date.localeCompare(b.date)||({vocab:0,foundation:1,exam:2,custom:3}[a.type]-{vocab:0,foundation:1,exam:2,custom:3}[b.type])}
+function carryStudyTasks(tasks,today=dateStr()){
+ if(!state.plan.autoCarry)return tasks.sort(taskOrder);
+ const ready=[],waiting=[],used=new Map();
+ const reserve=t=>{ready.push(t);used.set(t.date,(used.get(t.date)||0)+t.minutes)};
+ for(const t of tasks){
+  if(t.type==='custom'){reserve(t);continue}
+  const done=taskDone(t),completed=taskCompletionDay(t),plannedDate=t.date;
+  if(done){reserve({...t,plannedDate,date:validDay(completed)?completed:t.date});continue}
+  // User-selected future dates remain fixed. Missed tasks enter the carry queue.
+  if(state.taskMoves[t.id]&&t.date>=today){reserve({...t,plannedDate});continue}
+  waiting.push({...t,plannedDate});
+ }
+ waiting.sort(taskOrder);
+ for(const t of waiting){
+  let day=t.plannedDate<today?today:t.plannedDate;
+  for(let n=0;n<10000;n++,day=dateAdd(day,1)){
+   if(!state.plan.days.includes(new Date(day+'T12:00:00').getDay()))continue;
+   if((used.get(day)||0)+t.minutes>dayBudget(day))continue;
+   reserve({...t,date:day,carriedFrom:t.plannedDate<today?t.plannedDate:'',shifted:day!==t.plannedDate});break;
+  }
+ }
+ return ready.sort(taskOrder);
+}
+let lastPlannerDay=dateStr();
+function updatePlannerDate(){const today=dateStr();if(today===lastPlannerDay)return false;if(plannerDate===lastPlannerDay){plannerDate=today;plannerMonth=today.slice(0,7)}lastPlannerDay=today;return true}
+function refreshPlannerDay(){const isEditing=['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName);if(!isEditing&&updatePlannerDate()&&['home','planner'].includes(screen))render()}
+window.addEventListener('focus',refreshPlannerDay);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshPlannerDay()});
+setInterval(refreshPlannerDay,60000);
+
 function taskDone(t){return t.type==='foundation'?!!state.completed[t.ref]:t.type==='exam'?!!state.examRecords[EXTRA.tracks[t.track].units[t.ref].id]?.completed:t.type==='vocab'?!!state.wordTaskDone[t.id]:!!t.done}
 function todaySummary(day=dateStr()){const tasks=buildStudyPlan().filter(t=>t.date===day);return {tasks,done:tasks.filter(taskDone).length,total:tasks.length}}
 function taskListHTML(tasks,{move=true}={}){
  if(!tasks.length)return '<div class="empty">이 날짜에 예정된 학습이 없어요. 휴식하거나 자유롭게 단어를 복습해보세요.<\/div>';
- return `<div class="task-list">${tasks.map(t=>`<article class="task-row ${taskDone(t)?'task-done':''}"><div class="task-status" aria-label="${taskDone(t)?'완료':'예정'}">${taskDone(t)?'✓':'○'}<\/div><div class="task-copy"><div class="tiny muted">${esc(t.date)} · 예상 ${t.minutes}분<\/div><strong>${esc(t.title)}<\/strong><div class="button-row gap-top"><button class="btn small ${taskDone(t)?'':'primary'}" data-act="plan-open" data-id="${attr(t.id)}">${t.type==='custom'?(taskDone(t)?'완료 취소':'완료 표시'):(taskDone(t)?'다시 학습':'시작하기')}<\/button>${t.type==='custom'?`<button class="btn small" data-act="plan-delete" data-id="${attr(t.id)}">삭제<\/button>`:''}${move?`<label class="tiny muted">날짜 변경 <input class="date-mini" type="date" value="${t.date}" data-task-move="${attr(t.id)}" aria-label="${attr(t.title)} 날짜 변경"><\/label>`:''}<\/div><\/div><\/article>`).join('')}<\/div>`;
+ return `<div class="task-list">${tasks.map(t=>`<article class="task-row ${taskDone(t)?'task-done':''}"><div class="task-status" aria-label="${taskDone(t)?'완료':'예정'}">${taskDone(t)?'✓':'○'}<\/div><div class="task-copy"><div class="tiny muted">${esc(t.date)} · 예상 ${t.minutes}분${t.carriedFrom?` · <span class="carry-label">${t.carriedFrom} 미완료 이월<\/span>`:t.shifted?' · 일정 조정':''}<\/div><strong>${esc(t.title)}<\/strong><div class="button-row gap-top"><button class="btn small ${taskDone(t)?'':'primary'}" data-act="plan-open" data-id="${attr(t.id)}">${t.type==='custom'?(taskDone(t)?'완료 취소':'완료 표시'):(taskDone(t)?'다시 학습':'시작하기')}<\/button>${t.type==='custom'?`<button class="btn small" data-act="plan-delete" data-id="${attr(t.id)}">삭제<\/button>`:''}${move&&(!taskDone(t)||t.type==='custom')?`<label class="tiny muted">날짜 변경 <input class="date-mini" type="date" value="${t.date}" data-task-move="${attr(t.id)}" aria-label="${attr(t.title)} 날짜 변경"><\/label>`:''}<\/div><\/div><\/article>`).join('')}<\/div>`;
 }
 function calendarHTML(){
- const first=plannerMonth+'-01',start=dateAdd(first,-((new Date(first+'T12:00:00').getDay()+6)%7)),tasks=buildStudyPlan(),byDay=new Map();for(const t of tasks){if(!byDay.has(t.date))byDay.set(t.date,[]);byDay.get(t.date).push(t)}
- return `<div class="calendar-head"><button class="btn small" data-act="plan-month" data-step="-1" aria-label="이전 달">←<\/button><h2 class="h2">${plannerMonth.replace('-','년 ')}월<\/h2><button class="btn small" data-act="plan-month" data-step="1" aria-label="다음 달">→<\/button><\/div><div class="calendar-grid">${['월','화','수','목','금','토','일'].map(d=>`<span class="calendar-weekday">${d}<\/span>`).join('')}${Array.from({length:42},(_,i)=>{const day=dateAdd(start,i),list=byDay.get(day)||[],done=list.filter(taskDone).length;return `<button class="calendar-day ${day===plannerDate?'selected':''} ${day===dateStr()?'today':''} ${day.slice(0,7)!==plannerMonth?'outside':''}" data-act="plan-day" data-date="${day}" aria-label="${day}, 학습 ${list.length}개 중 ${done}개 완료"><span>${+day.slice(-2)}<\/span><small>${list.length?done+'/'+list.length:'·'}<\/small><\/button>`}).join('')}<\/div>`;
+ const first=plannerMonth+'-01',start=dateAdd(first,-((new Date(first+'T12:00:00').getDay()+6)%7)),tasks=buildStudyPlan(),byDay=new Map(),moved=new Map();for(const t of tasks)if(t.carriedFrom)moved.set(t.carriedFrom,(moved.get(t.carriedFrom)||0)+1);for(const t of tasks){if(!byDay.has(t.date))byDay.set(t.date,[]);byDay.get(t.date).push(t)}
+ return `<div class="calendar-head"><button class="btn small" data-act="plan-month" data-step="-1" aria-label="이전 달">←<\/button><h2 class="h2">${plannerMonth.replace('-','년 ')}월<\/h2><button class="btn small" data-act="plan-month" data-step="1" aria-label="다음 달">→<\/button><\/div><div class="calendar-grid">${['월','화','수','목','금','토','일'].map(d=>`<span class="calendar-weekday">${d}<\/span>`).join('')}${Array.from({length:42},(_,i)=>{const day=dateAdd(start,i),list=byDay.get(day)||[],done=list.filter(taskDone).length;return `<button class="calendar-day ${day===plannerDate?'selected':''} ${day===dateStr()?'today':''} ${day.slice(0,7)!==plannerMonth?'outside':''}" data-act="plan-day" data-date="${day}" aria-label="${day}, 학습 ${list.length}개 중 ${done}개 완료"><span>${+day.slice(-2)}<\/span><small>${list.length?done+'/'+list.length:moved.has(day)?'이월 '+moved.get(day):'·'}<\/small><\/button>`}).join('')}<\/div>`;
 }
 function plannerHTML(){
- const tasks=buildStudyPlan(),selected=tasks.filter(t=>t.date===plannerDate),overdue=tasks.filter(t=>t.date<dateStr()&&!taskDone(t)),p=state.plan,end=tasks.filter(t=>t.type!=='custom').at(-1)?.date;
- return `<div class="page-head"><div><span class="eyebrow">MY STUDY PLANNER<\/span><h1 class="h1">나의 학습 일정<\/h1><p class="lead">날짜별 기초·단어·시험 학습을 한곳에서 관리해요.<\/p><\/div><div class="button-row"><button class="btn" data-act="plan-today">오늘 보기<\/button><button class="btn primary" data-act="plan-settings">계획 설정<\/button><\/div><\/div><div class="planner-layout"><section class="panel pad"><p class="tiny muted">현재 계획: 하루 ${p.minutes}분 · 주 ${p.days.length}일 · ${end?'마지막 예정일 '+end:''}<\/p>${calendarHTML()}<h3 class="h3 gap-top">${plannerDate} 학습<\/h3><div class="gap-top">${taskListHTML(selected)}<\/div><\/section><aside id="plan-settings" class="panel pad"><h2 class="h2">학습 계획 설정<\/h2><form id="plan-form" class="settings-list gap-top"><label>시작일<input class="search" name="start" type="date" required value="${p.start}"><\/label><label>하루 학습 시간<select class="search" name="minutes">${[30,60,90].map(n=>`<option value="${n}" ${p.minutes===n?'selected':''}>${n}분<\/option>`).join('')}<\/select><\/label><fieldset class="self-check"><legend>공부할 요일<\/legend><div class="weekday-picks">${['일','월','화','수','목','금','토'].map((d,i)=>`<label><input name="days" value="${i}" type="checkbox" ${p.days.includes(i)?'checked':''}>${d}<\/label>`).join('')}<\/div><\/fieldset><label>시험 학습 비중<select name="focus" class="search"><option value="balanced" ${p.focus==='balanced'?'selected':''}>세 시험 균형 있게<\/option><option value="toeic" ${p.focus==='toeic'?'selected':''}>토익 중심<\/option><option value="speaking" ${p.focus==='speaking'?'selected':''}>토스·오픽 중심<\/option><\/select><\/label>${['toeic','tos','opic'].map(t=>`<label>${EXTRA.tracks[t].title} 목표 <input class="search" name="goal-${t}" maxlength="40" value="${attr(p.targets[t])}" placeholder="목표 점수·등급 또는 공부 목표"><\/label>`).join('')}<button class="btn primary">계획 저장 · 일정 다시 배정<\/button><p class="tiny muted">계획을 바꾸어도 학습 기록은 유지돼요. 날짜를 직접 옮긴 항목은 배정된 날짜를 유지합니다. 시간은 학습량을 나누기 위한 예상치입니다.<\/p><p id="plan-message" role="status"><\/p><\/form><div class="small-line"><\/div><h3 class="h3">직접 일정 추가<\/h3><form id="task-form" class="settings-list gap-top"><label>할 일<input class="search" name="title" required maxlength="100" placeholder="예: 토익 교재 10쪽 복습"><\/label><label>날짜<input class="search" name="date" type="date" required value="${plannerDate}"><\/label><label>예상 시간(분)<input class="search" name="minutes" type="number" min="5" max="180" step="5" value="15" required><\/label><button class="btn">일정 추가<\/button><\/form><\/aside><\/div>${overdue.length?`<section class="panel pad section"><h2 class="h2">남아 있는 이전 학습 · ${overdue.length}개<\/h2><p class="lead">시작하거나 날짜를 바꿔서 이어가세요. 먼저 ${Math.min(10,overdue.length)}개를 표시합니다.<\/p><div class="gap-top">${taskListHTML(overdue.slice(0,10))}<\/div><\/section>`:''}`;
+ const tasks=buildStudyPlan(),selected=tasks.filter(t=>t.date===plannerDate),movedOut=tasks.filter(t=>t.carriedFrom===plannerDate),overdue=tasks.filter(t=>t.date<dateStr()&&!taskDone(t)),p=state.plan,end=tasks.filter(t=>t.type!=='custom').at(-1)?.date;
+ return `<div class="page-head"><div><span class="eyebrow">MY STUDY PLANNER<\/span><h1 class="h1">나의 학습 일정<\/h1><p class="lead">날짜별 기초·단어·시험 학습을 한곳에서 관리해요.<\/p><\/div><div class="button-row"><button class="btn" data-act="plan-today">오늘 보기<\/button><button class="btn primary" data-act="plan-settings">계획 설정<\/button><\/div><\/div><div class="planner-layout"><section class="panel pad"><p class="tiny muted">현재 계획: 평일 ${p.minutes}분 · 주말 ${p.weekendMinutes}분 · 주 ${p.days.length}일 · ${end?'마지막 예정일 '+end:''}<\/p>${calendarHTML()}<h3 class="h3 gap-top">${plannerDate} 학습<\/h3><p class="tiny muted">예상 ${selected.reduce((n,t)=>n+t.minutes,0)}분 / 목표 ${dayBudget(plannerDate)}분${selected.some(t=>t.carriedFrom)?' · 미완료 학습부터 이어갑니다.':''}<\/p><div class="gap-top">${taskListHTML(selected)}<\/div>${movedOut.length?`<div class="tip gap-top">이 날짜에 못 한 학습 ${movedOut.length}개는 이후 학습일에 배정했습니다.<\/div>${taskListHTML(movedOut.slice(0,5))}`:''}<\/section><aside id="plan-settings" class="panel pad"><h2 class="h2">학습 계획 설정<\/h2><div class="tip gap-top">주말 학습과 자동 이월을 함께 적용할 수 있어요.<button class="btn small gap-top" data-act="plan-weekend-enable">주말 확장·자동 이월 적용<\/button><\/div><form id="plan-form" class="settings-list gap-top"><label>시작일<input class="search" name="start" type="date" required value="${p.start}"><\/label><label>평일 학습 시간<select class="search" name="minutes">${[30,60,90].map(n=>`<option value="${n}" ${p.minutes===n?'selected':''}>${n}분<\/option>`).join('')}<\/select><\/label><label>주말 학습 시간<select class="search" name="weekendMinutes">${[30,60,90].map(n=>`<option value="${n}" ${p.weekendMinutes===n?'selected':''}>${n}분<\/option>`).join('')}<\/select><\/label><label>못 한 학습 처리<select class="search" name="autoCarry"><option value="1" ${p.autoCarry?'selected':''}>다음 학습일로 자동 이월<\/option><option value="0" ${!p.autoCarry?'selected':''}>원래 날짜에 두고 직접 이동<\/option><\/select><\/label><fieldset class="self-check"><legend>공부할 요일<\/legend><div class="weekday-picks">${['일','월','화','수','목','금','토'].map((d,i)=>`<label><input name="days" value="${i}" type="checkbox" ${p.days.includes(i)?'checked':''}>${d}<\/label>`).join('')}<\/div><\/fieldset><label>시험 학습 비중<select name="focus" class="search"><option value="balanced" ${p.focus==='balanced'?'selected':''}>세 시험 균형 있게<\/option><option value="toeic" ${p.focus==='toeic'?'selected':''}>토익 중심<\/option><option value="speaking" ${p.focus==='speaking'?'selected':''}>토스·오픽 중심<\/option><\/select><\/label>${['toeic','tos','opic'].map(t=>`<label>${EXTRA.tracks[t].title} 목표 <input class="search" name="goal-${t}" maxlength="40" value="${attr(p.targets[t])}" placeholder="목표 점수·등급 또는 공부 목표"><\/label>`).join('')}<button class="btn primary">계획 저장 · 일정 다시 배정<\/button><p class="tiny muted">계획을 바꾸어도 학습 기록은 유지돼요. 자동 이월은 미완료 학습부터 하루 목표 시간 안에서 배정하고 이후 학습을 뒤로 나눕니다. 쉬는 날은 건너뛰며, 완료 기록과 직접 추가한 일정의 날짜는 유지합니다. 직접 옮긴 미래 일정은 고정되므로 목표 시간을 넘을 수 있어요. 시간은 예상치입니다.<\/p><p id="plan-message" role="status"><\/p><\/form><div class="small-line"><\/div><h3 class="h3">직접 일정 추가<\/h3><form id="task-form" class="settings-list gap-top"><label>할 일<input class="search" name="title" required maxlength="100" placeholder="예: 토익 교재 10쪽 복습"><\/label><label>날짜<input class="search" name="date" type="date" required value="${plannerDate}"><\/label><label>예상 시간(분)<input class="search" name="minutes" type="number" min="5" max="180" step="5" value="15" required><\/label><button class="btn">일정 추가<\/button><\/form><\/aside><\/div>${overdue.length?`<section class="panel pad section"><h2 class="h2">남아 있는 이전 학습 · ${overdue.length}개<\/h2><p class="lead">시작하거나 날짜를 바꿔서 이어가세요. 먼저 ${Math.min(10,overdue.length)}개를 표시합니다.<\/p><div class="gap-top">${taskListHTML(overdue.slice(0,10))}<\/div><\/section>`:''}`;
 }
 function homeHTML(){
  const {tasks,done,total}=todaySummary(),all=buildStudyPlan(),overdue=all.filter(t=>t.date<dateStr()&&!taskDone(t)),next=all.find(t=>t.date>dateStr()&&!taskDone(t)),wordCount=vocabBank().length,mastered=vocabBank().filter(w=>wordKnowledge(w.word).level>=3).length;
- return `<section class="panel dashboard-hero"><div><span class="eyebrow">YOUR ENGLISH, EVERY DAY<\/span><h1 class="h1">오늘의 한 걸음이<br>영어 실력이 되도록.<\/h1><p class="lead">${dateStr()} · 기초부터 단어, 토익·토스·오픽까지 나의 일정으로 학습해요.<\/p><div class="button-row gap-top"><button class="btn primary" data-act="goto" data-to="planner">학습 일정 열기 →<\/button><button class="btn" data-act="open-day" data-i="${nextIndex()}">기초 수업 이어하기<\/button><\/div><\/div><div class="daily-ring"><span class="soft-label">오늘의 계획<\/span><strong>${total?`${done}<small> / ${total}<\/small>`:'자유<small> 학습<\/small>'}<\/strong><div class="progress-track"><div class="progress-fill" style="width:${total?pct(done,total):0}%"><\/div><\/div><span class="tiny muted">${total?'계획에 맞춰 한 가지씩':'오늘은 자유 학습일이에요'}<\/span><\/div><\/section><div class="stat-grid"><div class="panel stat"><span class="soft-label">기초 과정<\/span><div class="stat-value">${completedCount()}<small> / 72<\/small><\/div><\/div><div class="panel stat"><span class="soft-label">익숙해진 단어<\/span><div class="stat-value">${mastered}<small> / ${wordCount}<\/small><\/div><\/div><div class="panel stat"><span class="soft-label">시험 연습 완료<\/span><div class="stat-value">${Object.values(state.examRecords).filter(r=>r.completed).length}<small> / ${Object.values(EXTRA.tracks).reduce((n,t)=>n+t.units.length,0)}<\/small><\/div><\/div><\/div><section class="section"><div class="section-header"><h2 class="h2">오늘 할 학습<\/h2><button class="btn small" data-act="goto" data-to="planner">전체 일정<\/button><\/div>${taskListHTML(tasks,{move:false})}${!tasks.length&&next?`<p class="tiny muted">다음 예정 학습은 ${next.date}입니다. 오늘도 단어 퀴즈와 자유 학습을 할 수 있어요.<\/p>`:''}<\/section>${overdue.length?`<section class="section"><h2 class="h2">이전 일정에서 이어서 · ${overdue.length}개<\/h2><div class="gap-top">${taskListHTML(overdue.slice(0,3),{move:false})}<\/div><\/section>`:''}<section class="learn-grid section"><article class="panel pad"><span class="eyebrow">VOCABULARY<\/span><h2 class="h2">단어를 나의 것으로<\/h2><p class="lead">플래시카드·뜻 찾기·듣기·직접 입력. 복습할 단어 ${vocabPool('due').length}개가 기다리고 있어요.<\/p><button class="btn primary gap-top" data-act="word-quiz-start" data-source="daily">오늘의 단어 퀴즈<\/button><\/article><article class="panel pad"><span class="eyebrow">CHAPTER COURSES<\/span><h2 class="h2">시험도 챕터별로 차근차근<\/h2><p class="lead">토익 8챕터 · 토스 6챕터 · 오픽 8챕터. 핵심 표현과 단어를 익힌 뒤 연습해요.<\/p><button class="btn gap-top" data-act="goto" data-to="exams">시험 과정 열기 →<\/button><\/article><\/section>${reportHTML()}`;
+ return `<section class="panel dashboard-hero"><div><span class="eyebrow">YOUR ENGLISH, EVERY DAY<\/span><h1 class="h1">오늘의 한 걸음이<br>영어 실력이 되도록.<\/h1><p class="lead">${dateStr()} · 기초부터 단어, 토익·토스·오픽까지 나의 일정으로 학습해요.<\/p><div class="button-row gap-top"><button class="btn primary" data-act="goto" data-to="planner">학습 일정 열기 →<\/button><button class="btn" data-act="open-day" data-i="${nextIndex()}">기초 수업 이어하기<\/button><\/div><\/div><div class="daily-ring"><span class="soft-label">오늘의 계획<\/span><strong>${total?`${done}<small> / ${total}<\/small>`:'자유<small> 학습<\/small>'}<\/strong><div class="progress-track"><div class="progress-fill" style="width:${total?pct(done,total):0}%"><\/div><\/div><span class="tiny muted">${total?'계획에 맞춰 한 가지씩':'오늘은 자유 학습일이에요'}<\/span><\/div><\/section><div class="stat-grid"><div class="panel stat"><span class="soft-label">기초 과정<\/span><div class="stat-value">${completedCount()}<small> / 72<\/small><\/div><\/div><div class="panel stat"><span class="soft-label">익숙해진 단어<\/span><div class="stat-value">${mastered}<small> / ${wordCount}<\/small><\/div><\/div><div class="panel stat"><span class="soft-label">시험 연습 완료<\/span><div class="stat-value">${Object.values(state.examRecords).filter(r=>r.completed).length}<small> / ${Object.values(EXTRA.tracks).reduce((n,t)=>n+t.units.length,0)}<\/small><\/div><\/div><\/div><section class="section"><div class="section-header"><h2 class="h2">오늘 할 학습<\/h2><button class="btn small" data-act="goto" data-to="planner">전체 일정<\/button><\/div><p class="tiny muted">평일 ${state.plan.minutes}분 · 주말 ${state.plan.weekendMinutes}분${state.plan.autoCarry?' · 못 한 학습은 다음 학습일로 자동 이월':''}<\/p>${taskListHTML(tasks,{move:false})}${!tasks.length&&next?`<p class="tiny muted">다음 예정 학습은 ${next.date}입니다. 오늘도 단어 퀴즈와 자유 학습을 할 수 있어요.<\/p>`:''}<\/section>${overdue.length?`<section class="section"><h2 class="h2">이전 일정에서 이어서 · ${overdue.length}개<\/h2><div class="gap-top">${taskListHTML(overdue.slice(0,3),{move:false})}<\/div><\/section>`:''}<section class="learn-grid section"><article class="panel pad"><span class="eyebrow">VOCABULARY<\/span><h2 class="h2">단어를 나의 것으로<\/h2><p class="lead">플래시카드·뜻 찾기·듣기·직접 입력. 복습할 단어 ${vocabPool('due').length}개가 기다리고 있어요.<\/p><button class="btn primary gap-top" data-act="word-quiz-start" data-source="daily">오늘의 단어 퀴즈<\/button><\/article><article class="panel pad"><span class="eyebrow">CHAPTER COURSES<\/span><h2 class="h2">시험도 챕터별로 차근차근<\/h2><p class="lead">토익 8챕터 · 토스 6챕터 · 오픽 8챕터. 핵심 표현과 단어를 익힌 뒤 연습해요.<\/p><button class="btn gap-top" data-act="goto" data-to="exams">시험 과정 열기 →<\/button><\/article><\/section>${reportHTML()}`;
 }
 function reportHTML(){const h=state.wordHistory,last=h.slice(-10),correct=last.reduce((n,r)=>n+r.correct,0),total=last.reduce((n,r)=>n+r.total,0),doneChapters=Object.entries(ADVANCED.chapters).flatMap(([t,cs])=>cs.filter(c=>c.units.every(id=>state.examRecords[id]?.completed)));return `<section class="panel pad section study-report"><h2 class="h2">나의 학습 리포트<\/h2><div class="stat-grid"><div><span class="tiny muted">최근 단어 퀴즈 정확도<\/span><p class="stat-value">${total?pct(correct,total)+'%':'—'}<\/p><span class="tiny muted">최근 ${last.length}회 · ${correct}/${total}문항<\/span><\/div><div><span class="tiny muted">완료한 시험 챕터<\/span><p class="stat-value">${doneChapters.length} / 22<\/p><\/div><div><span class="tiny muted">다시 익힐 단어<\/span><p class="stat-value">${vocabPool('weak').length}개<\/p><button class="btn small" data-act="word-quiz-start" data-source="weak">오답 단어 복습<\/button><\/div><\/div><\/section>`}
-function examOverviewHTML(){return `<div class="page-head"><div><span class="eyebrow">CHAPTER COURSES<\/span><h1 class="h1">시험별 전체 학습 과정<\/h1><p class="lead">핵심 개념 → 필수 단어 → 세 가지 연습. 챕터별로 완성해요.<\/p><\/div><\/div><div class="exam-grid">${Object.entries(EXTRA.tracks).map(([t,x])=>{const cs=ADVANCED.chapters[t],done=x.units.filter(u=>state.examRecords[u.id]?.completed).length;return `<section class="panel pad exam-card"><span class="round-tag">${cs.length}챕터 · ${x.units.length}개 연습<\/span><h2 class="h1">${x.title}<\/h2><p class="lead">${x.description}<\/p><div class="progress-track gap-top"><div class="progress-fill" style="width:${pct(done,x.units.length)}%"><\/div><\/div><p class="tiny muted">${done} / ${x.units.length} 연습 완료${state.plan.targets[t]?' · 목표 '+esc(state.plan.targets[t]):''}<\/p><button class="btn primary" data-act="course-track" data-track="${t}">전체 챕터 보기 →<\/button><\/section>`}).join('')}<\/div><div class="tip gap-top">직접 만든 기초·입문 학습 과정입니다. 공식 기출·모의고사가 아니며 시험 점수나 말하기 등급을 자동 산출하지 않습니다.<\/div>`}
+function examOverviewHTML(){return `<div class="page-head"><div><span class="eyebrow">CHAPTER COURSES<\/span><h1 class="h1">시험별 전체 학습 과정<\/h1><p class="lead">핵심 개념 → 필수 단어 → 세 가지 연습. 챕터별로 완성해요.<\/p><\/div><button class="btn primary" data-act="goto" data-to="resources">공식 자료·모의연습 →<\/button><\/div><div class="exam-grid">${Object.entries(EXTRA.tracks).map(([t,x])=>{const cs=ADVANCED.chapters[t],done=x.units.filter(u=>state.examRecords[u.id]?.completed).length;return `<section class="panel pad exam-card"><span class="round-tag">${cs.length}챕터 · ${x.units.length}개 연습<\/span><h2 class="h1">${x.title}<\/h2><p class="lead">${x.description}<\/p><div class="progress-track gap-top"><div class="progress-fill" style="width:${pct(done,x.units.length)}%"><\/div><\/div><p class="tiny muted">${done} / ${x.units.length} 연습 완료${state.plan.targets[t]?' · 목표 '+esc(state.plan.targets[t]):''}<\/p><button class="btn primary" data-act="course-track" data-track="${t}">전체 챕터 보기 →<\/button><\/section>`}).join('')}<\/div><div class="tip gap-top">직접 만든 기초·입문 학습 과정입니다. 공식 기출·모의고사가 아니며 시험 점수나 말하기 등급을 자동 산출하지 않습니다.<\/div>`}
 function chaptersHTML(){const track=EXTRA.tracks[chapterTrack];return `<div class="back-row"><button class="btn small" data-act="goto" data-to="exams">← 시험 선택<\/button><\/div><div class="page-head"><div><span class="eyebrow">${track.subtitle}<\/span><h1 class="h1">${track.title} 챕터별 학습<\/h1><p class="lead">각 챕터에서 표현과 단어를 익히고 연습을 마쳐보세요.<\/p><\/div><\/div><div class="chapter-grid">${ADVANCED.chapters[chapterTrack].map((c,i)=>{const done=c.units.filter(id=>state.examRecords[id]?.completed).length;return `<article class="panel pad"><span class="round-tag">CHAPTER ${i+1} · ${done}/${c.units.length} 완료<\/span><h2 class="h2 gap-top">${esc(c.title)}<\/h2><p class="lead">${esc(c.goal)}<\/p><div class="progress-track gap-top"><div class="progress-fill" style="width:${pct(done,c.units.length)}%"><\/div><\/div><button class="btn gap-top" data-act="course-chapter" data-track="${chapterTrack}" data-chapter="${c.id}">챕터 열기 →<\/button><\/article>`}).join('')}<\/div>`}
 function chapterForUnit(track,index){return ADVANCED.chapters[track].find(c=>c.units.includes(EXTRA.tracks[track].units[index]?.id))}
-function chapterHTML(){const c=ADVANCED.chapters[chapterTrack].find(c=>c.id===chapterId);return `<div class="back-row"><button class="btn small" data-act="course-track" data-track="${chapterTrack}">← 챕터 목록<\/button><span class="pill">${EXTRA.tracks[chapterTrack].title}<\/span><\/div><div class="panel pad"><span class="eyebrow">CHAPTER GUIDE<\/span><h1 class="h1">${esc(c.title)}<\/h1><p class="lead">${esc(c.goal)}<\/p><div class="callout gap-top"><h2 class="h3">먼저 기억해요<\/h2><ol>${c.guide.map(s=>`<li>${esc(s)}<\/li>`).join('')}<\/ol><\/div><h2 class="h2 gap-top">이 챕터의 필수 단어<\/h2><div class="vocab-list gap-top">${c.vocab.map(w=>`<article class="vocab-item"><strong>${esc(w.word)}<\/strong><p class="tiny muted">${esc(w.meaning)}<\/p><button class="btn small" data-act="speak" data-text="${attr(w.word)}">🔊 듣기<\/button><\/article>`).join('')}<\/div><button class="btn gap-top" data-act="chapter-vocab" data-track="${chapterTrack}" data-chapter="${c.id}">이 챕터 단어 퀴즈<\/button><h2 class="h2 gap-top">실전으로 연결하는 연습<\/h2><div class="task-list gap-top">${c.units.map((id,n)=>{const index=EXTRA.tracks[chapterTrack].units.findIndex(u=>u.id===id),u=EXTRA.tracks[chapterTrack].units[index];return `<article class="task-row"><span class="task-status">${state.examRecords[id]?.completed?'✓':n+1}<\/span><div class="task-copy"><strong>${esc(u.title)}<\/strong><p class="tiny muted">${esc(u.kind)}<\/p><button class="btn primary small" data-act="exam-open" data-track="${chapterTrack}" data-unit="${index}">연습하기 →<\/button><\/div><\/article>`}).join('')}<\/div><\/div>`}
+function chapterHTML(){const c=ADVANCED.chapters[chapterTrack].find(c=>c.id===chapterId);return `<div class="back-row"><button class="btn small" data-act="course-track" data-track="${chapterTrack}">← 챕터 목록<\/button><span class="pill">${EXTRA.tracks[chapterTrack].title}<\/span><\/div><div class="panel pad"><span class="eyebrow">CHAPTER GUIDE<\/span><h1 class="h1">${esc(c.title)}<\/h1><p class="lead">${esc(c.goal)}<\/p><div class="callout gap-top"><h2 class="h3">먼저 기억해요<\/h2><ol>${c.guide.map(s=>`<li>${esc(s)}<\/li>`).join('')}<\/ol><\/div>${chapterPhotoHTML(chapterTrack,c)}<h2 class="h2 gap-top">이 챕터의 필수 단어<\/h2><div class="vocab-list gap-top">${c.vocab.map(w=>`<article class="vocab-item"><strong>${esc(w.word)}<\/strong><p class="tiny muted">${esc(w.meaning)}<\/p><button class="btn small" data-act="speak" data-text="${attr(w.word)}">🔊 듣기<\/button><\/article>`).join('')}<\/div><button class="btn gap-top" data-act="chapter-vocab" data-track="${chapterTrack}" data-chapter="${c.id}">이 챕터 단어 퀴즈<\/button><h2 class="h2 gap-top">실전으로 연결하는 연습<\/h2><div class="task-list gap-top">${c.units.map((id,n)=>{const index=EXTRA.tracks[chapterTrack].units.findIndex(u=>u.id===id),u=EXTRA.tracks[chapterTrack].units[index];return `<article class="task-row"><span class="task-status">${state.examRecords[id]?.completed?'✓':n+1}<\/span><div class="task-copy"><strong>${esc(u.title)}<\/strong><p class="tiny muted">${esc(u.kind)}<\/p><button class="btn primary small" data-act="exam-open" data-track="${chapterTrack}" data-unit="${index}">연습하기 →<\/button><\/div><\/article>`}).join('')}<\/div><\/div>`}
 function openCourseUnit(track,index){stopActivities();examTrack=track;examUnit=index;examRevealed=false;listenTranscript=false;screen='exam';render();window.scrollTo({top:0,behavior:'instant'})}
 function handlePlannerAction(a,b){
+ if(a==='plan-weekend-enable'){state.plan.days=[...new Set([...state.plan.days,0,6])].sort();state.plan.weekendMinutes=60;state.plan.autoCarry=true;save();render();document.getElementById('plan-message').textContent='주말 60분과 자동 이월을 적용했어요. 기존 진도는 유지됩니다.';return true}
  if(a==='plan-settings'){document.getElementById('plan-settings')?.scrollIntoView({behavior:'smooth',block:'start'});return true}
  if(a==='plan-day'){plannerDate=b.dataset.date;render();return true}
  if(a==='plan-today'){plannerDate=dateStr();plannerMonth=plannerDate.slice(0,7);render();return true}
@@ -5014,15 +5676,15 @@ function handlePlannerAction(a,b){
  if(a==='plan-delete'){if(confirm('이 직접 추가한 일정을 삭제할까요?')){state.customTasks=state.customTasks.filter(t=>t.id!==b.dataset.id);save();render()}return true}
  if(a==='plan-open'){const t=buildStudyPlan().find(t=>t.id===b.dataset.id);if(!t)return true;if(t.type==='foundation')openDay(t.ref);else if(t.type==='exam')openCourseUnit(t.track,t.ref);else if(t.type==='vocab')startWordQuiz('daily',null,t.id,t.date);else{const r=state.customTasks.find(r=>r.id===t.id);r.done=!r.done;r.doneAt=r.done?dateStr():'';save();render()}return true}
  if(a==='course-track'){if(!EXTRA.tracks[b.dataset.track])return true;stopActivities();chapterTrack=b.dataset.track;screen='chapters';render();window.scrollTo({top:0,behavior:'instant'});return true}
- if(a==='course-chapter'){if(!ADVANCED.chapters[b.dataset.track]?.some(c=>c.id===b.dataset.chapter))return true;stopActivities();chapterTrack=b.dataset.track;chapterId=b.dataset.chapter;screen='chapter';render();window.scrollTo({top:0,behavior:'instant'});return true}
+ if(a==='course-chapter'){if(!ADVANCED.chapters[b.dataset.track]?.some(c=>c.id===b.dataset.chapter))return true;stopActivities();photoRevealed=false;chapterTrack=b.dataset.track;chapterId=b.dataset.chapter;screen='chapter';render();window.scrollTo({top:0,behavior:'instant'});return true}
  if(a==='chapter-vocab'){const c=ADVANCED.chapters[b.dataset.track]?.find(c=>c.id===b.dataset.chapter);if(c)startWordQuiz('chapter',c.vocab.map(w=>w.word));return true}
  return false;
 }
 app.addEventListener('submit',event=>{
  if(event.target.id==='plan-form'){
   event.preventDefault();const f=new FormData(event.target),days=f.getAll('days').map(Number);if(!days.length){document.getElementById('plan-message').textContent='공부할 요일을 하나 이상 골라주세요.';return}
-  const start=f.get('start'),minutes=Number(f.get('minutes')),focus=f.get('focus');if(!validDay(start)||![30,60,90].includes(minutes)||!['balanced','toeic','speaking'].includes(focus))return;
-  state.plan={start,minutes,days,focus,targets:Object.fromEntries(['toeic','tos','opic'].map(t=>[t,String(f.get('goal-'+t)||'').slice(0,40)]))};save();plannerDate=start;plannerMonth=start.slice(0,7);render();document.getElementById('plan-message').textContent='계획을 저장하고 일정을 배정했어요.';
+  const start=f.get('start'),minutes=Number(f.get('minutes')),weekendMinutes=Number(f.get('weekendMinutes')),autoCarry=f.get('autoCarry')==='1',focus=f.get('focus');if(!validDay(start)||![30,60,90].includes(minutes)||![30,60,90].includes(weekendMinutes)||!['balanced','toeic','speaking'].includes(focus))return;
+  state.plan={start,minutes,weekendMinutes,autoCarry,days,focus,targets:Object.fromEntries(['toeic','tos','opic'].map(t=>[t,String(f.get('goal-'+t)||'').slice(0,40)]))};save();plannerDate=start;plannerMonth=start.slice(0,7);render();document.getElementById('plan-message').textContent='계획을 저장하고 일정을 배정했어요.';
  }
  if(event.target.id==='task-form'){
   event.preventDefault();const f=new FormData(event.target),title=String(f.get('title')||'').trim(),date=f.get('date'),minutes=Number(f.get('minutes'));if(!title||!validDay(date)||!Number.isInteger(minutes)||minutes<5||minutes>180)return;
@@ -5036,15 +5698,17 @@ function validWord(w){return typeof w==='string'&&/^[a-zA-Z][a-zA-Z '\u2019-]{0,
 function vocabBank(){
  const map=new Map();for(const [word,meaning] of allVocab)map.set(word,{word,meaning,sources:['basic']});
  for(const [track,chapters] of Object.entries(ADVANCED.chapters))for(const c of chapters)for(const w of c.vocab){const key=w.word.toLowerCase();if(map.has(key)){if(!map.get(key).sources.includes(track))map.get(key).sources.push(track)}else map.set(key,{word:key,meaning:w.meaning,sources:[track]})}
- for(const w of state.customWords){const key=w.word.toLowerCase();if(!map.has(key))map.set(key,{...w,word:key,sources:['custom']})}
+ for(const [track,words] of Object.entries(LIBRARY.words))for(const w of words){const key=w.word.toLowerCase();if(map.has(key)){if(!map.get(key).sources.includes(track))map.get(key).sources.push(track)}else map.set(key,{word:key,meaning:w.meaning,sources:[track]})}
+ for(const w of state.customWords){const key=w.word.toLowerCase();if(!map.has(key))map.set(key,{...w,word:key,sources:w.category&&w.category!=='custom'?['custom',w.category]:['custom']})}
  return [...map.values()];
 }
 function wordKnowledge(word){const r=Object.hasOwn(state.wordStats,word)?state.wordStats[word]:null,old=Object.hasOwn(state.srs,word)?state.srs[word]:null;return r||{attempts:0,correct:0,level:old?.level||0,due:old?.due||'',missed:false}}
-function studyDayNumber(day){const p=state.plan,a=p.start.split('-').map(Number),b=day.split('-').map(Number),diff=Math.max(0,Math.floor((Date.UTC(b[0],b[1]-1,b[2])-Date.UTC(a[0],a[1]-1,a[2]))/86400000));let n=Math.floor(diff/7)*p.days.length;const weekDay=new Date(p.start+'T12:00:00').getDay();for(let i=0;i<diff%7;i++)if(p.days.includes((weekDay+i)%7))n++;return n}
+function studyWordOffset(day){const p=state.plan,a=p.start.split('-').map(Number),b=day.split('-').map(Number),diff=Math.max(0,Math.floor((Date.UTC(b[0],b[1]-1,b[2])-Date.UTC(a[0],a[1]-1,a[2]))/86400000));const first=new Date(p.start+'T12:00:00').getDay(),count=d=>(d===0||d===6?p.weekendMinutes:p.minutes)>=60?20:10,weekly=p.days.reduce((n,d)=>n+count(d),0);let offset=Math.floor(diff/7)*weekly;for(let i=0;i<diff%7;i++){const d=(first+i)%7;if(p.days.includes(d))offset+=count(d)}return offset}
+
 function vocabPool(source=state.wordPrefs.source,day=dateStr()){
  const bank=vocabBank();
  if(source==='all')return bank;
- if(source==='daily'){const size=state.plan.minutes===90?20:state.plan.minutes===60?15:10,start=(studyDayNumber(day)*size)%bank.length,due=bank.filter(w=>{const r=wordKnowledge(w.word);return r.due&&r.due<=dateStr()}).sort((a,b)=>wordKnowledge(a.word).due.localeCompare(wordKnowledge(b.word).due)).slice(0,Math.floor(size/2)),picked=[...due],used=new Set(due.map(w=>w.word));for(let i=0;i<bank.length&&picked.length<size;i++){const w=bank[(start+i)%bank.length];if(!used.has(w.word)){picked.push(w);used.add(w.word)}}return picked}
+ if(source==='daily'){const size=dailyWordGoal(day),start=studyWordOffset(day)%bank.length,due=bank.filter(w=>{const r=wordKnowledge(w.word);return r.due&&r.due<=dateStr()}).sort((a,b)=>wordKnowledge(a.word).due.localeCompare(wordKnowledge(b.word).due)).slice(0,Math.floor(size/2)),picked=[...due],used=new Set(due.map(w=>w.word));for(let i=0;i<bank.length&&picked.length<size;i++){const w=bank[(start+i)%bank.length];if(!used.has(w.word)){picked.push(w);used.add(w.word)}}return picked}
  if(source==='starred')return bank.filter(w=>state.starred.includes(w.word));
  if(source==='weak')return bank.filter(w=>wordKnowledge(w.word).missed);
  if(source==='due')return bank.filter(w=>{const r=wordKnowledge(w.word);return r.due&&r.due<=dateStr()}).sort((a,b)=>wordKnowledge(a.word).due.localeCompare(wordKnowledge(b.word).due));
@@ -5056,8 +5720,8 @@ function applyWordResult(word,correct,isQuiz){
 }
 function vocabListHTML(){let rows=vocabPool();const query=wordSearch.toLowerCase().trim();if(query)rows=rows.filter(w=>w.word.includes(query)||w.meaning.includes(query));if(!rows.length)return '<div class="empty">조건에 맞는 단어가 없어요. 단어 묶음을 바꾸거나 직접 추가해보세요.<\/div>';return `<div class="vocab-list">${rows.slice(0,200).map(w=>{const r=wordKnowledge(w.word);return `<article class="vocab-item"><div class="vocab-item-head"><strong lang="en">${esc(w.word)}<\/strong><button class="btn small" data-act="star" data-word="${attr(w.word)}" aria-label="${attr(w.word)} 즐겨찾기">${state.starred.includes(w.word)?'★':'☆'}<\/button><\/div><p class="muted">${wordMeaningsVisible?esc(w.meaning):'뜻을 가렸어요'}<\/p><span class="tiny muted">${r.level>=3?'익숙해요':r.missed?'다시 익히기':r.level?'복습 중':'새 단어'}${r.due?' · 복습 '+r.due:''}<\/span><div class="button-row gap-top"><button class="btn small" data-act="speak" data-text="${attr(w.word)}">🔊 듣기<\/button>${w.sources.includes('custom')?`<button class="btn small" data-act="word-edit" data-word="${attr(w.word)}">수정<\/button><button class="btn small" data-act="word-delete" data-word="${attr(w.word)}">삭제<\/button>`:''}<\/div><\/article>`}).join('')}<\/div>${rows.length>200?'<p class="tiny muted">먼저 200개를 표시합니다. 검색하면 다른 단어도 찾을 수 있어요.<\/p>':''}`}
 function vocabHTML(){
- const pool=vocabPool(),index=pool.length?flashcardIndex%pool.length:0,w=pool[index],bank=vocabBank(),mastered=bank.filter(w=>wordKnowledge(w.word).level>=3).length,edited=state.customWords.find(w=>w.word===editingWord);
- return `<div class="page-head"><div><span class="eyebrow">MY WORD STUDIO<\/span><h1 class="h1">단어 학습실<\/h1><p class="lead">보고, 듣고, 떠올리고, 직접 쓰면서 내 단어로 만들어요.<\/p><\/div><span class="pill">${bank.length}개 중 ${mastered}개 익숙해짐<\/span><\/div><div class="panel pad"><div class="word-controls"><label>단어 묶음<select id="word-source" class="search">${WORD_SOURCES.map(([key,title])=>`<option value="${key}" ${state.wordPrefs.source===key?'selected':''}>${title}<\/option>`).join('')}<\/select><\/label><label>퀴즈 방식<select id="word-mode" class="search">${WORD_MODES.map(([key,title])=>`<option value="${key}" ${state.wordPrefs.mode===key?'selected':''}>${title}<\/option>`).join('')}<\/select><\/label><label>문제 수<select id="word-size" class="search">${[5,10,20].map(n=>`<option value="${n}" ${state.wordPrefs.size===n?'selected':''}>${n}문제<\/option>`).join('')}<\/select><\/label><button class="btn primary" data-act="word-quiz-start" ${pool.length?'':'disabled'}>단어장 퀴즈 시작<\/button><\/div><p class="tiny muted">현재 묶음 ${pool.length}개 · 요청한 문제 수보다 단어가 적으면 가능한 수만큼 출제됩니다.<\/p>${wordQuizMessage?`<p class="tip" role="status">${esc(wordQuizMessage)}<\/p>`:''}<\/div><section class="panel pad section"><div class="card-header"><h2 class="h2">플래시카드<\/h2><span class="pill">${pool.length?index+1:0} / ${pool.length}<\/span><\/div>${w?`<button class="flashcard" data-act="word-flip" aria-label="${flashcardFace?'영어 보기':'뜻 확인하기'}"><span class="soft-label">${flashcardFace?'MEANING':'ENGLISH'}<\/span><strong lang="${flashcardFace?'ko':'en'}">${esc(flashcardFace?w.meaning:w.word)}<\/strong><span class="tiny muted">카드를 눌러 ${flashcardFace?'영어':'뜻'} 확인<\/span><\/button><div class="button-row gap-top"><button class="btn" data-act="word-card-step" data-step="-1">← 이전<\/button><button class="btn" data-act="speak" data-text="${attr(w.word)}">🔊 발음 듣기<\/button><button class="btn" data-act="word-card-step" data-step="1">다음 →<\/button><\/div><div class="button-row gap-top"><button class="btn green" data-act="word-card-known" data-known="1">기억나요 ✓<\/button><button class="btn" data-act="word-card-known" data-known="0">다시 익힐래요<\/button><\/div><p class="tiny muted">기억한 단어는 1·3·7·14·30일 간격으로 복습합니다. 같은 날 반복해서 맞혀도 숙련 단계가 계속 올라가지는 않아요.<\/p>`:'<div class="empty">이 묶음에는 아직 단어가 없어요. 다른 묶음을 선택해 주세요.<\/div>'}<\/section><section class="panel pad section"><div class="card-header"><h2 class="h2">단어 목록<\/h2><button class="btn small" data-act="toggle-word-meanings">뜻 ${wordMeaningsVisible?'가리기':'보기'}<\/button><\/div><input id="searchWords" data-search="words" class="search" aria-label="단어 검색" value="${attr(wordSearch)}" placeholder="영어 또는 한글 뜻 검색"><div id="vocab-results" class="gap-top">${vocabListHTML()}<\/div><\/section><section class="panel pad section"><h2 class="h2">${edited?'내 단어 수정':'나만의 단어 추가'}<\/h2><form id="custom-word-form" class="word-controls gap-top"><label>영어 단어·표현<input class="search" name="word" required maxlength="60" value="${attr(edited?.word||'')}" placeholder="예: take a walk" ${edited?'readonly':''}><\/label><label>뜻<input class="search" name="meaning" required maxlength="100" value="${attr(edited?.meaning||'')}" placeholder="예: 산책하다"><\/label><button class="btn primary">${edited?'수정 저장':'단어 추가'}<\/button>${edited?'<button class="btn" type="button" data-act="word-edit-cancel">수정 취소<\/button>':''}<\/form><p id="custom-word-message" class="tiny muted" role="status">직접 추가한 단어도 내 단어 묶음에서 카드와 퀴즈로 학습할 수 있어요.<\/p><\/section>${reportHTML()}`;
+ const pool=vocabPool(),bank=vocabBank(),mastered=bank.filter(w=>wordKnowledge(w.word).level>=3).length,edited=state.customWords.find(w=>w.word===editingWord);
+ return `<div class="page-head"><div><span class="eyebrow">MY WORD STUDIO<\/span><h1 class="h1">단어 학습실<\/h1><p class="lead">보고, 듣고, 떠올리고, 직접 쓰면서 내 단어로 만들어요.<\/p><\/div><span class="pill">${bank.length}개 중 ${mastered}개 익숙해짐<\/span><\/div><div class="panel pad"><div class="word-controls"><label>단어 묶음<select id="word-source" class="search">${WORD_SOURCES.map(([key,title])=>`<option value="${key}" ${state.wordPrefs.source===key?'selected':''}>${title}<\/option>`).join('')}<\/select><\/label><label>퀴즈 방식<select id="word-mode" class="search">${WORD_MODES.map(([key,title])=>`<option value="${key}" ${state.wordPrefs.mode===key?'selected':''}>${title}<\/option>`).join('')}<\/select><\/label><label>문제 수<select id="word-size" class="search">${[5,10,20].map(n=>`<option value="${n}" ${state.wordPrefs.size===n?'selected':''}>${n}문제<\/option>`).join('')}<\/select><\/label><button class="btn primary" data-act="word-quiz-start" ${pool.length?'':'disabled'}>단어장 퀴즈 시작<\/button><\/div><p class="tiny muted">현재 묶음 ${pool.length}개 · 요청한 문제 수보다 단어가 적으면 가능한 수만큼 출제됩니다.<\/p>${wordQuizMessage?`<p class="tip" role="status">${esc(wordQuizMessage)}<\/p>`:''}<\/div>${wordBooksHTML()}${flashcardHTML()}<section class="panel pad section"><div class="card-header"><h2 class="h2">단어 목록<\/h2><button class="btn small" data-act="toggle-word-meanings">뜻 ${wordMeaningsVisible?'가리기':'보기'}<\/button><\/div><input id="searchWords" data-search="words" class="search" aria-label="단어 검색" value="${attr(wordSearch)}" placeholder="영어 또는 한글 뜻 검색"><div id="vocab-results" class="gap-top">${vocabListHTML()}<\/div><\/section><section class="panel pad section"><h2 class="h2">${edited?'내 단어 수정':'나만의 단어 추가'}<\/h2><form id="custom-word-form" class="word-controls gap-top"><label>영어 단어·표현<input class="search" name="word" required maxlength="60" value="${attr(edited?.word||'')}" placeholder="예: take a walk" ${edited?'readonly':''}><\/label><label>뜻<input class="search" name="meaning" required maxlength="100" value="${attr(edited?.meaning||'')}" placeholder="예: 산책하다"><\/label><label>단어장 분류<select class="search" name="category">${[['custom','나만의 단어'],['basic','기본 단어'],['toeic','토익'],['tos','토스'],['opic','오픽']].map(([key,title])=>`<option value="${key}" ${edited?.category===key?'selected':''}>${title}<\/option>`).join('')}<\/select><\/label><button class="btn primary">${edited?'수정 저장':'단어 추가'}<\/button>${edited?'<button class="btn" type="button" data-act="word-edit-cancel">수정 취소<\/button>':''}<\/form><p id="custom-word-message" class="tiny muted" role="status">직접 추가한 단어도 내 단어 묶음에서 카드와 퀴즈로 학습할 수 있어요.<\/p><\/section>${reportHTML()}`;
 }
 function startWordQuiz(source=state.wordPrefs.source,words=null,taskId='',day=dateStr()){
  const pool=words?vocabBank().filter(w=>words.includes(w.word)):vocabPool(source,day);
@@ -5083,11 +5747,12 @@ function handleWordAction(a,b){
  if(a==='word-quiz-retry'){if(wordQuiz?.wrong.length)startWordQuiz('retry',[...wordQuiz.wrong],'retry');return true}
  if(a==='word-quiz-exit'){if(wordQuiz&&!wordQuiz.finished&&!confirm('진행 중인 퀴즈를 나갈까요? 답한 단어의 학습 기록은 저장됩니다.'))return true;goToScreen('vocab');return true}
  if(a==='word-flip'){flashcardFace=!flashcardFace;render();return true}
- if(a==='word-card-step'){const size=vocabPool().length;if(size)flashcardIndex=(flashcardIndex+Number(b.dataset.step)+size)%size;flashcardFace=false;render();return true}
- if(a==='word-card-known'){const pool=vocabPool(),w=pool[flashcardIndex%pool.length];if(w){applyWordResult(w.word,b.dataset.known==='1',false);const next=vocabPool(),position=next.findIndex(x=>x.word===w.word);flashcardIndex=position<0?Math.min(flashcardIndex,Math.max(0,next.length-1)):position+1;flashcardFace=false;render()}return true}
+ if(a==='word-card-step'){answerCard(false,true);return true}
+ if(a==='word-card-known'){answerCard(b.dataset.known==='1');return true}
+ if(a==='word-book'){state.wordPrefs.source=b.dataset.source;flashcardFace=false;wordSearch='';save();render();return true}
  if(a==='word-edit'){editingWord=b.dataset.word;render();document.getElementById('custom-word-form').scrollIntoView({behavior:'smooth',block:'center'});return true}
  if(a==='word-edit-cancel'){editingWord='';render();return true}
- if(a==='word-delete'){if(confirm('직접 추가한 이 단어를 삭제할까요?')){state.customWords=state.customWords.filter(w=>w.word!==b.dataset.word);state.starred=state.starred.filter(w=>w!==b.dataset.word);delete state.wordStats[b.dataset.word];editingWord='';save();render()}return true}
+ if(a==='word-delete'){if(confirm('직접 추가한 이 단어를 삭제할까요?')){state.customWords=state.customWords.filter(w=>w.word!==b.dataset.word);state.starred=state.starred.filter(w=>w!==b.dataset.word);delete state.wordStats[b.dataset.word];state.cardSessions={};editingWord='';save();render()}return true}
  return false;
 }
 app.addEventListener('change',event=>{const t=event.target;if(t.id==='word-source'){state.wordPrefs.source=t.value;flashcardIndex=0;flashcardFace=false;wordSearch='';wordQuizMessage='';save();render()}if(t.id==='word-mode'){state.wordPrefs.mode=t.value;save()}if(t.id==='word-size'){state.wordPrefs.size=Number(t.value);save()}});
@@ -5096,10 +5761,99 @@ app.addEventListener('submit',event=>{
  if(event.target.id==='custom-word-form'){
   event.preventDefault();const f=new FormData(event.target),word=String(f.get('word')||'').trim().toLowerCase(),meaning=String(f.get('meaning')||'').trim(),message=document.getElementById('custom-word-message');
   if(!validWord(word)||!meaning){message.textContent='영어 단어·표현과 뜻을 입력해 주세요. 영어에는 알파벳·공백·아포스트로피·하이픈을 사용할 수 있어요.';return}
-  if(editingWord){const item=state.customWords.find(w=>w.word===editingWord);if(item)item.meaning=meaning.slice(0,100)}else{if(vocabBank().some(w=>w.word===word)){message.textContent='이미 단어장에 있는 단어예요.';return}if(state.customWords.length>=200){message.textContent='직접 추가한 단어는 200개까지 저장할 수 있어요.';return}state.customWords.push({word,meaning:meaning.slice(0,100)})}
-  editingWord='';state.wordPrefs.source='custom';flashcardIndex=state.customWords.length-1;flashcardFace=false;save();render();document.getElementById('custom-word-message').textContent='단어를 저장했어요. 내 단어 묶음에서 퀴즈로 만나보세요.';
+  if(editingWord){const item=state.customWords.find(w=>w.word===editingWord);if(item){item.meaning=meaning.slice(0,100);item.category=String(f.get('category')||'custom')}}else{if(vocabBank().some(w=>w.word===word)){message.textContent='이미 단어장에 있는 단어예요.';return}if(state.customWords.length>=1000){message.textContent='직접 추가한 단어는 1000개까지 저장할 수 있어요.';return}state.customWords.push({word,meaning:meaning.slice(0,100),category:String(f.get('category')||'custom')})}
+  editingWord='';state.cardSessions={};state.wordPrefs.source='custom';flashcardIndex=state.customWords.length-1;flashcardFace=false;save();render();document.getElementById('custom-word-message').textContent='단어를 저장했어요. 내 단어 묶음에서 퀴즈로 만나보세요.';
  }
 });
+
+function cardSourceWords(source){
+ if(source==='daily'){const bank=vocabBank(),offset=studyWordOffset(dateStr())%bank.length,rotated=bank.slice(offset).concat(bank.slice(0,offset));return rotated}
+ if(source==='due'||source==='weak')return vocabBank();
+ return vocabPool(source);
+}
+function cardEligible(word){const r=wordKnowledge(word),source=state.wordPrefs.source;if(source==='due'&&(!r.due||r.due>dateStr()))return false;if(source==='weak'&&!r.missed)return false;return !(r.level>0&&r.due&&r.due>dateStr())}
+function currentCardDeck(){
+ const source=state.wordPrefs.source,pool=cardSourceWords(source),byWord=new Map(pool.map(w=>[w.word,w]));
+ let d=state.cardSessions[source];if(!d||d.day!==dateStr())d=state.cardSessions[source]={day:dateStr(),cursor:0,queue:[],retry:[],draws:0,known:0};
+ d.queue=[...new Set(d.queue)].filter(w=>byWord.has(w)&&cardEligible(w));d.retry=[...new Set(d.retry)].filter(w=>byWord.has(w)&&cardEligible(w)&&!d.queue.includes(w));
+ const nextNew=()=>{while(d.cursor<pool.length){const word=pool[d.cursor++].word;if(cardEligible(word)&&!d.queue.includes(word)&&!d.retry.includes(word))return word}return null};
+ while(d.queue.length<8){
+  let word;if(d.retry.length&&d.draws%3===2)word=d.retry.shift();else word=nextNew()||d.retry.shift();
+  if(!word)break;d.queue.push(word);d.draws++;
+ }
+ return {deck:d,word:byWord.get(d.queue[0]),remaining:pool.filter(w=>cardEligible(w.word)).length,poolSize:['due','weak'].includes(source)?pool.filter(w=>cardEligible(w.word)).length:pool.length};
+}
+function answerCard(known,skip=false){
+ const {deck,word}=currentCardDeck();if(!word)return;deck.queue.shift();
+ if(!known&&!deck.retry.includes(word.word))deck.retry.push(word.word);
+ if(known)deck.known++;
+ if(!skip)applyWordResult(word.word,known,false);
+ flashcardFace=false;currentCardDeck();save();render();
+}
+function flashcardHTML(){
+ const {deck,word:w,remaining,poolSize}=currentCardDeck();return `<section class="panel pad section"><div class="card-header"><h2 class="h2">이어지는 플래시카드<\/h2><span class="pill">기억남 ${deck.known}개<\/span><\/div><p class="tiny muted">남은 단어 ${remaining}개 · 묶음 전체 ${poolSize}개 · 다시 익힐 카드 ${new Set([...deck.retry,...deck.queue.filter(w=>wordKnowledge(w).missed)]).size}개<\/p>${w?`<button class="flashcard" data-act="word-flip" aria-label="${flashcardFace?'영어 보기':'뜻 확인하기'}"><span class="soft-label">${flashcardFace?'MEANING':'ENGLISH'}<\/span><strong lang="${flashcardFace?'ko':'en'}">${esc(flashcardFace?w.meaning:w.word)}<\/strong><span class="tiny muted">눌러서 ${flashcardFace?'영어':'뜻'} 확인<\/span><\/button><div class="button-row gap-top"><button class="btn" data-act="speak" data-text="${attr(w.word)}">🔊 발음 듣기<\/button><button class="btn" data-act="word-card-step" data-step="1">나중에 판단 · 다음 카드<\/button><\/div><div class="button-row gap-top"><button class="btn green" data-act="word-card-known" data-known="1">기억나요 · 이번 학습에서 빼기 ✓<\/button><button class="btn" data-act="word-card-known" data-known="0">다시 익힐래요 · 뒤로 보내기<\/button><\/div>`:`<div class="empty"><strong>이 묶음에서 지금 학습할 카드를 모두 마쳤어요.<\/strong><p>기억한 단어는 다음 복습일에 다시 만나요. 다른 단어장을 선택하면 새 단어로 이어갈 수 있어요.<\/p><\/div>`}<p class="tiny muted gap-top">기억한 카드는 복습일 전까지 다시 나오지 않아요. 어려운 카드는 뒤에서 반복되고 새 카드도 계속 섞입니다. ‘오늘의 단어’ 카드는 하루 퀴즈 분량을 넘어 전체 단어에서 계속 공급합니다.<\/p><\/section>`;
+}
+function wordBooksHTML(){return `<div class="word-books section">${[['basic','기본 단어'],['toeic','토익 단어'],['tos','토스 표현'],['opic','오픽 표현']].map(([key,title])=>`<button class="panel word-book ${state.wordPrefs.source===key?'active':''}" data-act="word-book" data-source="${key}"><span class="soft-label">${key.toUpperCase()}<\/span><strong>${title}<\/strong><span class="tiny muted">${vocabPool(key).length}개 · 카드와 퀴즈<\/span><\/button>`).join('')}<\/div><p class="tiny muted">시험별로 묶어서 학습할 수 있어요. 여러 묶음에 공통으로 들어 있는 단어는 기억·복습 상태를 함께 사용합니다.<\/p>`}
+
+let photoRevealed=false,miniTest=null,miniTicker=null;
+function photoHTML(photo){return `<figure class="lesson-photo"><img src="${photo.src}" alt="${attr(photo.alt)}" loading="lazy" width="1280" height="${photo.id==='photo-document'?854:960}"><figcaption><a href="${photo.source}" target="_blank" rel="noopener noreferrer">사진: ${photo.credit}<\/a><\/figcaption><\/figure>`}
+function chapterPhotoHTML(track,c){
+ if(!(track==='toeic'&&c.id==='t1'||track==='tos'&&c.id==='s2'||track==='opic'&&c.id==='o2'))return '';
+ const p=LIBRARY.photos[track==='tos'?0:1];return `<section class="panel pad section"><span class="eyebrow">PHOTO PRACTICE<\/span><h2 class="h2">사진과 연결해서 학습해요<\/h2>${photoHTML(p)}<p class="lead">${track==='opic'?'이런 장소를 방문한 경험을 떠올려 나만의 카페를 설명해보세요.':'사진 속 사람·사물·동작을 영어로 설명해보세요.'}<\/p><button class="btn gap-top" data-act="photo-model">${photoRevealed?'예시 닫기':'사진 설명 예시 보기'}<\/button>${photoRevealed?`<div class="callout gap-top"><p lang="en">${esc(p.model)}<\/p><button class="btn small gap-top" data-act="speak" data-text="${attr(p.model)}">🔊 예시 듣기<\/button><\/div>`:''}<p class="tiny muted">이 사진은 추가 학습용이며 아래 챕터 연습의 개별 상황 지문과 다를 수 있어요.<\/p><\/section>`;
+}
+function resourcesHTML(){
+ return `<div class="back-row"><button class="btn small" data-act="goto" data-to="exams">← 시험 과정<\/button><\/div><div class="page-head"><div><span class="eyebrow">EXAM PRACTICE & LIBRARY<\/span><h1 class="h1">공식 자료와 모의연습<\/h1><p class="lead">공식 PDF·기출 영상으로 형식을 익히고, 앱 안에서 시간을 재며 연습해요.<\/p><\/div><\/div><div class="exam-grid">${['toeic','tos','opic'].map(track=>`<article class="panel pad"><h2 class="h2">${EXTRA.tracks[track].title} 모의연습<\/h2><p class="lead">${track==='toeic'?'사진 포함 12문항 · 12분':track==='tos'?'유형별 11문항 · 20분':'주제별 12문항 · 40분'}<\/p><p class="tiny muted">직접 제작한 연습입니다. ${track==='toeic'?'정답 수와 해설을 확인합니다.':'답변 메모와 예시로 스스로 점검합니다.'} 공식 시험 점수·등급으로 환산하지 않습니다.<\/p><button class="btn primary gap-top" data-act="mock-start" data-track="${track}">제한시간 연습 시작<\/button><\/article>`).join('')}<\/div><section class="section"><h2 class="h2">공식 PDF·기출·체험 자료<\/h2><p class="tiny muted">원 제공 사이트에서 엽니다. 실제 시험 문제의 사진과 음성·영상은 각 공식 자료에서 확인해 주세요.<\/p><div class="chapter-grid gap-top">${LIBRARY.resources.map((r,i)=>`<article class="panel pad"><span class="round-tag">${EXTRA.tracks[r.track].title} · ${r.kind}<\/span><h3 class="h3 gap-top">${esc(r.title)}<\/h3><p class="lead gap-top">${esc(r.desc)}<\/p><div class="button-row gap-top"><a class="btn primary" href="${r.url}" target="_blank" rel="noopener noreferrer">공식 자료 열기 ↗<\/a><button class="btn" data-act="resource-plan" data-index="${i}">오늘 일정에 추가<\/button><\/div><\/article>`).join('')}<\/div><\/section><section class="panel pad section"><h2 class="h2">나의 모의연습 기록<\/h2>${state.mockHistory.length?`<div class="task-list gap-top">${state.mockHistory.map((r,i)=>`<article class="task-row"><div class="task-copy"><strong>${EXTRA.tracks[r.track].title} · ${r.date}<\/strong><p class="tiny muted">${r.track==='toeic'?r.correct+' / '+r.total+' 정답':r.answered+' / '+r.total+' 답변 메모'} · ${Math.floor(r.elapsed/60)}분 ${r.elapsed%60}초<\/p><button class="btn small" data-act="mock-history" data-index="${i}">결과 다시 보기<\/button><\/div><\/article>`).join('')}<\/div>`:'<p class="lead">제출한 모의연습 결과가 여기에 저장됩니다.<\/p>'}<\/section>`;
+}
+function mockQuestions(track){
+ const u=EXTRA.tracks[track].units;
+ if(track==='toeic'){
+  const photos=LIBRARY.photos.map(p=>({...p,id:p.id,type:'photo',title:'사진 묘사',text:'',why:p.why}));
+  const chapters=['t2','t2','t3','t4','t5','t5','t6','t7','t7','t8'],seen={};
+  return photos.concat(chapters.map(id=>{const c=ADVANCED.chapters.toeic.find(c=>c.id===id),n=seen[id]||0;seen[id]=n+1;const q=u.find(x=>x.id===c.units[n]);return {...q,type:q.kind.startsWith('LC')?'audio':'reading'}}));
+ }
+ if(track==='tos'){
+  const at=(c,i)=>u.find(x=>x.id===ADVANCED.chapters.tos.find(x=>x.id===c).units[i]);
+  return [at('s1',0),at('s1',1),...LIBRARY.photos.map(p=>({id:'tos-'+p.id,prompt:'Describe the picture in as much detail as you can.',ko:'사진의 사람·사물·행동을 설명해보세요.',model:p.model,photo:p})),at('s3',0),at('s3',1),at('s3',2),at('s4',0),at('s4',1),at('s4',2),at('s6',0)];
+ }
+ const ids=['o1','o2','o3','o4','o4','o5','o5','o6','o7','o7','o8','o8'],seen={};return ids.map(id=>{const c=ADVANCED.chapters.opic.find(c=>c.id===id),i=seen[id]||0;seen[id]=i+1;return u.find(x=>x.id===c.units[i])});
+}
+function normalizeMockHistory(x){
+ if(!Array.isArray(x))return [];return x.filter(r=>r&&['toeic','tos','opic'].includes(r.track)&&validDay(r.date)).slice(-5).map(r=>{
+  const qs=mockQuestions(r.track),answers={};for(const q of qs){const v=r.answers?.[q.id];if(q.options&&Number.isInteger(v)&&v>=0&&v<q.options.length)answers[q.id]=v;else if(!q.options&&typeof v==='string')answers[q.id]=v.slice(0,1000)}
+  return {track:r.track,date:r.date,total:qs.length,correct:r.track==='toeic'?qs.filter(q=>answers[q.id]===q.answer).length:null,answered:qs.filter(q=>q.options?answers[q.id]!==undefined:answers[q.id]?.trim()).length,elapsed:Number.isInteger(r.elapsed)?Math.max(0,Math.min(r.elapsed,7200)):0,answers};
+ });
+}
+function tickMock(){
+ if(!miniTest||miniTest.finished){clearInterval(miniTicker);miniTicker=null;return}
+ const left=Math.max(0,Math.ceil((miniTest.deadline-Date.now())/1000)),node=document.getElementById('mock-clock');if(node)node.textContent=Math.floor(left/60)+':'+String(left%60).padStart(2,'0');if(left===0)finishMock();
+}
+function startMock(track,history=null){
+ if(!['toeic','tos','opic'].includes(track))return;stopActivities();clearInterval(miniTicker);
+ const duration=track==='toeic'?12*60:track==='tos'?20*60:40*60;
+ miniTest={track,questions:mockQuestions(track),pos:0,answers:history?structuredClone(history.answers):{},start:Date.now(),deadline:Date.now()+duration*1000,duration,finished:!!history,result:history};screen='minitest';render();if(!history)miniTicker=setInterval(tickMock,1000);window.scrollTo({top:0,behavior:'instant'});
+}
+function finishMock(){
+ const m=miniTest;if(!m||m.finished)return;clearInterval(miniTicker);miniTicker=null;m.finished=true;
+ m.result={track:m.track,date:dateStr(),total:m.questions.length,correct:m.track==='toeic'?m.questions.filter(q=>m.answers[q.id]===q.answer).length:null,answered:m.questions.filter(q=>q.options?m.answers[q.id]!==undefined:m.answers[q.id]?.trim()).length,elapsed:Math.min(m.duration,Math.max(0,Math.floor((Date.now()-m.start)/1000))),answers:structuredClone(m.answers)};
+ state.mockHistory.push(m.result);state.mockHistory=state.mockHistory.slice(-5);save();if(screen==='minitest')render();
+}
+function miniTestHTML(){
+ const m=miniTest;if(!m)return resourcesHTML();
+ if(m.finished)return `<div class="back-row"><button class="btn small" data-act="goto" data-to="resources">← 자료·모의연습<\/button><\/div><section class="panel pad"><span class="eyebrow">PRACTICE REVIEW<\/span><h1 class="h1">${EXTRA.tracks[m.track].title} 모의연습 결과<\/h1><p class="lead">${m.track==='toeic'?m.result.correct+' / '+m.result.total+'문항 정답':m.result.answered+' / '+m.result.total+'문항 답변 메모'}<\/p><p class="tiny muted">공식 점수·등급 채점이 아닙니다. 말하기는 실제로 말해본 내용과 아래 예시를 비교해보세요.<\/p><div class="settings-list gap-top">${m.questions.map((q,i)=>`<article class="callout"><h3>${i+1}. ${esc(q.title||q.ko||'말하기 연습')}<\/h3>${q.type==='photo'?photoHTML(q):q.photo?photoHTML(q.photo):''}<p lang="en">${esc(q.text||q.prompt)}<\/p><p><strong>나의 답:<\/strong> ${q.options?(m.answers[q.id]!==undefined?esc(q.options[m.answers[q.id]]):'미응답'):esc(m.answers[q.id]||'메모 없음')}<\/p>${q.options?`<p><strong>정답:<\/strong> ${esc(q.options[q.answer])}<\/p><p>${esc(q.why)}<\/p>`:`<p><strong>예시:<\/strong> ${esc(q.model)}<\/p>`}<\/article>`).join('')}<\/div><\/section>`;
+ const q=m.questions[m.pos],answered=Object.keys(m.answers).filter(id=>typeof m.answers[id]==='number'||m.answers[id].trim()).length;
+ return `<div class="back-row"><span class="pill">${EXTRA.tracks[m.track].title} · ${m.pos+1} / ${m.questions.length}<\/span><span class="pill">남은 시간 <strong id="mock-clock">${Math.floor(Math.max(0,m.deadline-Date.now())/60000)}:${String(Math.floor(Math.max(0,m.deadline-Date.now())/1000)%60).padStart(2,'0')}<\/strong><\/span><\/div><section class="panel quiz"><span class="eyebrow">${m.track==='toeic'?'MINI MOCK PRACTICE':'SPEAKING FORMAT PRACTICE'}<\/span><p class="tiny muted">${answered}문항 답변 · 정답과 예시는 제출 후 확인합니다. 답변 메모는 1,000자까지 입력할 수 있어요.<\/p>${q.type==='photo'?photoHTML(q):q.photo?photoHTML(q.photo):''}${q.type==='audio'?`<button class="btn primary gap-top" data-act="speak" data-text="${attr(q.text)}">🔊 문제 듣기<\/button>`:`<div class="callout gap-top"><p class="english-sentence" lang="en">${esc(q.text||q.prompt)}<\/p>${q.ko?`<p>${esc(q.ko)}<\/p>`:''}<\/div>`}${q.options?`<h2 class="quiz-question">${esc(q.prompt)}<\/h2><div class="quiz-options">${q.options.map((x,i)=>`<button class="quiz-option ${m.answers[q.id]===i?'mock-selected':''}" data-act="mock-answer" data-choice="${i}">${esc(x)}<\/button>`).join('')}<\/div>`:`<button class="btn gap-top" data-act="speak" data-text="${attr(q.prompt)}">🔊 질문 듣기<\/button><label for="mock-notes" class="strong" style="display:block;margin-top:18px">말한 내용·답변 메모<\/label><textarea id="mock-notes" class="search gap-top" maxlength="1000" rows="6" placeholder="먼저 소리 내어 말한 뒤 핵심 내용을 적어보세요.">${esc(m.answers[q.id]||'')}<\/textarea>`}<div class="button-row gap-top"><button class="btn" data-act="mock-step" data-step="-1" ${m.pos===0?'disabled':''}>← 이전<\/button><button class="btn" data-act="mock-step" data-step="1" ${m.pos===m.questions.length-1?'disabled':''}>다음 →<\/button><button class="btn primary" data-act="mock-submit">제출하고 결과 보기<\/button><\/div><p class="tiny muted gap-top">제출 전 다른 메뉴로 나가면 진행 중인 답변이 사라집니다. 제출 결과는 계정 기록에 저장됩니다.<\/p><\/section>`;
+}
+function handleResourceAction(a,b){
+ if(a==='photo-model'){photoRevealed=!photoRevealed;render();return true}
+ if(a==='mock-start'){startMock(b.dataset.track);return true}
+ if(a==='mock-history'){const r=state.mockHistory[Number(b.dataset.index)];if(r)startMock(r.track,r);return true}
+ if(a==='mock-answer'){const q=miniTest?.questions[miniTest.pos],n=Number(b.dataset.choice);if(q?.options&&Number.isInteger(n)&&n>=0&&n<q.options.length){miniTest.answers[q.id]=n;render()}return true}
+ if(a==='mock-step'){if(miniTest&&!miniTest.finished){miniTest.pos=Math.max(0,Math.min(miniTest.questions.length-1,miniTest.pos+Number(b.dataset.step)));render()}return true}
+ if(a==='mock-submit'){if(confirm('모의연습을 제출하고 결과를 확인할까요?'))finishMock();return true}
+ if(a==='resource-plan'){const r=LIBRARY.resources[Number(b.dataset.index)];if(r&&state.customTasks.length<500){state.customTasks.push({id:'custom-'+crypto.randomUUID(),title:r.title,date:dateStr(),minutes:20,done:false,doneAt:''});save();plannerDate=dateStr();plannerMonth=plannerDate.slice(0,7);goToScreen('planner')}return true}
+ return false;
+}
+app.addEventListener('input',event=>{if(event.target.id==='mock-notes'&&miniTest&&!miniTest.finished)miniTest.answers[miniTest.questions[miniTest.pos].id]=event.target.value.slice(0,1000)});
 
 
 function examNavigationHTML(){const list=orderedExamUnits(examTrack),i=list.indexOf(currentExam()),units=EXTRA.tracks[examTrack].units;return `<div class="button-row gap-top"><button class="btn" data-act="exam-open" data-track="${examTrack}" data-unit="${units.indexOf(list[Math.max(0,i-1)])}" ${i===0?'disabled':''}>← 이전 연습<\/button><button class="btn" data-act="exam-open" data-track="${examTrack}" data-unit="${units.indexOf(list[Math.min(list.length-1,i+1)])}" ${i===list.length-1?'disabled':''}>다음 연습 →<\/button><\/div>`}
@@ -5128,7 +5882,7 @@ async function cloudFetch(path,options={},authenticated=true){
  return body;
 }
 function queueCloudSave(){if(!cloudSession)return;try{const m=cloudMeta();m.dirty=true;storeCloudMeta(m)}catch{return}clearTimeout(cloudTimer);if(!cloudConflict)cloudTimer=setTimeout(()=>syncCloud().catch(()=>{}),1200)}
-function refreshCloudUI(){if(screen==='account')render()}
+function refreshCloudUI(){if(screen==='account'||(['home','planner'].includes(screen)&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName)))render()}
 async function syncCloud(){
  if(!cloudSession||cloudBusy||cloudConflict)return;cloudBusy=true;const epoch=authEpoch,key=activeStorageKey,snapshot=JSON.stringify(state),meta=cloudMeta();
  try{
