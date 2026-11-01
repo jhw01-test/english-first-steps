@@ -367,7 +367,7 @@ const EXTRA={
   ]
 };
 const KEY='everyday-english-foundation-state-v1';
-const CLOUD_CONFIG={url:'',publishableKey:''};
+const CLOUD_CONFIG={url:'https://aicaaawuortmdqslkgbp.supabase.co',publishableKey:'sb_publishable_YddlPyyXDLlE9qq2gdqw8Q_IHxFSMzb',enabled:false};
 let cloudSession=cachedCloudSession();
 let activeStorageKey=cloudSession?KEY+'-user-'+cloudSession.user.id:KEY;
 const defaultState=()=>({completed:{},quizRecords:{},starred:[],srs:{},rate:.86,studyMinutes:30,errors:{},examRecords:{}});
@@ -629,7 +629,7 @@ function handleExtraAction(a,b){
 
 let cloudStatus='',cloudBusy=false,cloudConflict=false,cloudTimer=null,authEpoch=0;
 function cachedCloudSession(){
- try{if(!CLOUD_CONFIG.url||!CLOUD_CONFIG.publishableKey)return null;const s=JSON.parse(localStorage.getItem('english-cloud-session')||'null');return s?.access_token&&s?.refresh_token&&/^[0-9a-f-]{36}$/i.test(s.user?.id)?s:null}catch{return null}
+ try{if(!CLOUD_CONFIG.enabled||!CLOUD_CONFIG.url||!CLOUD_CONFIG.publishableKey)return null;const s=JSON.parse(localStorage.getItem('english-cloud-session')||'null');return s?.access_token&&s?.refresh_token&&/^[0-9a-f-]{36}$/i.test(s.user?.id)?s:null}catch{return null}
 }
 function cloudMeta(){try{return JSON.parse(localStorage.getItem(activeStorageKey+'-sync')||'null')||{revision:0,dirty:false}}catch{return {revision:0,dirty:false}}}
 function storeCloudMeta(m){localStorage.setItem(activeStorageKey+'-sync',JSON.stringify(m))}
@@ -637,7 +637,7 @@ function rememberSession(s){s.expires_at=Date.now()/1000+(s.expires_in||3600);cl
 async function safeCloudFetch(url,options){try{return await fetch(url,options)}catch{throw Error('네트워크에 연결하지 못했어요. 기록은 이 기기에 보관되며 다시 연결해 동기화할 수 있어요.')}}
 async function cloudFetch(path,options={},authenticated=true){
  const requestEpoch=authEpoch;
- if(!CLOUD_CONFIG.url||!CLOUD_CONFIG.publishableKey)throw Error('계정 연결을 준비하고 있어요.');
+ if(!CLOUD_CONFIG.enabled||!CLOUD_CONFIG.url||!CLOUD_CONFIG.publishableKey)throw Error('계정 연결을 준비하고 있어요.');
  if(authenticated&&!cloudSession)throw Error('다시 로그인해 주세요.');
  if(authenticated&&cloudSession.expires_at<Date.now()/1000+60){
   const res=await safeCloudFetch(CLOUD_CONFIG.url+'/auth/v1/token?grant_type=refresh_token',{method:'POST',headers:{apikey:CLOUD_CONFIG.publishableKey,'Content-Type':'application/json'},body:JSON.stringify({refresh_token:cloudSession.refresh_token})});
@@ -683,7 +683,7 @@ async function resolveCloudConflict(useLocal){
  storeCloudMeta({revision,dirty:useLocal});cloudConflict=false;cloudStatus='사용할 기록을 선택했어요.';await syncCloud();
 }
 function accountHTML(){
- const enabled=!!(CLOUD_CONFIG.url&&CLOUD_CONFIG.publishableKey);
+ const enabled=!!(CLOUD_CONFIG.enabled&&CLOUD_CONFIG.url&&CLOUD_CONFIG.publishableKey);
  if(!enabled)return `<div class="panel pad"><span class="eyebrow">MY ACCOUNT</span><h1 class="h1">나의 학습 계정</h1><p class="lead">기기 간에 기록을 이어 쓸 수 있도록 계정 연결을 준비하고 있어요. 현재는 이 브라우저에 기록됩니다.</p><button class="btn primary gap-top" data-act="goto" data-to="settings">학습 기록 백업하기</button></div>`;
  return `<div class="panel pad"><span class="eyebrow">MY ACCOUNT</span><h1 class="h1">${cloudSession?'나의 학습 계정':'이메일로 시작하기'}</h1>${cloudSession?`<p class="lead">${esc(cloudSession.user.email||'로그인한 사용자')}</p><p>기초 진도·오답·시험 연습 기록을 계정에 저장합니다.</p><div class="button-row"><button class="btn primary" data-act="cloud-sync" ${cloudBusy?'disabled':''}>지금 동기화</button><button class="btn" data-act="cloud-import">로그인 전 기기 기록 가져오기</button><button class="btn" data-act="cloud-logout" ${cloudBusy?'disabled':''}>로그아웃</button></div>${cloudConflict?`<div class="alert gap-top"><p>여러 기기의 기록이 달라요. 덮어쓰기 전에 설정에서 기록을 백업할 수 있습니다.</p><div class="button-row"><button class="btn" data-act="cloud-use-remote">온라인 기록 사용</button><button class="btn" data-act="cloud-use-local">이 기기 기록으로 온라인 저장</button></div></div>`:''}`:`<p class="lead">이메일 인증번호로 로그인해요. 처음 사용하면 계정이 함께 만들어집니다.</p><form id="cloud-login" class="settings-list gap-top"><label>이메일<input id="cloud-email" class="search" type="email" autocomplete="email" required maxlength="254"></label><label>인증번호<input id="cloud-otp" class="search" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6,10}" maxlength="10" placeholder="번호를 받은 뒤 입력"></label><div class="button-row"><button class="btn" type="submit" name="mode" value="send">인증번호 받기</button><button class="btn primary" type="submit" name="mode" value="verify">인증하고 로그인</button></div></form>`}<p id="cloud-status" class="tip gap-top" role="status">${esc(cloudStatus||(cloudSession?'연결 상태를 확인해 주세요.':'로그인 전 기록은 이 브라우저에 보관됩니다.'))}</p></div>`;
 }
